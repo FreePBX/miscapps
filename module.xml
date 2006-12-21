@@ -4,6 +4,9 @@
 	<version>0.1.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
+	<description>
+		Adds the ability to create feature codes that can go to any freePBX destination (such as an IVR or queue)
+	</description>
 	<menuitems>
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
@@ -11,6 +14,6 @@
 		*0.1.1* Fixed publish location for trunk/2.3 repository
 	</changelog>
 	<location>release/2.3/miscapps-0.1.1.tgz</location>
-	<info>http://aussievoip.com.au/wiki/freePBX-Announcement</info>
+	<info>http://aussievoip.com.au/wiki/freePBX-MiscApplications</info>
 	<md5sum>bf1d8369becebbfef2d6b502c5a385c3</md5sum>
 </module>
