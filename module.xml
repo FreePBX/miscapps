@@ -1,13 +1,16 @@
 <module>
 	<rawname>miscapps</rawname>
 	<name>Misc Applications</name>
-	<version>0.1</version>
+	<version>0.1.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
-	<location>release/2.2/</location>
+	<changelog>
+		*0.1.1* Fixed publish location for trunk/2.3 repository
+	</changelog>
+	<location>release/2.3/miscapps-0.1.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Announcement</info>
-	<md5sum>e931391f2e1eb12937873cc22488a921</md5sum>
+	<md5sum>bf1d8369becebbfef2d6b502c5a385c3</md5sum>
 </module>
