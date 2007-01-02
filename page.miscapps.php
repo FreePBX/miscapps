@@ -30,8 +30,8 @@ if ($_POST['goto0']) {
 switch ($action) {
 	case 'add':
 		miscapps_add($description, $ext, $dest);
-		//needreload();
-		//redirect_standard();
+		needreload();
+		redirect_standard();
 	break;
 	case 'edit':
 		miscapps_edit($miscapp_id, $description, $ext, $dest);
