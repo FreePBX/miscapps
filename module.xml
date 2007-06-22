@@ -1,7 +1,7 @@
 <module>
 	<rawname>miscapps</rawname>
 	<name>Misc Applications</name>
-	<version>0.2</version>
+	<version>0.2.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,6 +11,7 @@
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
 	<changelog>
+	  *0.2.1* merge findmefollow/core extension destinations if any
 		*0.2* Fix bug with adding new apps
 		*0.1.1* Fixed publish location for trunk/2.3 repository
 	</changelog>
