@@ -5,7 +5,7 @@
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
-		Adds the ability to create feature codes that can go to any freePBX destination (such as an IVR or queue)
+		Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)
 	</description>
 	<menuitems>
 		<miscapps>Misc Applications</miscapps>

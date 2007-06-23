@@ -1,5 +1,5 @@
 <?php 
-/** Misc Applications module for freePBX 2.2+
+/** Misc Applications module for FreePBX 2.2+
  * Copyright 2006 Greg MacLellan
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -76,7 +76,7 @@ if ($extdisplay) {
 
 }
 
-$helptext = _("Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in freePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other freePBX modules to dial internal numbers or feature codes.");
+$helptext = _("Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes.");
 echo "<p>".$helptext."</p>\n";
 ?>
 
