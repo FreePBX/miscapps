@@ -3,6 +3,18 @@
 global $db;
 global $amp_conf;
 
+$autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
+$sql = "CREATE TABLE IF NOT EXISTS miscapps (
+	miscapps_id INTEGER NOT NULL PRIMARY KEY $autoincrement,
+	ext VARCHAR( 50 ) ,
+	description VARCHAR( 50 ) ,
+	dest VARCHAR( 255 )
+)";
+
+$check = $db->query($sql);
+if(DB::IsError($check)) {
+	die("Can not create miscdests table\n");
+}
 $results = array();
 $sql = "SELECT miscapps_id, dest FROM miscapps";
 $results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
