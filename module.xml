@@ -19,7 +19,7 @@
 		*0.2* Fix bug with adding new apps
 		*0.1.1* Fixed publish location for trunk/2.3 repository
 	</changelog>
-	<location>release/2.3/miscapps-0.2.3.tgz</location>
+	<location>release/2.3/miscapps-0.2.3.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-MiscApplications</info>
-	<md5sum>1d0584d98b374d65229375c1f46b2cbc</md5sum>
+	<md5sum>79b89d0ba9462e328a8778d5937e8c69</md5sum>
 </module>
