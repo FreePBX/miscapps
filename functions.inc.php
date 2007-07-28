@@ -71,7 +71,7 @@ function miscapps_get($miscapps_id) {
 	
 	// we want to get the ext from featurecodes
 	$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
-	$row['ext'] = $fc->getCode();
+	$row['ext'] = $fc->getDefault();
 	$row['enabled'] = $fc->isEnabled();
 
 	return $row;
@@ -125,8 +125,8 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest) {
 	
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
 	$fc->setDescription($description);
-	$fc->setCode($ext);
+	$fc->setDefault($ext, true);
 	$fc->update();
 }
-
 ?>
+
