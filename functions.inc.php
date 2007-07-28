@@ -53,7 +53,7 @@ function miscapps_list($get_ext = false) {
 	if ($get_ext) {
 		foreach (array_keys($results) as $idx) {
 			$fc = new featurecode('miscapps', 'miscapp_'.$results[$idx]['miscapps_id']);
-			$results[$idx]['ext'] = $fc->getCode();
+			$results[$idx]['ext'] = $fc->getDefault();
 			$results[$idx]['enabled'] = $fc->isEnabled();
 		}
 	}
