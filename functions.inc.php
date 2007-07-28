@@ -128,5 +128,5 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest) {
 	$fc->setDefault($ext, true);
 	$fc->update();
 }
-?>
 
+?>
