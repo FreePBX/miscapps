@@ -11,6 +11,7 @@
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
 	<changelog>
+		*0.2.3.3* fixed some undefined variables
 		*0.2.3.2* #2177: removed apparently corrupted newline at end of file
 		*0.2.3.1* added proper uninstall, removes any feature codes and then table
 		*0.2.3* #1902 miscapp always sets/pulls default code now regardless of custom override in featurecodes

@@ -22,7 +22,7 @@ $ext = isset($_POST['ext']) ? $_POST['ext'] :  '';
 $dest = isset($_POST['dest']) ? $_POST['dest'] :  '';
 $enabled = isset($_POST['enabled']) ? (!empty($_POST['enabled'])) : true;
 
-if ($_POST['goto0']) {
+if (isset($_POST['goto0']) && $_POST['goto0']) {
 	$dest = $_POST[ $_POST['goto0'].'0' ];
 }
 
