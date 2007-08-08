@@ -47,7 +47,7 @@ function miscapps_list($get_ext = false) {
 	$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($results)) {
-		die($results->getMessage()."<br><br>Error selecting from miscapps");	
+		die_freepbx($results->getMessage()."<br><br>Error selecting from miscapps");	
 	}
 	
 	if ($get_ext) {
@@ -66,7 +66,7 @@ function miscapps_get($miscapps_id) {
 	$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ".addslashes($miscapps_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
-		die($row->getMessage()."<br><br>Error selecting row from miscapps");	
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from miscapps");	
 	}
 	
 	// we want to get the ext from featurecodes
@@ -85,7 +85,7 @@ function miscapps_add($description, $ext, $dest) {
 		"'".addslashes($dest)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage().$sql);
+		die_freepbx($result->getMessage().$sql);
 	}
 	//get id..
 	$miscapps_id = $db->getOne('SELECT LAST_INSERT_ID()');
@@ -104,7 +104,7 @@ function miscapps_delete($miscapps_id) {
 	$sql = "DELETE FROM miscapps WHERE miscapps_id = ".addslashes($miscapps_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage().$sql);
+		die_freepbx($result->getMessage().$sql);
 	}
 	
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
@@ -120,7 +120,7 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest) {
 		"WHERE miscapps_id = ".addslashes($miscapps_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage().$sql);
+		die_freepbx($result->getMessage().$sql);
 	}
 	
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);

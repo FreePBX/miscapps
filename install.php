@@ -13,7 +13,7 @@ $sql = "CREATE TABLE IF NOT EXISTS miscapps (
 
 $check = $db->query($sql);
 if(DB::IsError($check)) {
-	die("Can not create miscdests table\n");
+	die_freepbx("Can not create miscdests table\n");
 }
 $results = array();
 $sql = "SELECT miscapps_id, dest FROM miscapps";
@@ -28,7 +28,7 @@ if (!DB::IsError($results)) { // error - table must not be there
 			$sql = "UPDATE miscapps SET dest = '$new_dest' WHERE miscapps_id = $miscapps_id  AND dest = '$old_dest'";
 			$results = $db->query($sql);
 			if(DB::IsError($results)) {
-				die($results->getMessage());
+				die_freepbx($results->getMessage());
 			}
 		}
 	}
