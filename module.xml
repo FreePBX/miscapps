@@ -22,6 +22,6 @@
 		*0.2* Fix bug with adding new apps
 		*0.1.1* Fixed publish location for trunk/2.3 repository
 	</changelog>
-	<location>release/2.3/miscapps-0.2.3.3.tgz</location>
-	<md5sum>b3e31dfe4af80489fdd5fe61040ed784</md5sum>
+	<location>release/2.3/miscapps-0.2.3.4.tgz</location>
+	<md5sum>fb70be71fd4c5a96e7206d929d46c3d0</md5sum>
 </module>
