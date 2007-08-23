@@ -1,7 +1,7 @@
 <module>
 	<rawname>miscapps</rawname>
 	<name>Misc Applications</name>
-	<version>0.2.3.4</version>
+	<version>0.2.3.5</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,7 +11,7 @@
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
 	<changelog>
-		*0.2.3.4* #2305 Feature Status broken
+		*0.2.3.5* #2305 Feature Status broken
 		*0.2.3.3* fixed some undefined variables, bump for rc1
 		*0.2.3.2* #2177: removed apparently corrupted newline at end of file
 		*0.2.3.1* added proper uninstall, removes any feature codes and then table

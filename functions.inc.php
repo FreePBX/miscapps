@@ -73,7 +73,6 @@ function miscapps_get($miscapps_id) {
 	$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
 	$row['ext'] = $fc->getDefault();
 	$row['enabled'] = $fc->isEnabled();
-	echo $row['enabled']?"enabled":"disabled";
 
 	return $row;
 }
