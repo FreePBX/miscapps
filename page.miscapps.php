@@ -34,7 +34,7 @@ switch ($action) {
 		redirect_standard();
 	break;
 	case 'edit':
-		miscapps_edit($miscapp_id, $description, $ext, $dest);
+		miscapps_edit($miscapp_id, $description, $ext, $dest, $enabled);
 		needreload();
 		redirect_standard('extdisplay');
 	break;
@@ -97,8 +97,8 @@ echo "<p>".$helptext."</p>\n";
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Feature Status")?>:<span><?php echo _("If this code is enabled or not.")?></span></a></td>
 		<td><select name="enabled">
-			<option value="1" <?php if ($enabled) echo "checked"; ?>>Enabled</option>
-			<option value="0" <?php if (!$enabled) echo "checked"; ?>>Disabled</option>
+			<option value="1" <?php if ($enabled) echo "SELECTED"; ?>>Enabled</option>
+			<option value="0" <?php if (!$enabled) echo "SELECTED"; ?>>Disabled</option>
 		</select></td>
 	</tr>
 	

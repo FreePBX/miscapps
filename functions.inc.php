@@ -73,6 +73,7 @@ function miscapps_get($miscapps_id) {
 	$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
 	$row['ext'] = $fc->getDefault();
 	$row['enabled'] = $fc->isEnabled();
+	echo $row['enabled']?"enabled":"disabled";
 
 	return $row;
 }
@@ -111,7 +112,7 @@ function miscapps_delete($miscapps_id) {
 	$fc->delete();
 }
 
-function miscapps_edit($miscapps_id, $description, $ext, $dest) { 
+function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) { 
 	global $db;
 	$sql = "UPDATE miscapps SET ".
 		"description = '".addslashes($description)."', ".
@@ -126,6 +127,7 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest) {
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
 	$fc->setDescription($description);
 	$fc->setDefault($ext, true);
+	$fc->setEnabled($enabled);
 	$fc->update();
 }
 
