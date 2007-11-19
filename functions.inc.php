@@ -130,4 +130,56 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
 	$fc->update();
 }
 
+function miscapps_check_extensions($exten=true) {
+	global $active_modules;
+	$extenlist = array();
+	if (is_array($exten) && empty($exten)) {
+		return $extenlist;
+	}
+	$sql = "SELECT miscapps_id, ext, description FROM miscapps ";
+	if (is_array($exten)) {
+		$sql .= "WHERE ext in ('".implode("','",$exten)."')";
+	}
+	$sql .= " ORDER BY ext";
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+	$type = isset($active_modules['miscapps']['type'])?$active_modules['miscapps']['type']:'setup';
+
+	foreach ($results as $result) {
+		$thisexten = $result['ext'];
+		$thisid    = $result['miscapps_id'];
+		$extenlist[$thisexten]['description'] = _("MiscApp: ").$result['description'];
+		$extenlist[$thisexten]['status'] = 'INUSE';
+		$extenlist[$thisexten]['edit_url'] = 'config.php?display=miscapps&type='.$type.'&extdisplay='.urlencode($thisid);
+	}
+	return $extenlist;
+}
+
+function miscapps_check_destinations($dest=true) {
+	global $active_modules;
+
+	$destlist = array();
+	if (is_array($dest) && empty($dest)) {
+		return $destlist;
+	}
+	$sql = "SELECT miscapps_id, dest, description FROM miscapps ";
+	if ($dest !== true) {
+		$sql .= "WHERE dest in ('".implode("','",$dest)."')";
+	}
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+	$type = isset($active_modules['miscapps']['type'])?$active_modules['miscapps']['type']:'setup';
+
+	foreach ($results as $result) {
+		$thisdest = $result['dest'];
+		$thisid   = $result['miscapps_id'];
+		$destlist[] = array(
+			'dest' => $thisdest,
+			'description' => 'Misc Application: '.$result['description'],
+			'edit_url' => 'config.php?display=miscapps&type='.$type.'&extdisplay='.urlencode($thisid),
+		);
+	}
+	return $destlist;
+}
+
 ?>

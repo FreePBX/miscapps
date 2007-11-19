@@ -29,14 +29,33 @@ if (isset($_POST['goto0']) && $_POST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		miscapps_add($description, $ext, $dest);
-		needreload();
-		redirect_standard();
+		$conflict_url = array();
+		$usage_arr = framework_check_extension_usage($ext);
+		if (!empty($usage_arr)) {
+			$conflict_url = framework_display_extension_usage_alert($usage_arr);
+		} else {
+			miscapps_add($description, $ext, $dest);
+			needreload();
+			redirect_standard();
+		}
 	break;
+	// TODO: need to lookup the current extension based on the id and if it is changing
+	//       do a check to make sure it doesn't conflict. If not changing, np.
+	//
 	case 'edit':
-		miscapps_edit($miscapp_id, $description, $ext, $dest, $enabled);
-		needreload();
-		redirect_standard('extdisplay');
+		$fc = new featurecode('miscapps', 'miscapp_'.$miscapp_id);
+		$conflict_url = array();
+		if ($fc->getDefault() != $ext) {
+			$usage_arr = framework_check_extension_usage($ext);
+			if (!empty($usage_arr)) {
+				$conflict_url = framework_display_extension_usage_alert($usage_arr);
+			}
+		}
+		if (empty($conflict_url)) {
+			miscapps_edit($miscapp_id, $description, $ext, $dest, $enabled);
+			needreload();
+			redirect_standard('extdisplay');
+		}
 	break;
 	case 'delete':
 		miscapps_delete($miscapp_id);
@@ -78,6 +97,12 @@ if ($extdisplay) {
 
 $helptext = _("Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes.");
 echo "<p>".$helptext."</p>\n";
+?>
+
+<?php if (!empty($conflict_url)) {
+      	echo "<h5>"._("Conflicting Extensions")."</h5>";
+      	echo implode('<br .>',$conflict_url);
+      }
 ?>
 
 <form name="editMiscapp" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkMiscapp(editMiscapp);">
