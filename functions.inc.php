@@ -1,13 +1,4 @@
 <?php
-/*
-function miscapp_destinations() {
-	// return an associative array with destination and description
-	foreach (announcement_list() as $row) {
-		$extens[] = array('destination' => 'app-announcement,ann-'.$row[0].',1', 'description' => $row[1]);
-	}
-	return $extens;
-}
-*/
 
 function miscapps_contexts() {
 	// return an associative array with context and description
@@ -128,31 +119,6 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
 	$fc->setDefault($ext, true);
 	$fc->setEnabled($enabled);
 	$fc->update();
-}
-
-function miscapps_check_extensions($exten=true) {
-	global $active_modules;
-	$extenlist = array();
-	if (is_array($exten) && empty($exten)) {
-		return $extenlist;
-	}
-	$sql = "SELECT miscapps_id, ext, description FROM miscapps ";
-	if (is_array($exten)) {
-		$sql .= "WHERE ext in ('".implode("','",$exten)."')";
-	}
-	$sql .= " ORDER BY ext";
-	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
-
-	$type = isset($active_modules['miscapps']['type'])?$active_modules['miscapps']['type']:'setup';
-
-	foreach ($results as $result) {
-		$thisexten = $result['ext'];
-		$thisid    = $result['miscapps_id'];
-		$extenlist[$thisexten]['description'] = _("MiscApp: ").$result['description'];
-		$extenlist[$thisexten]['status'] = 'INUSE';
-		$extenlist[$thisexten]['edit_url'] = 'config.php?display=miscapps&type='.$type.'&extdisplay='.urlencode($thisid);
-	}
-	return $extenlist;
 }
 
 function miscapps_check_destinations($dest=true) {
