@@ -134,7 +134,7 @@ echo $helptext;
 
 <?php 
 //draw goto selects
-echo drawselects($dest,0,true);
+echo drawselects($dest,0);
 ?>
 			
 			<tr>
