@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-26 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Francesco Romano\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.miscapps.php:79
+msgid ""
+"Misc Applications are for adding feature codes that you can dial from "
+"internal phones that go to various destinations available in FreePBX. This "
+"is in contrast to the <strong>Misc Destinations</strong> module, which is "
+"for creating destinations that can be used by other FreePBX modules to dial "
+"internal numbers or feature codes."
+msgstr "Le Applicazioni Varie possono essere utilizzate per impostare dei servizi consultabili direttamente dai telefoni scegliendo una delle varie destinazioni disponibili in FreePBX. Non è la stessa cosa del modulo <strong>Destinazioni Varie</strong>, che serve a creare destinazioni da poter essere utilizzate da altri moduli FreePBX, per chiamare per esempio numeri interni o altri servizi."
+
+#: page.miscapps.php:88
+msgid "Edit Misc Application"
+msgstr "Modifica Applicazione Varia"
+
+#: page.miscapps.php:88
+msgid "Add Misc Application"
+msgstr "Aggiungi Applicazione Varia"
+
+#: page.miscapps.php:90
+msgid "Description"
+msgstr "Descrizione"
+
+#: page.miscapps.php:90
+msgid "The name of this application"
+msgstr "Il nome di questa applicazione"
+
+#: page.miscapps.php:94
+msgid "Feature Code"
+msgstr "Codice Servizio"
+
+#: page.miscapps.php:94
+msgid ""
+"The feature code/extension users can dial to access this application. This "
+"can also be modified on the Feature Codes page."
+msgstr "Il codice/estensione che gli utenti dovranno digitare per accedere a questa applicazione. Questa può essere anche modificata nella pagina Codici Servizi."
+
+#: page.miscapps.php:98
+msgid "Feature Status"
+msgstr "Stato Servizio"
+
+#: page.miscapps.php:98
+msgid "If this code is enabled or not."
+msgstr "Se questo codice è attivo o no."
+
+#: page.miscapps.php:105
+msgid "Destination"
+msgstr "Destinazione"
+
+#: page.miscapps.php:114
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Core"
+msgstr "Sistema"
+
+msgid "Conferences"
+msgstr "Conferenze"
+
+msgid "Phonebook Directory"
+msgstr "Rubrica"
+
+msgid "Queues"
+msgstr "Code"
+
+msgid "Ring Groups"
+msgstr "Gruppi di chiamata"
+
+msgid "Speed dial functions"
+msgstr "Selezione breve"
+
+msgid "Time Conditions"
+msgstr "Condizioni Temporali"
+
+msgid "Custom Contexts"
+msgstr "Contesti Personalizzati"
+
+msgid "Extended Routing"
+msgstr "Rotte specifiche"
+
+msgid "Custom App<span><br>ADVANCED USERS ONLY<br><br>Uses Goto() to send caller to a custom context.<br><br>The context name should start with \"custom-\", and be in the format custom-context,extension,priority. Example entry:<br><br><b>custom-myapp,s,1</b><br><br>The <b>[custom-myapp]</b> context would need to be created and included in extensions_custom.conf</span>"
+msgstr "Applicazione Personalizzata<span>SOLO UTENTI AVANZATI<br>Utilizzare Goto() per inviare la chiamata verso un contesto personalizzato.<br><br>Il nome del contesto deve iniziare per \"custom-\" e deve essere nel formato custom-contesto,extension,priorità. Esempio: <br><br><b>custom-app,s,1</b><br><br><b>Il contesto [custom-app] </b> deve poi essere creato e incluso nel file extensions_custom.conf</span>"
+
+
+msgid "Submit Changes"
+msgstr "Invia"
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Enabled"
+msgstr "Attivato"
+
+msgid "Disabled"
+msgstr "Disattivato"
+
+msgid "Add Misc. Application"
+msgstr "Aggiungi Applicazione Varia"
+
+msgid "Voicemail"
+msgstr "Casella Vocale"
+
+msgid "Extensions"
+msgstr "Interni"
+
+msgid "Day Night Mode"
+msgstr "Controllo Giorno Notte"
+
+msgid "Terminate Call"
+msgstr "Termina Chiamata"
