@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <ceo@postmet.com>, 2008.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-29 15:07+0100\n"
+"PO-Revision-Date: 2008-01-29 15:07+0100\n"
+"Last-Translator: Alexander Kozyrev\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.miscapps.php:96 page.miscapps.php:116
+msgid "Edit Misc Application"
+msgstr "Изменить Различное приложение"
+
+#: page.miscapps.php:98
+msgid "Add MIsc Application"
+msgstr "Добавить Различное приложение"
+
+#: page.miscapps.php:101
+msgid ""
+"Misc Applications are for adding feature codes that you can dial from "
+"internal phones that go to various destinations available in FreePBX. This "
+"is in contrast to the <strong>Misc Destinations</strong> module, which is "
+"for creating destinations that can be used by other FreePBX modules to dial "
+"internal numbers or feature codes."
+msgstr ""
+"Различные приложения добавляют коды к таблице Сервисных кодов, с помощью "
+"которых можно попадать во все возможные направления, доступные во FreePBX. "
+"Это не совсем тоже, что и модуль <strong>Различные направления</strong>, "
+"который служит для создания направлений, используемых затем в других модулях "
+"FreePBX, на которые можно выходить через внутренние номера или Сервисные коды."
+
+#: page.miscapps.php:106
+msgid "Conflicting Extensions"
+msgstr "Конфликтующие внутренние номера"
+
+#: page.miscapps.php:116
+msgid "Add Misc Application"
+msgstr "Добавить Различное приложение"
+
+#: page.miscapps.php:118
+msgid "Description"
+msgstr "Описание"
+
+#: page.miscapps.php:118
+msgid "The name of this application"
+msgstr "Название приложения"
+
+#: page.miscapps.php:122
+msgid "Feature Code"
+msgstr "Сервисный код"
+
+#: page.miscapps.php:122
+msgid ""
+"The feature code/extension users can dial to access this application. This "
+"can also be modified on the Feature Codes page."
+msgstr ""
+"Сервисный код или внутренний номер, через который будет вызываться это приложение. "
+"Это может редактироваться в секции Сервисные коды."
+
+#: page.miscapps.php:126
+msgid "Feature Status"
+msgstr "Статус опции"
+
+#: page.miscapps.php:126
+msgid "If this code is enabled or not."
+msgstr "Если код активирован или нет"
+
+#: page.miscapps.php:133
+msgid "Destination"
+msgstr "Направление"
+
+#: page.miscapps.php:142
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Day Night Mode"
+msgstr "Дневной/Ночной режим"
+
+msgid "Terminate Call"
+msgstr "Терминировать звонок"
+
+msgid "Extensions"
+msgstr "Внутренние номера"
+
+msgid "Voicemail"
+msgstr "Голосовая почта"
+
+msgid "Core"
+msgstr "Основная"
+
+msgid "IVR"
+msgstr "Интерактивное меню"
+
+msgid "Languages"
+msgstr "Языки"
+
+msgid "Conferences"
+msgstr "Конференции"
+
+msgid "Phonebook Directory"
+msgstr "Телефонная книга"
+
+msgid "Queues"
+msgstr "Очереди"
+
+msgid "Ring Groups"
+msgstr "Группы вызова"
+
+msgid "Speed dial functions"
+msgstr "Функции быстрого набора"
+
+msgid "Time Conditions"
+msgstr "Правила по времени"
+
+msgid "Custom Applications"
+msgstr "Специальное приложение"
+
+msgid "Extended Routing"
+msgstr "Расширенная маршрутизация"
+
+msgid "Misc Destinations" 
+msgstr "Различные направления"
+
+msgid "Submit Changes"
+msgstr "Применить изменения"
