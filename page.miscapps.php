@@ -116,15 +116,15 @@ echo $helptext;
 	<tr><td colspan="2"><h5><?php  echo ($extdisplay ? _("Edit Misc Application") : _("Add Misc Application")) ?><hr></h5></td></tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Description")?>:<span><?php echo _("The name of this application")?></span></a></td>
-		<td><input size="15" type="text" name="description" value="<?php  echo $description; ?>"></td>
+		<td><input size="15" type="text" name="description" value="<?php  echo $description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Feature Code")?>:<span><?php echo _("The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page.")?></span></a></td>
-		<td><input type="text" name="ext" value="<?php echo $ext; ?>" /></td>
+		<td><input type="text" name="ext" value="<?php echo $ext; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Feature Status")?>:<span><?php echo _("If this code is enabled or not.")?></span></a></td>
-		<td><select name="enabled">
+		<td><select name="enabled" tabindex="<?php echo ++$tabindex;?>">
 			<option value="1" <?php if ($enabled) echo "SELECTED"; ?>>Enabled</option>
 			<option value="0" <?php if (!$enabled) echo "SELECTED"; ?>>Disabled</option>
 		</select></td>
@@ -138,7 +138,7 @@ echo drawselects($dest,0);
 ?>
 			
 			<tr>
-			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>">
+			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
 			</td>		
 			
