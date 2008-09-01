@@ -54,7 +54,7 @@ function miscapps_list($get_ext = false) {
 
 function miscapps_get($miscapps_id) {
 	global $db;
-	$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ".addslashes($miscapps_id);
+	$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ".$db->escapeSimple($miscapps_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Error selecting row from miscapps");	
@@ -71,9 +71,9 @@ function miscapps_get($miscapps_id) {
 function miscapps_add($description, $ext, $dest) {
 	global $db;
 	$sql = "INSERT INTO miscapps (description, ext, dest) VALUES (".
-		"'".addslashes($description)."', ".
-		"'".addslashes($ext)."', ".
-		"'".addslashes($dest)."')";
+		"'".$db->escapeSimple($description)."', ".
+		"'".$db->escapeSimple($ext)."', ".
+		"'".$db->escapeSimple($dest)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -92,7 +92,7 @@ function miscapps_add($description, $ext, $dest) {
 
 function miscapps_delete($miscapps_id) {
 	global $db;
-	$sql = "DELETE FROM miscapps WHERE miscapps_id = ".addslashes($miscapps_id);
+	$sql = "DELETE FROM miscapps WHERE miscapps_id = ".$db->escapeSimple($miscapps_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -105,10 +105,10 @@ function miscapps_delete($miscapps_id) {
 function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) { 
 	global $db;
 	$sql = "UPDATE miscapps SET ".
-		"description = '".addslashes($description)."', ".
-		"ext = '".addslashes($ext)."', ".
-		"dest = '".addslashes($dest)."' ".
-		"WHERE miscapps_id = ".addslashes($miscapps_id);
+		"description = '".$db->escapeSimple($description)."', ".
+		"ext = '".$db->escapeSimple($ext)."', ".
+		"dest = '".$db->escapeSimple($dest)."' ".
+		"WHERE miscapps_id = ".$db->escapeSimple($miscapps_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
