@@ -95,7 +95,7 @@ if ($extdisplay) {
 
 	echo "<h2>"._("Edit Misc Application")."</h2>";
 } else {
-	echo "<h2>"._("Add MIsc Application")."</h2>";
+	echo "<h2>"._("Add Misc Application")."</h2>";
 }
 
 $helptext = _("Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes.");
