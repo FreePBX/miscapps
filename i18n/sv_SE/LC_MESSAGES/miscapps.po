@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX miscapps\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-16 16:31+0200\n"
-"PO-Revision-Date: 2008-09-16 19:37+0100\n"
+"PO-Revision-Date: 2008-09-16 20:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,27 +17,20 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.miscapps.php:74 page.miscapps.php:98 page.miscapps.php:116
+#: page.miscapps.php:74
+#: page.miscapps.php:98
+#: page.miscapps.php:116
 msgid "Add Misc Application"
 msgstr "Lägg till Övrig applikation"
 
-#: page.miscapps.php:96 page.miscapps.php:116
+#: page.miscapps.php:96
+#: page.miscapps.php:116
 msgid "Edit Misc Application"
 msgstr "Redigera Övrig applikation"
 
 #: page.miscapps.php:101
-msgid ""
-"Misc Applications are for adding feature codes that you can dial from "
-"internal phones that go to various destinations available in FreePBX. This "
-"is in contrast to the <strong>Misc Destinations</strong> module, which is "
-"for creating destinations that can be used by other FreePBX modules to dial "
-"internal numbers or feature codes."
-msgstr ""
-"Övriga applikationer är till för att lägga till funktionskoder som du kan "
-"ringa från interna telefoner som kan gå till olika destinationer inom "
-"FreePBX. Detta är i kontrast med <strong>Övrig destination</strong>, som är "
-"för att skapa destinationer som kan användas av FreePBX övriga moduler för "
-"att ringa interna nummer eller funktionskoder."
+msgid "Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes."
+msgstr "Övriga applikationer är till för att lägga till funktionskoder som du kan ringa från interna telefoner som kan gå till olika destinationer inom FreePBX. Detta är i kontrast med <strong>Övrig destination</strong>, som är för att skapa destinationer som kan användas av FreePBX övriga moduler för att ringa interna nummer eller funktionskoder."
 
 #: page.miscapps.php:106
 msgid "Conflicting Extensions"
@@ -56,12 +49,8 @@ msgid "Feature Code"
 msgstr "Funktionskod"
 
 #: page.miscapps.php:122
-msgid ""
-"The feature code/extension users can dial to access this application. This "
-"can also be modified on the Feature Codes page."
-msgstr ""
-"Funktionskoden/anknytningen användare kan ringa för att få åtkomst till "
-"denna applikation. Denna kan även modifieras på sidan Funktionskoder."
+msgid "The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page."
+msgstr "Funktionskoden/anknytningen användare kan ringa för att få åtkomst till denna applikation. Denna kan även modifieras på sidan Funktionskoder."
 
 #: page.miscapps.php:126
 msgid "Feature Status"
@@ -97,4 +86,5 @@ msgstr "Ogiltig beskrivning angiven"
 
 #: module.xml
 msgid "Misc Applications"
-msgstr "Övrig applikation"
+msgstr "Övriga applikationer"
+
