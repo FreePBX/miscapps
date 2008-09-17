@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX miscapps\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-16 16:31+0200\n"
-"PO-Revision-Date: 2008-09-16 20:00+0100\n"
+"PO-Revision-Date: 2008-09-17 10:37+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgstr "Beskrivning"
 
 #: page.miscapps.php:118
 msgid "The name of this application"
-msgstr "Kort beskrivning på denna applikatione"
+msgstr "Kort beskrivning på denna applikation"
 
 #: page.miscapps.php:122
 msgid "Feature Code"
@@ -58,7 +58,7 @@ msgstr "Funktionsstatus"
 
 #: page.miscapps.php:126
 msgid "If this code is enabled or not."
-msgstr "Om denna kod är aktiv eller ej."
+msgstr "Om denna kod är aktiv eller inte."
 
 #: page.miscapps.php:128
 msgid "Enabled"
