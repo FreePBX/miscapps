@@ -1,7 +1,7 @@
 <module>
 	<rawname>miscapps</rawname>
 	<name>Misc Applications</name>
-	<version>2.5.0.1</version>
+	<version>2.5.0.2</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,6 +11,7 @@
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
 	<changelog>
+		*2.5.0.2* spelling, Swedish
 		*2.5.0.1* #3138 Sqlite3 fixes
 		*2.5.0* #2845 tabindex
 		*2.4.0.2* #2843 Russian Translation
@@ -30,6 +31,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/miscapps-2.5.0.1.tgz</location>
-	<md5sum>f0c1ce3c8d9d254a6870bf69327c561e</md5sum>
+	<location>release/2.5/miscapps-2.5.0.2.tgz</location>
+	<md5sum>7914b03948d4c80f432e4178773018d3</md5sum>
 </module>
