@@ -141,7 +141,7 @@ function miscapps_check_destinations($dest=true) {
 		$thisid   = $result['miscapps_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
-			'description' => 'Misc Application: '.$result['description'],
+			'description' => sprintf(_("Misc Application: %s"),$result['description']),
 			'edit_url' => 'config.php?display=miscapps&type='.$type.'&extdisplay='.urlencode($thisid),
 		);
 	}

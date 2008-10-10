@@ -71,7 +71,7 @@ switch ($action) {
 <div class="rnav"><ul>
 <?php 
 
-echo '<li><a href="config.php?display=miscapps&amp;type=setup">'._('Add Misc. Application').'</a></li>';
+echo '<li><a href="config.php?display=miscapps&amp;type=setup">'._('Add Misc Application').'</a></li>';
 
 foreach (miscapps_list() as $row) {
 	echo '<li><a href="config.php?display=miscapps&amp;type=setup&amp;extdisplay='.$row['miscapps_id'].'" class="">'.$row['description'].'</a></li>';
@@ -125,8 +125,8 @@ echo $helptext;
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Feature Status")?>:<span><?php echo _("If this code is enabled or not.")?></span></a></td>
 		<td><select name="enabled" tabindex="<?php echo ++$tabindex;?>">
-			<option value="1" <?php if ($enabled) echo "SELECTED"; ?>>Enabled</option>
-			<option value="0" <?php if (!$enabled) echo "SELECTED"; ?>>Disabled</option>
+			<option value="1" <?php if ($enabled) echo "SELECTED"; ?>><?php echo _("Enabled");?></option>
+			<option value="0" <?php if (!$enabled) echo "SELECTED"; ?>><?php echo _("Disabled");?></option>
 		</select></td>
 	</tr>
 	

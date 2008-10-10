@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX miscapps\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-16 16:31+0200\n"
-"PO-Revision-Date: 2008-09-17 10:37+0100\n"
+"POT-Creation-Date: 2008-10-05 12:08+0200\n"
+"PO-Revision-Date: 2008-10-10 22:41+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:144
+#, php-format
+msgid "Misc Application: %s"
+msgstr "Övrig applikation: %s"
 
 #: page.miscapps.php:74
 #: page.miscapps.php:98
@@ -84,7 +89,6 @@ msgstr "Ta bort"
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning angiven"
 
-#: module.xml
 msgid "Misc Applications"
 msgstr "Övriga applikationer"
 
