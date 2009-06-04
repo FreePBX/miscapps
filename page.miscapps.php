@@ -12,6 +12,7 @@
  * GNU General Public License for more details.
  */
 
+$tabindex = 0;
 $action = isset($_POST['action']) ? $_POST['action'] :  '';
 if (isset($_POST['delete'])) $action = 'delete'; 
 
