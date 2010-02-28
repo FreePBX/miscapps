@@ -1,7 +1,7 @@
 <module>
 	<rawname>miscapps</rawname>
 	<name>Misc Applications</name>
-	<version>2.6.0.0</version>
+	<version>2.7.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -13,6 +13,7 @@
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
 	<changelog>
+		*2.7.0.0* localizations
 		*2.6.0.0* localizations, misc
 		*2.5.0.3* localization enclosures, spelling
 		*2.5.0.2* spelling, Swedish
@@ -35,6 +36,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.6/miscapps-2.6.0.0.tgz</location>
-	<md5sum>2da980cabd70969a51e8bb7fd1975f58</md5sum>
+	<location>release/2.7/miscapps-2.7.0.0.tgz</location>
+	<md5sum>21c3b91e7ced27f30c84e39764406f58</md5sum>
 </module>
