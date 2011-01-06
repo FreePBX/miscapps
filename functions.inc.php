@@ -19,6 +19,7 @@ function miscapps_get_config($engine) {
 			foreach (miscapps_list(true) as $row) {
 				if ($row['enabled']) {
 					$ext->add('app-miscapps-'.$row['miscapps_id'], $row['ext'], '', new ext_noop('Running miscapp '.$row['miscapps_id'].': '.$row['description']));
+					$ext->add('app-miscapps-'.$row['miscapps_id'], $row['ext'], '', new ext_macro('user-callerid'));
 					$ext->add('app-miscapps-'.$row['miscapps_id'], $row['ext'], '', new ext_goto($row['dest']));
 					
 					$ext->addInclude('from-internal-additional', 'app-miscapps-'.$row['miscapps_id']);
