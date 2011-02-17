@@ -41,6 +41,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.9/miscapps-2.9.0.1.tgz</location>
-	<md5sum>f4f0c063ff2cd3b0439ea8fcde9cbc7c</md5sum>
+	<location>release/2.9/miscapps-2.9.0.2.tgz</location>
+	<md5sum>b79647808469b4769a54c481e7ccab1f</md5sum>
 </module>
