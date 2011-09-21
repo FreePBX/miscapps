@@ -2,7 +2,7 @@
 	<rawname>miscapps</rawname>
 	<repo>extended</repo>
 	<name>Misc Applications</name>
-	<version>2.9.0.2</version>
+	<version>2.10.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Applications</category>
@@ -13,6 +13,7 @@
 		<miscapps>Misc Applications</miscapps>
 	</menuitems>
 	<changelog>
+		*2.10.0.0* new version changes
 		*2.9.0.2* #4831
 		*2.9.0.1* set repository
 		*2.9.0.0* #4651, #4655, #4724
@@ -20,6 +21,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.9/miscapps-2.9.0.2.tgz</location>
-	<md5sum>b79647808469b4769a54c481e7ccab1f</md5sum>
+	<location>release/2.10/miscapps-2.10.0.0.tgz</location>
+	<md5sum>1840ae7c13f5c38d29123870d843d9ec</md5sum>
 </module>
