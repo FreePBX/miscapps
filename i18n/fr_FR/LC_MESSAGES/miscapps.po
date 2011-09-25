@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 12:08+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2009-04-20 21:52+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,20 +28,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:144
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Application : %s"
 
-#: page.miscapps.php:74 page.miscapps.php:98 page.miscapps.php:116
+msgid "Misc Applications"
+msgstr "Applications Diverses"
+
+msgid "Applications"
+msgstr ""
+
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
+msgstr ""
+
 msgid "Add Misc Application"
 msgstr "Ajouter une Application"
 
-#: page.miscapps.php:96 page.miscapps.php:116
 msgid "Edit Misc Application"
 msgstr "Editer Application"
 
-#: page.miscapps.php:101
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -49,68 +56,53 @@ msgid ""
 "for creating destinations that can be used by other FreePBX modules to dial "
 "internal numbers or feature codes."
 msgstr ""
-"Les Applications Diverses sont faites pour ajouter des codes de caractéristique "
-" que vous pouvez composer à partir des téléphones internes en direction de diverses "
-"destinations disponibles dans FreePBX. Cela contraste avec le module <strong>Destinations "
-"Diverses</strong>, qui sert à créer des destinations qui peuvent être utilisées par d'autres "
-"modules de FreePBX pour composer des numéros internes ou des codes de caractéristique."
+"Les Applications Diverses sont faites pour ajouter des codes de "
+"caractéristique  que vous pouvez composer à partir des téléphones internes "
+"en direction de diverses destinations disponibles dans FreePBX. Cela "
+"contraste avec le module <strong>Destinations Diverses</strong>, qui sert à "
+"créer des destinations qui peuvent être utilisées par d'autres modules de "
+"FreePBX pour composer des numéros internes ou des codes de caractéristique."
 
-#: page.miscapps.php:106
 msgid "Conflicting Extensions"
 msgstr "Extensions Conflictuelles"
 
-#: page.miscapps.php:118
 msgid "Description"
 msgstr "Description"
 
-#: page.miscapps.php:118
 msgid "The name of this application"
 msgstr "Le nom de cette application"
 
-#: page.miscapps.php:122
 msgid "Feature Code"
 msgstr "Code de Caractéristique"
 
-#: page.miscapps.php:122
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
 "Les utilisateurs de code/extension de caractéristique peuvent numéroter pour "
-"accéder à cette application. Peut aussi être modifié sur la page Codes de Caractéristique."
+"accéder à cette application. Peut aussi être modifié sur la page Codes de "
+"Caractéristique."
 
-#: page.miscapps.php:126
 msgid "Feature Status"
 msgstr "Statut de Caractéristique"
 
-#: page.miscapps.php:126
 msgid "If this code is enabled or not."
 msgstr "Si ce code est activé ou pas."
 
-#: page.miscapps.php:128
 msgid "Enabled"
 msgstr "Activé"
 
-#: page.miscapps.php:129
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: page.miscapps.php:133
 msgid "Destination"
 msgstr "Destination"
 
-#: page.miscapps.php:141
 msgid "Submit Changes"
 msgstr "Appliquer les Modifications"
 
-#: page.miscapps.php:142
 msgid "Delete"
 msgstr "Supprimer"
 
-#: page.miscapps.php:154
 msgid "Invalid description specified"
 msgstr "Description spécifiée invalide"
-
-#: module.xml
-msgid "Misc Applications"
-msgstr "Applications Diverses"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 12:08+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2008-11-06 14:52+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,102 +17,114 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: functions.inc.php:144
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Applicazione: %s"
 
-#: page.miscapps.php:74
-#: page.miscapps.php:98
-#: page.miscapps.php:116
-msgid "Add Misc Application"
-msgstr "Aggiungi Applicazione"
-
-#: page.miscapps.php:96
-#: page.miscapps.php:116
-msgid "Edit Misc Application"
-msgstr "Modifica Applicazione"
-
-#: page.miscapps.php:101
-msgid "Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes."
-msgstr "Le Applicazioni Varie possono essere utilizzate per impostare dei servizi consultabili direttamente dai telefoni scegliendo una delle varie destinazioni disponibili in FreePBX. Non è la stessa cosa del modulo <strong>Destinazioni Varie</strong>, che serve a creare destinazioni da poter essere utilizzate da altri moduli FreePBX, per chiamare per esempio numeri interni o altri servizi."
-
-#: page.miscapps.php:106
-msgid "Conflicting Extensions"
-msgstr "Interni in conflitto"
-
-#: page.miscapps.php:118
-msgid "Description"
-msgstr "Descrizione"
-
-#: page.miscapps.php:118
-msgid "The name of this application"
-msgstr "Il nome di questa applicazione"
-
-#: page.miscapps.php:122
-msgid "Feature Code"
-msgstr "Codice Servizio"
-
-#: page.miscapps.php:122
-msgid "The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page."
-msgstr "Il codice/estensione che gli utenti dovranno digitare per accedere a questa applicazione. Questa può essere anche modificata nella pagina Codici Servizi."
-
-#: page.miscapps.php:126
-msgid "Feature Status"
-msgstr "Stato Servizio"
-
-#: page.miscapps.php:126
-msgid "If this code is enabled or not."
-msgstr "Se questo codice è attivo o no."
-
-#: page.miscapps.php:128
-msgid "Enabled"
-msgstr "Attivato"
-
-#: page.miscapps.php:129
-msgid "Disabled"
-msgstr "Disattivato"
-
-#: page.miscapps.php:133
-msgid "Destination"
-msgstr "Destinazione"
-
-#: page.miscapps.php:141
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
-
-#: page.miscapps.php:142
-msgid "Delete"
-msgstr "Elimina"
-
-#: page.miscapps.php:154
-msgid "Invalid description specified"
-msgstr "Descrizione specificata non valida"
-
-#: module.xml
 msgid "Misc Applications"
 msgstr "Applicazioni Varie"
 
+msgid "Applications"
+msgstr ""
+
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
+msgstr ""
+
+msgid "Add Misc Application"
+msgstr "Aggiungi Applicazione"
+
+msgid "Edit Misc Application"
+msgstr "Modifica Applicazione"
+
+msgid ""
+"Misc Applications are for adding feature codes that you can dial from "
+"internal phones that go to various destinations available in FreePBX. This "
+"is in contrast to the <strong>Misc Destinations</strong> module, which is "
+"for creating destinations that can be used by other FreePBX modules to dial "
+"internal numbers or feature codes."
+msgstr ""
+"Le Applicazioni Varie possono essere utilizzate per impostare dei servizi "
+"consultabili direttamente dai telefoni scegliendo una delle varie "
+"destinazioni disponibili in FreePBX. Non è la stessa cosa del modulo "
+"<strong>Destinazioni Varie</strong>, che serve a creare destinazioni da "
+"poter essere utilizzate da altri moduli FreePBX, per chiamare per esempio "
+"numeri interni o altri servizi."
+
+msgid "Conflicting Extensions"
+msgstr "Interni in conflitto"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "The name of this application"
+msgstr "Il nome di questa applicazione"
+
+msgid "Feature Code"
+msgstr "Codice Servizio"
+
+msgid ""
+"The feature code/extension users can dial to access this application. This "
+"can also be modified on the Feature Codes page."
+msgstr ""
+"Il codice/estensione che gli utenti dovranno digitare per accedere a questa "
+"applicazione. Questa può essere anche modificata nella pagina Codici Servizi."
+
+msgid "Feature Status"
+msgstr "Stato Servizio"
+
+msgid "If this code is enabled or not."
+msgstr "Se questo codice è attivo o no."
+
+msgid "Enabled"
+msgstr "Attivato"
+
+msgid "Disabled"
+msgstr "Disattivato"
+
+msgid "Destination"
+msgstr "Destinazione"
+
+msgid "Submit Changes"
+msgstr "Conferma Cambiamenti"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Invalid description specified"
+msgstr "Descrizione specificata non valida"
+
 #~ msgid "Add MIsc Application"
 #~ msgstr "Aggiungi Applicazione Varia"
+
 #~ msgid "Core"
 #~ msgstr "Sistema"
+
 #~ msgid "Conferences"
 #~ msgstr "Conferenze"
+
 #~ msgid "Phonebook Directory"
 #~ msgstr "Elenco Telefonico"
+
 #~ msgid "Queues"
 #~ msgstr "Code"
+
 #~ msgid "Ring Groups"
 #~ msgstr "Gruppi di chiamata"
+
 #~ msgid "Speed dial functions"
 #~ msgstr "Selezione breve"
+
 #~ msgid "Time Conditions"
 #~ msgstr "Condizioni Temporali"
+
 #~ msgid "Custom Contexts"
 #~ msgstr "Contesti Personalizzati"
+
 #~ msgid "Extended Routing"
 #~ msgstr "Rotte specifiche"
+
 #~ msgid ""
 #~ "Custom App<span><br>ADVANCED USERS ONLY<br><br>Uses Goto() to send caller "
 #~ "to a custom context.<br><br>The context name should start with \"custom-"
@@ -126,24 +138,33 @@ msgstr "Applicazioni Varie"
 #~ "custom-contesto,extension,priorità. Esempio: <br><br><b>custom-app,s,1</"
 #~ "b><br><br><b>Il contesto [custom-app] </b> deve poi essere creato e "
 #~ "incluso nel file extensions_custom.conf</span>"
+
 #~ msgid "Edit"
 #~ msgstr "Modifica"
+
 #~ msgid "Add Misc. Application"
 #~ msgstr "Aggiungi Applicazione Varia"
+
 #~ msgid "Voicemail"
 #~ msgstr "Caselle Vocali"
+
 #~ msgid "Day Night Mode"
 #~ msgstr "Servizio Giorno/Notte"
+
 #~ msgid "Terminate Call"
 #~ msgstr "Termina Chiamata"
+
 #~ msgid "Misc Destinations"
 #~ msgstr "Destinazioni Varie"
+
 #~ msgid "Custom Applications"
 #~ msgstr "Applicazioni Personalizzate"
+
 #~ msgid "VoiceMail Blasting"
 #~ msgstr "Gruppi di Caselle Vocali"
+
 #~ msgid "Languages"
 #~ msgstr "Lingue"
+
 #~ msgid "Announcements"
 #~ msgstr "Annunci"
-

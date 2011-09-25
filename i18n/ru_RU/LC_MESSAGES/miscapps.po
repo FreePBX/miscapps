@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-13 12:08+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2008-12-26 15:07+0100\n"
 "Last-Translator: Alexander Kozyrev\n"
 "Language-Team: Russian\n"
@@ -17,20 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-5\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:144
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Дополнительное приложение: %s"
 
-#: page.miscapps.php:74 page.miscapps.php:98 page.miscapps.php:116
+msgid "Misc Applications"
+msgstr "Дополнительные приложения"
+
+msgid "Applications"
+msgstr ""
+
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
+msgstr ""
+
 msgid "Add Misc Application"
 msgstr "Добавить Дополнительное приложение"
 
-#: page.miscapps.php:96 page.miscapps.php:116
 msgid "Edit Misc Application"
 msgstr "Изменить Дополнительное приложение"
 
-#: page.miscapps.php:101
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -38,71 +45,52 @@ msgid ""
 "for creating destinations that can be used by other FreePBX modules to dial "
 "internal numbers or feature codes."
 msgstr ""
-"Дополнительные приложения добавляют коды к таблице "
-"Сервисных кодов, с помощью которых можно попадать во все возможные "
-"направления, доступные во FreePBX. Это не совсем "
-"тоже, что и модуль <strong>Дополнительные направления</"
-"strong>, который служит для создания направлений, "
-"используемых затем в других модулях FreePBX, на которые можно выходить через внутренние номера или Сервисные "
-"коды."
+"Дополнительные приложения добавляют коды к таблице Сервисных кодов, с "
+"помощью которых можно попадать во все возможные направления, доступные во "
+"FreePBX. Это не совсем тоже, что и модуль <strong>Дополнительные "
+"направления</strong>, который служит для создания направлений, используемых "
+"затем в других модулях FreePBX, на которые можно выходить через внутренние "
+"номера или Сервисные коды."
 
-#: page.miscapps.php:106
 msgid "Conflicting Extensions"
 msgstr "Конфликтующие внутренние номера"
 
-#: page.miscapps.php:118
 msgid "Description"
 msgstr "Описание"
 
-#: page.miscapps.php:118
 msgid "The name of this application"
 msgstr "Название приложения"
 
-#: page.miscapps.php:122
 msgid "Feature Code"
 msgstr "Сервисный код"
 
-#: page.miscapps.php:122
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
-"Сервисный код или внутренний номер, через "
-"который будет вызываться это приложение. Это может "
-"редактироваться в секции Сервисные коды."
+"Сервисный код или внутренний номер, через который будет вызываться это "
+"приложение. Это может редактироваться в секции Сервисные коды."
 
-#: page.miscapps.php:126
 msgid "Feature Status"
 msgstr "Статус опции"
 
-#: page.miscapps.php:126
 msgid "If this code is enabled or not."
 msgstr "Если код активирован или нет"
 
-#: page.miscapps.php:128
 msgid "Enabled"
 msgstr "Включен"
 
-#: page.miscapps.php:129
 msgid "Disabled"
 msgstr "Выключен"
 
-#: page.miscapps.php:133
 msgid "Destination"
 msgstr "Направление"
 
-#: page.miscapps.php:141
 msgid "Submit Changes"
 msgstr "Применить изменения"
 
-#: page.miscapps.php:142
 msgid "Delete"
 msgstr "Удалить"
 
-#: page.miscapps.php:154
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
-
-#: module.xml
-msgid "Misc Applications"
-msgstr "Дополнительные приложения"
