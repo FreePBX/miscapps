@@ -1,4 +1,5 @@
 <?php 
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 /** Misc Applications module for FreePBX 2.2+
  * Copyright 2006 Greg MacLellan
  * This program is free software; you can redistribute it and/or

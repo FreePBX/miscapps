@@ -1,4 +1,5 @@
 <?php
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 function miscapps_contexts() {
 	// return an associative array with context and description
