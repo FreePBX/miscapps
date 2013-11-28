@@ -23,4 +23,4 @@
 	</depends>
 	<location>release/2.10/miscapps-2.10.0.0.tgz</location>
 	<md5sum>1840ae7c13f5c38d29123870d843d9ec</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
