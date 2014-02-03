@@ -1,18 +1,18 @@
 <module>
-	<rawname>miscapps</rawname>
-	<repo>extended</repo>
-	<name>Misc Applications</name>
-	<version>2.11.0.0</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
-	<category>Applications</category>
-	<description>
+  <rawname>miscapps</rawname>
+  <repo>extended</repo>
+  <name>Misc Applications</name>
+  <version>2.11.0.0</version>
+  <publisher>FreePBX</publisher>
+  <license>GPLv2+</license>
+  <category>Applications</category>
+  <description>
 		Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)
 	</description>
-	<menuitems>
-		<miscapps>Misc Applications</miscapps>
-	</menuitems>
-	<changelog>
+  <menuitems>
+    <miscapps>Misc Applications</miscapps>
+  </menuitems>
+  <changelog>
 		*2.11.0.0* #6055
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
@@ -20,9 +20,12 @@
 		*2.9.0.1* set repository
 		*2.9.0.0* #4651, #4655, #4724
 	</changelog>
-	<depends>
-		<version>2.4.0</version>
-	</depends>
-	<location>release/2.11/miscapps-2.11.0.0.tgz</location>
-	<md5sum>b288e7c7bc4c9f2213cd470f4d9c3791</md5sum>
+  <depends>
+    <version>2.4.0</version>
+  </depends>
+  <location>release/2.11/miscapps-2.11.0.0.tgz</location>
+  <md5sum>b288e7c7bc4c9f2213cd470f4d9c3791</md5sum>
+  <supported>
+    <version>2.10</version>
+  </supported>
 </module>
