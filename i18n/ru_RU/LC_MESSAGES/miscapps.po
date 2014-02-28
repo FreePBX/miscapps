@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
 #
-# fuzzy
+
 #
 msgid ""
 msgstr ""
@@ -14,29 +14,31 @@ msgstr ""
 "Last-Translator: Alexander Kozyrev\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-5\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #, php-format
 msgid "Misc Application: %s"
-msgstr "¥ﬁﬂﬁ€›ÿ‚’€Ï›ﬁ’ ﬂ‡ÿ€ﬁ÷’›ÿ’: %s"
+msgstr "–î–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω–æ–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ: %s"
 
 msgid "Misc Applications"
-msgstr "¥ﬁﬂﬁ€›ÿ‚’€Ï›Î’ ﬂ‡ÿ€ﬁ÷’›ÿÔ"
+msgstr "–î–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω—ã–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏—è"
 
 msgid "Applications"
-msgstr ""
+msgstr "–ü—Ä–∏–ª–æ–∂–µ–Ω–∏—è"
 
 msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
+"–î–æ–±–∞–≤–ª—è–µ—Ç –≤–æ–∑–º–æ–∂–Ω–æ—Å—Ç—å —Å–æ–∑–¥–∞–≤–∞—Ç—å —Å–µ—Ä–≤–∏—Å–Ω—ã–µ –∫–æ–¥—ã, –∫–æ—Ç–æ—Ä—ã–µ –º–æ–≥—É—Ç –∏—Å–ø–æ–ª—å–∑–æ–≤–∞—Ç—å—Å—è"
+"–ª—é–±—ã–º –Ω–∞–∑–Ω–∞—á–µ–Ω–∏–µ–º Asterisk (—Ç–∞–∫–∏–º–∏ –∫–∞–∫ –ò–Ω—Ç–µ—Ä–∞–∫—Ç–∏–≤–Ω–æ–µ –º–µ–Ω—é –∏–ª–∏ –æ—á–µ—Ä–µ–¥—å)"
 
 msgid "Add Misc Application"
-msgstr "¥ﬁ—–“ÿ‚Ï ¥ﬁﬂﬁ€›ÿ‚’€Ï›ﬁ’ ﬂ‡ÿ€ﬁ÷’›ÿ’"
+msgstr "–î–æ–±–∞–≤–∏—Ç—å –î–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω–æ–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ"
 
 msgid "Edit Misc Application"
-msgstr "∏◊‹’›ÿ‚Ï ¥ﬁﬂﬁ€›ÿ‚’€Ï›ﬁ’ ﬂ‡ÿ€ﬁ÷’›ÿ’"
+msgstr "–ò–∑–º–µ–Ω–∏—Ç—å –î–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω–æ–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ"
 
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
@@ -45,52 +47,52 @@ msgid ""
 "for creating destinations that can be used by other FreePBX modules to dial "
 "internal numbers or feature codes."
 msgstr ""
-"¥ﬁﬂﬁ€›ÿ‚’€Ï›Î’ ﬂ‡ÿ€ﬁ÷’›ÿÔ ‘ﬁ—–“€ÔÓ‚ ⁄ﬁ‘Î ⁄ ‚–—€ÿÊ’ ¡’‡“ÿ·›ÎÂ ⁄ﬁ‘ﬁ“, · "
-"ﬂﬁ‹ﬁÈÏÓ ⁄ﬁ‚ﬁ‡ÎÂ ‹ﬁ÷›ﬁ ﬂﬁﬂ–‘–‚Ï “ﬁ “·’ “ﬁ◊‹ﬁ÷›Î’ ›–ﬂ‡–“€’›ÿÔ, ‘ﬁ·‚„ﬂ›Î’ “ﬁ "
-"FreePBX. Õ‚ﬁ ›’ ·ﬁ“·’‹ ‚ﬁ÷’, Á‚ﬁ ÿ ‹ﬁ‘„€Ï <strong>¥ﬁﬂﬁ€›ÿ‚’€Ï›Î’ "
-"›–ﬂ‡–“€’›ÿÔ</strong>, ⁄ﬁ‚ﬁ‡ÎŸ ·€„÷ÿ‚ ‘€Ô ·ﬁ◊‘–›ÿÔ ›–ﬂ‡–“€’›ÿŸ, ÿ·ﬂﬁ€Ï◊„’‹ÎÂ "
-"◊–‚’‹ “ ‘‡„”ÿÂ ‹ﬁ‘„€ÔÂ FreePBX, ›– ⁄ﬁ‚ﬁ‡Î’ ‹ﬁ÷›ﬁ “ÎÂﬁ‘ÿ‚Ï Á’‡’◊ “›„‚‡’››ÿ’ "
-"›ﬁ‹’‡– ÿ€ÿ ¡’‡“ÿ·›Î’ ⁄ﬁ‘Î."
+"–î–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω—ã–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏—è –¥–æ–±–∞–≤–ª—è—é—Ç –∫–æ–¥—ã –∫ —Ç–∞–±–ª–∏—Ü–µ –°–µ—Ä–≤–∏—Å–Ω—ã—Ö –∫–æ–¥–æ–≤, —Å "
+"–ø–æ–º–æ—â—å—é –∫–æ—Ç–æ—Ä—ã—Ö –º–æ–∂–Ω–æ –ø–æ–ø–∞–¥–∞—Ç—å –≤–æ –≤—Å–µ –≤–æ–∑–º–æ–∂–Ω—ã–µ –Ω–∞–ø—Ä–∞–≤–ª–µ–Ω–∏—è, –¥–æ—Å—Ç—É–ø–Ω—ã–µ –≤–æ "
+"FreePBX. –≠—Ç–æ –Ω–µ —Å–æ–≤—Å–µ–º —Ç–æ–∂–µ, —á—Ç–æ –∏ –º–æ–¥—É–ª—å <strong>–î–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω—ã–µ "
+"–Ω–∞–ø—Ä–∞–≤–ª–µ–Ω–∏—è</strong>, –∫–æ—Ç–æ—Ä—ã–π —Å–ª—É–∂–∏—Ç –¥–ª—è —Å–æ–∑–¥–∞–Ω–∏—è –Ω–∞–ø—Ä–∞–≤–ª–µ–Ω–∏–π, –∏—Å–ø–æ–ª—å–∑—É–µ–º—ã—Ö "
+"–∑–∞—Ç–µ–º –≤ –¥—Ä—É–≥–∏—Ö –º–æ–¥—É–ª—è—Ö FreePBX, –Ω–∞ –∫–æ—Ç–æ—Ä—ã–µ –º–æ–∂–Ω–æ –≤—ã—Ö–æ–¥–∏—Ç—å —á–µ—Ä–µ–∑ –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–µ "
+"–Ω–æ–º–µ—Ä–∞ –∏–ª–∏ –°–µ—Ä–≤–∏—Å–Ω—ã–µ –∫–æ–¥—ã."
 
 msgid "Conflicting Extensions"
-msgstr "∫ﬁ›‰€ÿ⁄‚„ÓÈÿ’ “›„‚‡’››ÿ’ ›ﬁ‹’‡–"
+msgstr "–ö–æ–Ω—Ñ–ª–∏–∫—Ç—É—é—â–∏–µ –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–µ –Ω–æ–º–µ—Ä–∞"
 
 msgid "Description"
-msgstr "æﬂÿ·–›ÿ’"
+msgstr "–û–ø–∏—Å–∞–Ω–∏–µ"
 
 msgid "The name of this application"
-msgstr "Ω–◊“–›ÿ’ ﬂ‡ÿ€ﬁ÷’›ÿÔ"
+msgstr "–ù–∞–∑–≤–∞–Ω–∏–µ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏—è"
 
 msgid "Feature Code"
-msgstr "¡’‡“ÿ·›ÎŸ ⁄ﬁ‘"
+msgstr "–°–µ—Ä–≤–∏—Å–Ω—ã–π –∫–æ–¥"
 
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
-"¡’‡“ÿ·›ÎŸ ⁄ﬁ‘ ÿ€ÿ “›„‚‡’››ÿŸ ›ﬁ‹’‡, Á’‡’◊ ⁄ﬁ‚ﬁ‡ÎŸ —„‘’‚ “Î◊Î“–‚Ï·Ô Ì‚ﬁ "
-"ﬂ‡ÿ€ﬁ÷’›ÿ’. Õ‚ﬁ ‹ﬁ÷’‚ ‡’‘–⁄‚ÿ‡ﬁ“–‚Ï·Ô “ ·’⁄Êÿÿ ¡’‡“ÿ·›Î’ ⁄ﬁ‘Î."
+"–°–µ—Ä–≤–∏—Å–Ω—ã–π –∫–æ–¥ –∏–ª–∏ –≤–Ω—É—Ç—Ä–µ–Ω–Ω–∏–π –Ω–æ–º–µ—Ä, —á–µ—Ä–µ–∑ –∫–æ—Ç–æ—Ä—ã–π –±—É–¥–µ—Ç –≤—ã–∑—ã–≤–∞—Ç—å—Å—è —ç—Ç–æ "
+"–ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ. –≠—Ç–æ –º–æ–∂–µ—Ç —Ä–µ–¥–∞–∫—Ç–∏—Ä–æ–≤–∞—Ç—å—Å—è –≤ —Å–µ–∫—Ü–∏–∏ –°–µ—Ä–≤–∏—Å–Ω—ã–µ –∫–æ–¥—ã."
 
 msgid "Feature Status"
-msgstr "¡‚–‚„· ﬁﬂÊÿÿ"
+msgstr "–°—Ç–∞—Ç—É—Å –æ–ø—Ü–∏–∏"
 
 msgid "If this code is enabled or not."
-msgstr "µ·€ÿ ⁄ﬁ‘ –⁄‚ÿ“ÿ‡ﬁ“–› ÿ€ÿ ›’‚"
+msgstr "–ï—Å–ª–∏ –∫–æ–¥ –∞–∫—Ç–∏–≤–∏—Ä–æ–≤–∞–Ω –∏–ª–∏ –Ω–µ—Ç"
 
 msgid "Enabled"
-msgstr "≤⁄€ÓÁ’›"
+msgstr "–í–∫–ª—é—á–µ–Ω"
 
 msgid "Disabled"
-msgstr "≤Î⁄€ÓÁ’›"
+msgstr "–í—ã–∫–ª—é—á–µ–Ω"
 
 msgid "Destination"
-msgstr "Ω–ﬂ‡–“€’›ÿ’"
+msgstr "–ù–∞–ø—Ä–∞–≤–ª–µ–Ω–∏–µ"
 
 msgid "Submit Changes"
-msgstr "ø‡ÿ‹’›ÿ‚Ï ÿ◊‹’›’›ÿÔ"
+msgstr "–ü—Ä–∏–º–µ–Ω–∏—Ç—å –∏–∑–º–µ–Ω–µ–Ω–∏—è"
 
 msgid "Delete"
-msgstr "√‘–€ÿ‚Ï"
+msgstr "–£–¥–∞–ª–∏—Ç—å"
 
 msgid "Invalid description specified"
-msgstr "√⁄–◊–›ﬁ ›’“’‡›ﬁ’ ﬁﬂÿ·–›ÿ’"
+msgstr "–£–∫–∞–∑–∞–Ω–æ –Ω–µ–≤–µ—Ä–Ω–æ–µ –æ–ø–∏—Å–∞–Ω–∏–µ"
