@@ -2,9 +2,10 @@
   <rawname>miscapps</rawname>
   <repo>extended</repo>
   <name>Misc Applications</name>
-  <version>2.11.0.0</version>
-  <publisher>FreePBX</publisher>
-  <license>GPLv2+</license>
+  <version>2.11.0.1</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <category>Applications</category>
   <description>
 		Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)
@@ -13,6 +14,7 @@
     <miscapps>Misc Applications</miscapps>
   </menuitems>
   <changelog>
+  		*2.11.0.1* Include license file
 		*2.11.0.0* #6055
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
