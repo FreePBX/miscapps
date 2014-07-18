@@ -1,11 +1,11 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2006-2014 Schmooze Com Inc.
 
 $tabindex = 0;
 $action = isset($_POST['action']) ? $_POST['action'] :  '';
-if (isset($_POST['delete'])) $action = 'delete'; 
+if (isset($_POST['delete'])) $action = 'delete';
 
 
 $miscapp_id = isset($_POST['miscapp_id']) ? $_POST['miscapp_id'] :  false;
@@ -57,11 +57,11 @@ switch ($action) {
 }
 
 
-?> 
+?>
 
 
 <div class="rnav"><ul>
-<?php 
+<?php
 
 echo '<li><a href="config.php?display=miscapps&amp;type=setup">'._('Add Misc Application').'</a></li>';
 
@@ -77,7 +77,7 @@ foreach (miscapps_list() as $row) {
 if ($extdisplay) {
 	// load
 	$row = miscapps_get($extdisplay);
-	
+
 	$description = $row['description'];
 	$ext = $row['ext'];
 	$dest = $row['dest'];
@@ -98,7 +98,7 @@ echo $helptext;
       }
 ?>
 
-<form name="editMiscapp" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkMiscapp(editMiscapp);">
+<form name="editMiscapp" action="" method="post" onsubmit="return checkMiscapp(editMiscapp);">
 	<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="miscapp_id" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
@@ -119,24 +119,24 @@ echo $helptext;
 			<option value="0" <?php if (!$enabled) echo "SELECTED"; ?>><?php echo _("Disabled");?></option>
 		</select></td>
 	</tr>
-	
+
 	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
 
-<?php 
+<?php
 //draw goto selects
 echo drawselects($dest,0);
 ?>
-			
+
 			<tr>
 			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-			</td>		
-			
+			</td>
+
 			</tr>
 			</table>
 			</form>
-			
-			
+
+
 <script language="javascript">
 <!--
 
@@ -147,7 +147,7 @@ function checkMiscapp(theForm) {
 	setDestinations(theForm, '_post_dest');
 
 	// form validation
-	defaultEmptyOK = false;	
+	defaultEmptyOK = false;
 	if (isEmpty(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
 
