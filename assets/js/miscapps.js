@@ -1,6 +1,6 @@
 
 function checkMiscapp(theForm) {
-	var msgInvalidDescription = 'Invalid description specified';
+	var msgInvalidDescription = _('Invalid description specified');
 
 	// set up the Destination stuff
 	setDestinations(theForm, '_post_dest');
@@ -20,7 +20,7 @@ $('#ext').keyup(function(){
 	var cval = $(this).val();
 	var patt = new RegExp("^[\*0-9]+$");
 	if(!patt.test(cval) && cval.length > 0){
-		warnInvalid($(this),"This field must only contain numbers and *'s");
+		warnInvalid($(this),_("This field must only contain numbers and *'s"));
 	}	
 });
 //Check for conflicts
@@ -30,14 +30,14 @@ $('#ext').blur(function(){
 	if(cval in extmap && cval.length > 0){
 		var foundid = extmap[cval];
 		if (foundid.indexOf(id) == -1){
-			warnInvalid($(this),"The number provided for the feature code is already in use by " + extmap[cval]);
+			warnInvalid($(this),_("The number provided for the feature code is already in use by ") + extmap[cval]);
 		}
 	}
 });
 
 //Delete intercept
 $( "#delete" ).click(function() {
-		var result = confirm("Are you sure you want to delete this?");
+		var result = confirm(_("Are you sure you want to delete this?"));
 		if(result == false){
 			return false;
 		}

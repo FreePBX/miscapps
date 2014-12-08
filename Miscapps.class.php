@@ -2,7 +2,7 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright (C) 2014 Schmooze Com Inc.
 namespace FreePBX\modules;
-class Miscapps implements BMO {
+class Miscapps implements \BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -73,7 +73,7 @@ class Miscapps implements BMO {
 			//       do a check to make sure it doesn't conflict. If not changing, np.
 			//
 			case 'edit':
-				$fc = new featurecode('miscapps', 'miscapp_'.$miscapp_id);
+				$fc = new \featurecode('miscapps', 'miscapp_'.$miscapp_id);
 				$conflict_url = array();
 				if ($fc->getDefault() != $ext) {
 					$usage_arr = framework_check_extension_usage($ext);
@@ -199,7 +199,7 @@ class Miscapps implements BMO {
 		}else{
 			return false;
 		}	
-		$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
+		$fc = new \featurecode('miscapps', 'miscapp_'.$miscapps_id);
 		$fc->setDescription($description);
 		$fc->setDefault($ext, true);
 		$fc->update();
@@ -212,7 +212,7 @@ class Miscapps implements BMO {
 		$q->execute(array($miscapps_id));
 		if($q){
 			debug('******* q was true **********');
-			$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
+			$fc = new \featurecode('miscapps', 'miscapp_'.$miscapps_id);
 			$fc->delete();
 			return true;
 		}
@@ -225,7 +225,7 @@ class Miscapps implements BMO {
 		$q = $db->prepare($sql);
 		$q->execute(array($description, $ext, $dest, $miscapps_id));
 		if($q){
-			$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
+			$fc = new \featurecode('miscapps', 'miscapp_'.$miscapps_id);
 			$fc->setDescription($description);
 			$fc->setDefault($ext, true);
 			$fc->setEnabled($enabled);
