@@ -103,7 +103,7 @@ if (!empty($conflict_url)) {
 											<i class="fa fa-question-circle fpbx-help-icon" data-for="ext"></i>
 										</div>
 										<div class="col-md-9">
-											<input type="text" class="form-control" id="extdisplay" name="ext" value="<?php echo (isset($ext) ? $ext : ''); ?>" tabindex="<?php echo ++$tabindex;?>" >
+											<input type="text" class="form-control" id="ext" name="ext" value="<?php echo (isset($ext) ? $ext : ''); ?>" tabindex="<?php echo ++$tabindex;?>">
 										</div>
 									</div>
 								</div>
@@ -121,8 +121,9 @@ if (!empty($conflict_url)) {
 						<div class="row">
 							<div class="col-md-12">
 								<div class="row">
+									<div class="col-md-3"></div>
 									<div class="form-group">
-										<div class="col-md-3 radioset">
+										<div class="col-md-9 radioset">
 											<input type="checkbox" id="enabled" name="enabled" <?php if ($enabled) echo "checked"; ?>>
 											<label for="enabled">Enabled</label>
 										</div>
