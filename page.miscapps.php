@@ -111,7 +111,7 @@ if (!empty($conflict_url)) {
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<span id="extd-help" class="help-block fpbx-help-block"><?php echo _("The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page.")?></span>
+								<span id="ext-help" class="help-block fpbx-help-block"><?php echo _("The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page.")?></span>
 							</div>
 						</div>
 					</div>					
@@ -152,7 +152,7 @@ if (!empty($conflict_url)) {
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<span id="goto0-help" class="help-block fpbx-help-block"><?php echo _("Chose the destination for this app")?></span>
+								<span id="goto0-help" class="help-block fpbx-help-block"><?php echo _("Choose the destination for this app when people dial the feature code")?></span>
 							</div>
 						</div>
 					</div>
