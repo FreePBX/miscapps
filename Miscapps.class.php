@@ -1,8 +1,7 @@
 <?PHP
-
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright (C) 2014 Schmooze Com Inc.
-
+namespace FreePBX\modules;
 class Miscapps implements BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
