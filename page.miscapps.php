@@ -4,157 +4,162 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	Copyright 2006-2014 Schmooze Com Inc.
 
 $tabindex = 0;
-$action = isset($_POST['action']) ? $_POST['action'] :  '';
-if (isset($_POST['delete'])) $action = 'delete'; 
 
 
-$miscapp_id = isset($_POST['miscapp_id']) ? $_POST['miscapp_id'] :  false;
-$description = isset($_POST['description']) ? $_POST['description'] :  '';
-$ext = isset($_POST['ext']) ? $_POST['ext'] :  '';
-$dest = isset($_POST['dest']) ? $_POST['dest'] :  '';
-$enabled = isset($_POST['enabled']) ? (!empty($_POST['enabled'])) : true;
-
-if (isset($_POST['goto0']) && $_POST['goto0']) {
-	$dest = $_POST[ $_POST['goto0'].'0' ];
-}
-
-
-switch ($action) {
-	case 'add':
-		$conflict_url = array();
-		$usage_arr = framework_check_extension_usage($ext);
-		if (!empty($usage_arr)) {
-			$conflict_url = framework_display_extension_usage_alert($usage_arr);
-		} else {
-			miscapps_add($description, $ext, $dest);
-			needreload();
-			redirect_standard();
-		}
-	break;
-	// TODO: need to lookup the current extension based on the id and if it is changing
-	//       do a check to make sure it doesn't conflict. If not changing, np.
-	//
-	case 'edit':
-		$fc = new featurecode('miscapps', 'miscapp_'.$miscapp_id);
-		$conflict_url = array();
-		if ($fc->getDefault() != $ext) {
-			$usage_arr = framework_check_extension_usage($ext);
-			if (!empty($usage_arr)) {
-				$conflict_url = framework_display_extension_usage_alert($usage_arr);
-			}
-		}
-		if (empty($conflict_url)) {
-			miscapps_edit($miscapp_id, $description, $ext, $dest, $enabled);
-			needreload();
-			redirect_standard('extdisplay');
-		}
-	break;
-	case 'delete':
-		miscapps_delete($miscapp_id);
-		needreload();
-		redirect_standard();
-	break;
-}
-
-
-?> 
-
-
-<div class="rnav"><ul>
-<?php 
-
-echo '<li><a href="config.php?display=miscapps&amp;type=setup">'._('Add Misc Application').'</a></li>';
-
-foreach (miscapps_list() as $row) {
-	echo '<li><a href="config.php?display=miscapps&amp;type=setup&amp;extdisplay='.$row['miscapps_id'].'" class="">'.$row['description'].'</a></li>';
-}
-
-?>
-</ul></div>
-
-<?php
+$helptext = _("Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes.");
 
 if ($extdisplay) {
 	// load
 	$row = miscapps_get($extdisplay);
-	
+	$id = $row['miscapps_id'];
 	$description = $row['description'];
 	$ext = $row['ext'];
 	$dest = $row['dest'];
 	$enabled = $row['enabled'];
-
-	echo "<h2>"._("Edit Misc Application")."</h2>";
+	$helptext = '';
+	$title = _("Edit Misc Application");
+	$delurl = 'config.php?display=miscapps&action=delete&id=' . $id;
 } else {
-	echo "<h2>"._("Add Misc Application")."</h2>";
+	$title = _("Add Misc Application");
+	$id = "None";
+	$delurl = '';
+	//Enable by default
+	$enabled = true;
 }
+//bootnav
+$bootnav = '';
+$bootnav .= '<div class="col-sm-3 hidden-xs bootnav">';
+$bootnav .= '<div class="list-group">';
+if($extdisplay == ''){
+	$bootnav .= '<a href="config.php?display=miscapps&amp;type=setup" class="list-group-item active">'._("Add Misc Application").'</a>';	
+}else{
+	$bootnav .= '<a href="config.php?display=miscapps&amp;type=setup" class="list-group-item">'._("Add Misc Application").'</a>';		
+}
+foreach (miscapps_list() as $row) {
+	$bootnav .= '<a class="list-group-item '.($extdisplay==$row['miscapps_id'] ? 'active':'').'" href="config.php?display=miscapps&amp;type=setup&amp;extdisplay='.$row['miscapps_id'].'">'.$row['description'].'</a>';
+}
+$bootnav .= '</div>';
+$bootnav .= '</div>';
+//end bootnav
+$warn = '';
+if (!empty($conflict_url)) {
+	$warn .= '<div class="alert alert-danger" role="alert">';
+	$warn .= '<i class="glyphicon glyphicon-exclamation-sign"></i>&nbsp;<h5>'._("Conflicting Extensions").'</h5>';
+    $warn .= '<ul class="list-group">';
+    foreach($conflict_url as $cu){
+		$warn .= '<li class="list-group-item" id="iteminuse">' . $cu . '</li>';
+     }
+     $warn .= '</ul>';
+     $warn .= '</div>';
+ }
 
-$helptext = _("Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes.");
-echo $helptext;
 ?>
-
-<?php if (!empty($conflict_url)) {
-      	echo "<h5>"._("Conflicting Extensions")."</h5>";
-      	echo implode('<br .>',$conflict_url);
-      }
-?>
-
-<form name="editMiscapp" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkMiscapp(editMiscapp);">
-	<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
-	<input type="hidden" name="miscapp_id" value="<?php echo $extdisplay; ?>">
-	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
-	<table>
-	<tr><td colspan="2"><h5><?php  echo ($extdisplay ? _("Edit Misc Application") : _("Add Misc Application")) ?><hr></h5></td></tr>
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Description")?>:<span><?php echo _("The name of this application")?></span></a></td>
-		<td><input size="15" type="text" name="description" value="<?php  echo $description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
-	</tr>
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Feature Code")?>:<span><?php echo _("The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page.")?></span></a></td>
-		<td><input type="text" class="extdisplay" name="ext" value="<?php echo $ext; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td>
-	</tr>
-	<tr>
-		<td><a href="#" class="info"><?php echo _("Feature Status")?>:<span><?php echo _("If this code is enabled or not.")?></span></a></td>
-		<td><select name="enabled" tabindex="<?php echo ++$tabindex;?>">
-			<option value="1" <?php if ($enabled) echo "SELECTED"; ?>><?php echo _("Enabled");?></option>
-			<option value="0" <?php if (!$enabled) echo "SELECTED"; ?>><?php echo _("Disabled");?></option>
-		</select></td>
-	</tr>
-	
-	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
-
-<?php 
-//draw goto selects
-echo drawselects($dest,0);
-?>
-			
-			<tr>
-			<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
-			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-			</td>		
-			
-			</tr>
-			</table>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="fpbx-container">
+				<form autocomplete="off" class="fpbx-submit" name="editMiscapp" action="config.php?display=miscapps" method="post" data-fpbx-delete="<?php echo $delurl ?>" role="form" onsubmit="return checkMiscapp(editMiscapp);">
+				<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
+				<input type="hidden" name="miscapp_id" value="<?php echo $extdisplay; ?>">
+				<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
+				<div class="display full-border">
+					<div>
+						<h1><?php echo $title ?></h1>
+						<?php echo $warn ?>
+						<p><?php echo $helptext ?></p>
+					</div>
+					<!--Descripton-->
+					<div class="element-container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-3">
+											<label class="control-label" for="description"><?php echo _("Description:")?></label>
+											<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
+										</div>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="description" name="description" value="<?php echo (isset($description) ? $description : ''); ?>" tabindex="<?php echo ++$tabindex;?>" >
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<span id="description-help" class="help-block fpbx-help-block"><?php echo _("The name of this application")?></span>
+							</div>
+						</div>
+					</div>
+					<!--End Description-->
+					<!--Feaurecode-->
+					<div class="element-container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-3">
+											<label class="control-label" for="ext"><?php echo _("Feature Code")?></label>
+											<i class="fa fa-question-circle fpbx-help-icon" data-for="ext"></i>
+										</div>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="extdisplay" name="ext" value="<?php echo (isset($ext) ? $ext : ''); ?>" tabindex="<?php echo ++$tabindex;?>" >
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<span id="extd-help" class="help-block fpbx-help-block"><?php echo _("The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page.")?></span>
+							</div>
+						</div>
+					</div>					
+					<!--END Feaurecode-->
+					<!--Enabled-->
+					<div class="element-container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-3 radioset">
+											<input type="checkbox" id="enabled" name="enabled" <?php if ($enabled) echo "checked"; ?>>
+											<label for="enabled">Enabled</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--End Enabled-->
+					<!--Destination-->
+					<div class="element-container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-3">
+											<label class="control-label" for="goto0"><?php echo _("Destination") ?></label>
+											<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
+										</div>
+										<div class="col-md-9">
+											<?php echo drawselects($dest,0);?>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<span id="goto0-help" class="help-block fpbx-help-block"><?php echo _("Chose the destination for this app")?></span>
+							</div>
+						</div>
+					</div>
+					<!--End Destination-->
+				</div>
 			</form>
-			
-			
-<script language="javascript">
-<!--
-
-function checkMiscapp(theForm) {
-	var msgInvalidDescription = "<?php echo _('Invalid description specified'); ?>";
-
-	// set up the Destination stuff
-	setDestinations(theForm, '_post_dest');
-
-	// form validation
-	defaultEmptyOK = false;	
-	if (isEmpty(theForm.description.value))
-		return warnInvalid(theForm.description, msgInvalidDescription);
-
-	if (!validateDestinations(theForm, 1, true))
-		return false;
-
-	return true;
-}
-//-->
-</script>
+			</div>
+		</div>
+	   <?php echo $bootnav ?>
+	</div>
+</div>
