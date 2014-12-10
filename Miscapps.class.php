@@ -11,22 +11,21 @@ class Miscapps implements \BMO {
 		$this->db = $freepbx->Database;
 	}
 	public function install() {
-		$db = $this->db;
 		$sql = "CREATE TABLE IF NOT EXISTS miscapps (miscapps_id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, ext VARCHAR( 50 ) , description VARCHAR( 50 ) , dest VARCHAR( 255 ))";
-		$q = $db->prepare($sql);
-		echo _("Creating Database \n");
+		$q = $this->db->prepare($sql);
 		$q = $q->execute();
 		unset($sql);
 		unset($q);
 		//Migration... Is this still needed
+		global $db;
 		$results = array();
 		$sql = "SELECT miscapps_id, dest FROM miscapps";
 		$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-		if (!DB::IsError($results)) { // error - table must not be there
+		if (!\DB::IsError($results)) { // error - table must not be there
 			foreach ($results as $result) {
 				$old_dest    = $result['dest'];
 				$$this->id = $result['miscapps_id'];
-		
+
 				$new_dest = merge_ext_followme(trim($old_dest));
 				if ($new_dest != $old_dest) {
 					$sql = "UPDATE miscapps SET dest = '$new_dest' WHERE miscapps_id = $miscapps_id  AND dest = '$old_dest'";
@@ -36,7 +35,7 @@ class Miscapps implements \BMO {
 					}
 				}
 			}
-		}				
+		}
 	}
 	public function uninstall() {
 		echo _("Removing Settings table");
@@ -53,7 +52,7 @@ class Miscapps implements \BMO {
 		$ext = isset($_REQUEST['ext']) ? $_REQUEST['ext'] :  '';
 		$dest = isset($_REQUEST['dest']) ? $_REQUEST['dest'] :  '';
 		$enabled = isset($_REQUEST['enabled']) ? (!empty($_REQUEST['enabled'])) : true;
-		
+
 		if (isset($_REQUEST['goto0']) && $_REQUEST['goto0']) {
 			$dest = $_REQUEST[ $_REQUEST['goto0'].'0' ];
 		}
@@ -140,14 +139,14 @@ class Miscapps implements \BMO {
 		// return an associative array with context and description
 		foreach ($this->malist() as $row) {
 			$contexts[] = array(
-				'context' => 'app-miscapps-'.$row['miscapps_id'], 
+				'context' => 'app-miscapps-'.$row['miscapps_id'],
 				'description'=> 'Misc Application: '.$row['description'],
 				'source' => 'Misc Applications',
 			);
 		}
 		return $contexts;
-	}	
-	
+	}
+
 	/**  Get a list of all miscapps
 	 * Optional parameter is get_ext. Potentially slow, because each row is extracted from the featurecodes table
 	 * one-by-one
@@ -167,10 +166,10 @@ class Miscapps implements \BMO {
 				$results[$idx]['enabled'] = $fc->isEnabled();
 			}
 		}
-		
+
 		return $results;
 	}
-	
+
 	public function get($miscapps_id) {
 		$db = $this->db;
 		$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ?";
@@ -180,15 +179,15 @@ class Miscapps implements \BMO {
 			$row = $q->getRow();
 		}
 
-		
+
 		// we want to get the ext from featurecodes
 		$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
 		$row['ext'] = $fc->getDefault();
 		$row['enabled'] = $fc->isEnabled();
-	
+
 		return $row;
 	}
-	
+
 	public function add($description, $ext, $dest) {
 		$db = $this->db;
 		$sql = "INSERT INTO miscapps (description, ext, dest) VALUES (?,?,?)";
@@ -198,7 +197,7 @@ class Miscapps implements \BMO {
 			$miscapps_id = $db->lastInsertId();
 		}else{
 			return false;
-		}	
+		}
 		$fc = new \featurecode('miscapps', 'miscapp_'.$miscapps_id);
 		$fc->setDescription($description);
 		$fc->setDefault($ext, true);
@@ -218,8 +217,8 @@ class Miscapps implements \BMO {
 		}
 		return false;
 	}
-	
-	public function edit($miscapps_id, $description, $ext, $dest, $enabled=true) { 
+
+	public function edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
 		$db = $this->db;
 		$sql = 'UPDATE miscapps SET description = ?, ext = ?, dest = ? WHERE miscapps_id = ?';
 		$q = $db->prepare($sql);
@@ -232,7 +231,7 @@ class Miscapps implements \BMO {
 			$fc->update();
 		}
 	}
-	
+
 	public function check_destinations($dest=true) {
 		global $active_modules;
 		$db = $this->db;
@@ -247,17 +246,17 @@ class Miscapps implements \BMO {
 			if($q){
 				$results = $q->fetchAll();
 			}
-		} else { 
+		} else {
 			$where = implode("','", $dest);
 			$sql = "SELECT miscapps_id, dest, description FROM miscapps WHERE dest in ?";
 			$q = $db->prepare($sql);
 			$q->execute(array($where));
 			if($q){
 				$results = $q->fetchAll();
-			}	
+			}
 		}
 		$type = isset($active_modules['miscapps']['type'])?$active_modules['miscapps']['type']:'setup';
-	
+
 		foreach ($results as $result) {
 			$thisdest = $result['dest'];
 			$thisid   = $result['miscapps_id'];
@@ -269,7 +268,7 @@ class Miscapps implements \BMO {
 		}
 		return $destlist;
 	}
-	
+
 	public function change_destination($old_dest, $new_dest) {
 		$db = $this->db;
 		$sql = 'UPDATE miscapps SET dest = ? WHERE dest = ?';
@@ -277,7 +276,7 @@ class Miscapps implements \BMO {
 		$q->execute(array($new_dest, $old_dest));
 		if($q){
 			return true;
-		}		
+		}
 		return false;
 	}
 }
