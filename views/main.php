@@ -1,0 +1,112 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="fpbx-container">
+				<form autocomplete="off" class="fpbx-submit" name="editMiscapp" action="config.php?display=miscapps" method="post" data-fpbx-delete="<?php echo $delurl ?>" role="form" onsubmit="return checkMiscapp(editMiscapp);">
+					<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
+					<input type="hidden" name="miscapp_id" value="<?php echo $extdisplay; ?>">
+					<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
+					<div class="display full-border">
+						<div>
+							<h1><?php echo $title ?></h1>
+							<?php echo $warn ?>
+							<p><?php echo $helptext ?></p>
+						</div>
+						<!--Enabled-->
+						<div class="element-container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-3 control-label">
+												<?php echo _("Enable") ?>
+											</div>
+											<div class="col-md-9 radioset">
+												<input type="checkbox" id="enabled" name="enabled" <?php if ($enabled) echo "checked"; ?>>
+												<label for="enabled">Enabled</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End Enabled-->
+						<!--Descripton-->
+						<div class="element-container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-3 control-label">
+												<label for="description"><?php echo _("Description:")?></label>
+												<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
+											</div>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="description" name="description" value="<?php echo (isset($description) ? $description : ''); ?>" tabindex="<?php echo ++$tabindex;?>" >
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<span id="description-help" class="help-block fpbx-help-block"><?php echo _("The name of this application")?></span>
+								</div>
+							</div>
+						</div>
+						<!--End Description-->
+						<!--Feaurecode-->
+						<div class="element-container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-3 control-label">
+												<label for="ext"><?php echo _("Feature Code")?></label>
+												<i class="fa fa-question-circle fpbx-help-icon" data-for="ext"></i>
+											</div>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="ext" name="ext" value="<?php echo (isset($ext) ? $ext : ''); ?>" tabindex="<?php echo ++$tabindex;?>">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<span id="ext-help" class="help-block fpbx-help-block"><?php echo _("The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page.")?></span>
+								</div>
+							</div>
+						</div>
+						<!--END Feaurecode-->
+						<!--Destination-->
+						<div class="element-container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-3 control-label">
+												<label for="goto0"><?php echo _("Destination") ?></label>
+												<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
+											</div>
+											<div class="col-md-9">
+												<?php echo drawselects($dest,0);?>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<span id="goto0-help" class="help-block fpbx-help-block"><?php echo _("Choose the destination for this app when people dial the feature code")?></span>
+								</div>
+							</div>
+						</div>
+						<!--End Destination-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<?php echo $bootnav ?>
+	</div>
+</div>
