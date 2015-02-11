@@ -3,43 +3,76 @@
 # This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
 #
-
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:00-0500\n"
 "PO-Revision-Date: 2008-12-26 15:07+0100\n"
 "Last-Translator: Alexander Kozyrev\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: /usr/src/freepbx/miscapps/page.miscapps.php:66
+#: /usr/src/freepbx/miscapps/page.miscapps.php:88
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Add Misc Application"
+msgstr "Добавить Дополнительное приложение"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:96
+msgid "Conflicting Extensions"
+msgstr "Конфликтующие внутренние номера"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:132
+msgid "Delete"
+msgstr "Удалить"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "Description"
+msgstr "Описание"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:123
+msgid "Destination"
+msgstr "Направление"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:119
+msgid "Disabled"
+msgstr "Выключен"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:86
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Edit Misc Application"
+msgstr "Изменить Дополнительное приложение"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:118
+msgid "Enabled"
+msgstr "Включен"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+msgid "Feature Code"
+msgstr "Сервисный код"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "Feature Status"
+msgstr "Статус опции"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "If this code is enabled or not."
+msgstr "Если код активирован или нет"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:144
+msgid "Invalid description specified"
+msgstr "Указано неверное описание"
+
+#: /usr/src/freepbx/miscapps/functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Дополнительное приложение: %s"
 
-msgid "Misc Applications"
-msgstr "Дополнительные приложения"
-
-msgid "Applications"
-msgstr "Приложения"
-
-msgid ""
-"Adds the ability to create feature codes that can go to any FreePBX "
-"destination (such as an IVR or queue)"
-msgstr ""
-"Добавляет возможность создавать сервисные коды, которые могут использоваться"
-"любым назначением Asterisk (такими как Интерактивное меню или очередь)"
-
-msgid "Add Misc Application"
-msgstr "Добавить Дополнительное приложение"
-
-msgid "Edit Misc Application"
-msgstr "Изменить Дополнительное приложение"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -54,18 +87,11 @@ msgstr ""
 "затем в других модулях FreePBX, на которые можно выходить через внутренние "
 "номера или Сервисные коды."
 
-msgid "Conflicting Extensions"
-msgstr "Конфликтующие внутренние номера"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:131
+msgid "Submit Changes"
+msgstr "Применить изменения"
 
-msgid "Description"
-msgstr "Описание"
-
-msgid "The name of this application"
-msgstr "Название приложения"
-
-msgid "Feature Code"
-msgstr "Сервисный код"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -73,26 +99,20 @@ msgstr ""
 "Сервисный код или внутренний номер, через который будет вызываться это "
 "приложение. Это может редактироваться в секции Сервисные коды."
 
-msgid "Feature Status"
-msgstr "Статус опции"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "The name of this application"
+msgstr "Название приложения"
 
-msgid "If this code is enabled or not."
-msgstr "Если код активирован или нет"
+#~ msgid "Misc Applications"
+#~ msgstr "Дополнительные приложения"
 
-msgid "Enabled"
-msgstr "Включен"
+#~ msgid "Applications"
+#~ msgstr "Приложения"
 
-msgid "Disabled"
-msgstr "Выключен"
-
-msgid "Destination"
-msgstr "Направление"
-
-msgid "Submit Changes"
-msgstr "Применить изменения"
-
-msgid "Delete"
-msgstr "Удалить"
-
-msgid "Invalid description specified"
-msgstr "Указано неверное описание"
+#~ msgid ""
+#~ "Adds the ability to create feature codes that can go to any FreePBX "
+#~ "destination (such as an IVR or queue)"
+#~ msgstr ""
+#~ "Добавляет возможность создавать сервисные коды, которые могут "
+#~ "использоватьсялюбым назначением Asterisk (такими как Интерактивное меню "
+#~ "или очередь)"

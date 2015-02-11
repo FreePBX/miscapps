@@ -2,7 +2,7 @@
 # ================================
 # Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
 # Inquiries: info@qloog.com / www.qloog.com
-# 
+#
 # This translation is a culmination of the hard work of
 # several outstanding individuals, which started in 2009 with the 
 # first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
@@ -14,7 +14,7 @@
 # of course, released under the same GPLv2 license as FreePBX. 
 # We only ask that you kindly retain these credits in honor of 
 # the time and effort that all of us have contributed. Enjoy!
-# 
+#
 # This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
@@ -37,40 +37,74 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-05 19:32+0900\n"
+"POT-Creation-Date: 2015-02-11 18:00-0500\n"
 "PO-Revision-Date: 2014-02-20 04:44+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-msgid "Misc Applications"
-msgstr "その他アプリケーション"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:66
+#: /usr/src/freepbx/miscapps/page.miscapps.php:88
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Add Misc Application"
+msgstr "その他アプリケーションを追加"
 
-msgid "Applications"
-msgstr "アプリケーション"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:96
+msgid "Conflicting Extensions"
+msgstr "内線の競合"
 
-msgid ""
-"Adds the ability to create feature codes that can go to any FreePBX "
-"destination (such as an IVR or queue)"
-msgstr ""
-"FreePBXのどの宛先にも行ける(IVRやキューなど)キーコードを作成する機能を追加し"
-"ます。"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:132
+msgid "Delete"
+msgstr "削除"
 
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "Description"
+msgstr "説明"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:123
+msgid "Destination"
+msgstr "宛先"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:119
+msgid "Disabled"
+msgstr "無効"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:86
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Edit Misc Application"
+msgstr "その他アプリケーションを編集"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:118
+msgid "Enabled"
+msgstr "有効"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+msgid "Feature Code"
+msgstr "キーコード"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "Feature Status"
+msgstr "ステータス"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "If this code is enabled or not."
+msgstr "このコードを有効にするかどうか。"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:144
+msgid "Invalid description specified"
+msgstr "無効な説明が指定されました"
+
+#: /usr/src/freepbx/miscapps/functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "その他アプリケーション： %s"
 
-msgid "Add Misc Application"
-msgstr "その他アプリケーションを追加"
-
-msgid "Edit Misc Application"
-msgstr "その他アプリケーションを編集"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -83,18 +117,11 @@ msgstr ""
 "にダイヤルするために、他のFreePBXモジュールから使用される宛先を作成する"
 "<strong>その他宛先</strong>モジュールと対照的な機能です。"
 
-msgid "Conflicting Extensions"
-msgstr "内線の競合"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:131
+msgid "Submit Changes"
+msgstr "変更を適用"
 
-msgid "Description"
-msgstr "説明"
-
-msgid "The name of this application"
-msgstr "このアプリケーションの名前"
-
-msgid "Feature Code"
-msgstr "キーコード"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -102,26 +129,19 @@ msgstr ""
 "このアプリケーションにアクセスするためにユーザーがダイヤルすることができる"
 "キーコード/内線。この値はキーコードのページからも修正することができます。"
 
-msgid "Feature Status"
-msgstr "ステータス"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "The name of this application"
+msgstr "このアプリケーションの名前"
 
-msgid "If this code is enabled or not."
-msgstr "このコードを有効にするかどうか。"
+#~ msgid "Misc Applications"
+#~ msgstr "その他アプリケーション"
 
-msgid "Enabled"
-msgstr "有効"
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
 
-msgid "Disabled"
-msgstr "無効"
-
-msgid "Destination"
-msgstr "宛先"
-
-msgid "Submit Changes"
-msgstr "変更を適用"
-
-msgid "Delete"
-msgstr "削除"
-
-msgid "Invalid description specified"
-msgstr "無効な説明が指定されました"
+#~ msgid ""
+#~ "Adds the ability to create feature codes that can go to any FreePBX "
+#~ "destination (such as an IVR or queue)"
+#~ msgstr ""
+#~ "FreePBXのどの宛先にも行ける(IVRやキューなど)キーコードを作成する機能を追加"
+#~ "します。"

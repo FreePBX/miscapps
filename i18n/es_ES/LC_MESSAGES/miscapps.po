@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo miscapps module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:00-0500\n"
 "PO-Revision-Date: 2009-01-22 01:41+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -13,27 +13,63 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: /usr/src/freepbx/miscapps/page.miscapps.php:66
+#: /usr/src/freepbx/miscapps/page.miscapps.php:88
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Add Misc Application"
+msgstr "Añadir aplicación"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:96
+msgid "Conflicting Extensions"
+msgstr "Extensiones en conflicto"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:132
+msgid "Delete"
+msgstr "Eliminar"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "Description"
+msgstr "Descripción"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:123
+msgid "Destination"
+msgstr "Destino"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:119
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:86
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Edit Misc Application"
+msgstr "Editar aplicación"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:118
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+msgid "Feature Code"
+msgstr "Código de característica"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "Feature Status"
+msgstr "Estado de característica"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "If this code is enabled or not."
+msgstr "Indica si este código está habilitado o no."
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:144
+msgid "Invalid description specified"
+msgstr "La descripción especificada no es válida"
+
+#: /usr/src/freepbx/miscapps/functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Aplicación: %s"
 
-msgid "Misc Applications"
-msgstr "Aplicaciones varias"
-
-msgid "Applications"
-msgstr ""
-
-msgid ""
-"Adds the ability to create feature codes that can go to any FreePBX "
-"destination (such as an IVR or queue)"
-msgstr ""
-
-msgid "Add Misc Application"
-msgstr "Añadir aplicación"
-
-msgid "Edit Misc Application"
-msgstr "Editar aplicación"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -48,18 +84,11 @@ msgstr ""
 "usados por otros módulos de FreePBX para llamar a números internos o códigos "
 "de características."
 
-msgid "Conflicting Extensions"
-msgstr "Extensiones en conflicto"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:131
+msgid "Submit Changes"
+msgstr "Enviar cambios"
 
-msgid "Description"
-msgstr "Descripción"
-
-msgid "The name of this application"
-msgstr "El nombre de esta aplicación"
-
-msgid "Feature Code"
-msgstr "Código de característica"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -68,26 +97,9 @@ msgstr ""
 "acceder a esta aplicación. Este valor también puede ser modificado desde la "
 "sección de \"Códigos de características\"."
 
-msgid "Feature Status"
-msgstr "Estado de característica"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "The name of this application"
+msgstr "El nombre de esta aplicación"
 
-msgid "If this code is enabled or not."
-msgstr "Indica si este código está habilitado o no."
-
-msgid "Enabled"
-msgstr "Habilitado"
-
-msgid "Disabled"
-msgstr "Deshabilitado"
-
-msgid "Destination"
-msgstr "Destino"
-
-msgid "Submit Changes"
-msgstr "Enviar cambios"
-
-msgid "Delete"
-msgstr "Eliminar"
-
-msgid "Invalid description specified"
-msgstr "La descripción especificada no es válida"
+#~ msgid "Misc Applications"
+#~ msgstr "Aplicaciones varias"

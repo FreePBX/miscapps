@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:00-0500\n"
 "PO-Revision-Date: 2008-11-06 14:52+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,27 +17,63 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
+#: /usr/src/freepbx/miscapps/page.miscapps.php:66
+#: /usr/src/freepbx/miscapps/page.miscapps.php:88
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Add Misc Application"
+msgstr "Aggiungi Applicazione"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:96
+msgid "Conflicting Extensions"
+msgstr "Interni in conflitto"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:132
+msgid "Delete"
+msgstr "Elimina"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "Description"
+msgstr "Descrizione"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:123
+msgid "Destination"
+msgstr "Destinazione"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:119
+msgid "Disabled"
+msgstr "Disattivato"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:86
+#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+msgid "Edit Misc Application"
+msgstr "Modifica Applicazione"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:118
+msgid "Enabled"
+msgstr "Attivato"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+msgid "Feature Code"
+msgstr "Codice Servizio"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "Feature Status"
+msgstr "Stato Servizio"
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+msgid "If this code is enabled or not."
+msgstr "Se questo codice è attivo o no."
+
+#: /usr/src/freepbx/miscapps/page.miscapps.php:144
+msgid "Invalid description specified"
+msgstr "Descrizione specificata non valida"
+
+#: /usr/src/freepbx/miscapps/functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Applicazione: %s"
 
-msgid "Misc Applications"
-msgstr "Applicazioni Varie"
-
-msgid "Applications"
-msgstr ""
-
-msgid ""
-"Adds the ability to create feature codes that can go to any FreePBX "
-"destination (such as an IVR or queue)"
-msgstr ""
-
-msgid "Add Misc Application"
-msgstr "Aggiungi Applicazione"
-
-msgid "Edit Misc Application"
-msgstr "Modifica Applicazione"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -52,18 +88,11 @@ msgstr ""
 "poter essere utilizzate da altri moduli FreePBX, per chiamare per esempio "
 "numeri interni o altri servizi."
 
-msgid "Conflicting Extensions"
-msgstr "Interni in conflitto"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:131
+msgid "Submit Changes"
+msgstr "Conferma Cambiamenti"
 
-msgid "Description"
-msgstr "Descrizione"
-
-msgid "The name of this application"
-msgstr "Il nome di questa applicazione"
-
-msgid "Feature Code"
-msgstr "Codice Servizio"
-
+#: /usr/src/freepbx/miscapps/page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -71,29 +100,12 @@ msgstr ""
 "Il codice/estensione che gli utenti dovranno digitare per accedere a questa "
 "applicazione. Questa può essere anche modificata nella pagina Codici Servizi."
 
-msgid "Feature Status"
-msgstr "Stato Servizio"
+#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+msgid "The name of this application"
+msgstr "Il nome di questa applicazione"
 
-msgid "If this code is enabled or not."
-msgstr "Se questo codice è attivo o no."
-
-msgid "Enabled"
-msgstr "Attivato"
-
-msgid "Disabled"
-msgstr "Disattivato"
-
-msgid "Destination"
-msgstr "Destinazione"
-
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
-
-msgid "Delete"
-msgstr "Elimina"
-
-msgid "Invalid description specified"
-msgstr "Descrizione specificata non valida"
+#~ msgid "Misc Applications"
+#~ msgstr "Applicazioni Varie"
 
 #~ msgid "Add MIsc Application"
 #~ msgstr "Aggiungi Applicazione Varia"
