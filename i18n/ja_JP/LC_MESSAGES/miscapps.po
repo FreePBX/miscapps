@@ -1,0 +1,127 @@
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
+# 
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+# 
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for miscapps
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.10.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-05 19:32+0900\n"
+"PO-Revision-Date: 2014-02-20 04:44+0200\n"
+"Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
+"Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.8\n"
+
+msgid "Misc Applications"
+msgstr "その他アプリケーション"
+
+msgid "Applications"
+msgstr "アプリケーション"
+
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
+msgstr ""
+"FreePBXのどの宛先にも行ける(IVRやキューなど)キーコードを作成する機能を追加し"
+"ます。"
+
+#, php-format
+msgid "Misc Application: %s"
+msgstr "その他アプリケーション： %s"
+
+msgid "Add Misc Application"
+msgstr "その他アプリケーションを追加"
+
+msgid "Edit Misc Application"
+msgstr "その他アプリケーションを編集"
+
+msgid ""
+"Misc Applications are for adding feature codes that you can dial from "
+"internal phones that go to various destinations available in FreePBX. This "
+"is in contrast to the <strong>Misc Destinations</strong> module, which is "
+"for creating destinations that can be used by other FreePBX modules to dial "
+"internal numbers or feature codes."
+msgstr ""
+"その他アプリケーションは、内部の電話からダイヤルし、FreePBXで利用できる様々な"
+"宛先に行くことができるキーコードを追加します。これは、内部の番号やキーコード"
+"にダイヤルするために、他のFreePBXモジュールから使用される宛先を作成する"
+"<strong>その他宛先</strong>モジュールと対照的な機能です。"
+
+msgid "Conflicting Extensions"
+msgstr "内線の競合"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "The name of this application"
+msgstr "このアプリケーションの名前"
+
+msgid "Feature Code"
+msgstr "キーコード"
+
+msgid ""
+"The feature code/extension users can dial to access this application. This "
+"can also be modified on the Feature Codes page."
+msgstr ""
+"このアプリケーションにアクセスするためにユーザーがダイヤルすることができる"
+"キーコード/内線。この値はキーコードのページからも修正することができます。"
+
+msgid "Feature Status"
+msgstr "ステータス"
+
+msgid "If this code is enabled or not."
+msgstr "このコードを有効にするかどうか。"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Destination"
+msgstr "宛先"
+
+msgid "Submit Changes"
+msgstr "変更を適用"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Invalid description specified"
+msgstr "無効な説明が指定されました"
