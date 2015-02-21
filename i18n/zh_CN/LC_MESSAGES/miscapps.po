@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:00-0500\n"
+"POT-Creation-Date: 2015-02-20 19:41-0500\n"
 "PO-Revision-Date: 2009-02-01 12:33+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,63 +18,74 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:66
-#: /usr/src/freepbx/miscapps/page.miscapps.php:88
-#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+#: page.miscapps.php:66 page.miscapps.php:88 page.miscapps.php:106
 msgid "Add Misc Application"
 msgstr "添加杂项应用"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:96
+#: miscapps.i18n.php:5
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
+msgstr ""
+
+#: miscapps.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: page.miscapps.php:96
 msgid "Conflicting Extensions"
 msgstr "分机号冲突"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:132
+#: page.miscapps.php:132
 msgid "Delete"
 msgstr "删除"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+#: page.miscapps.php:108
 msgid "Description"
 msgstr "描述"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:123
+#: page.miscapps.php:123
 msgid "Destination"
 msgstr "目的地"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:119
+#: page.miscapps.php:119
 msgid "Disabled"
 msgstr "禁用"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:86
-#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+#: page.miscapps.php:86 page.miscapps.php:106
 msgid "Edit Misc Application"
 msgstr "编辑杂项应用"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:118
+#: page.miscapps.php:118
 msgid "Enabled"
 msgstr "启用"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+#: page.miscapps.php:112
 msgid "Feature Code"
 msgstr "功能代码"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+#: page.miscapps.php:116
 msgid "Feature Status"
 msgstr "功能状态"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+#: page.miscapps.php:116
 msgid "If this code is enabled or not."
 msgstr "设置此代码是否启用"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:144
+#: page.miscapps.php:144
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
-#: /usr/src/freepbx/miscapps/functions.inc.php:151
+#: functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "杂项应用：%s"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:91
+#: miscapps.i18n.php:3 miscapps.i18n.php:6
+msgid "Misc Applications"
+msgstr "杂项应用"
+
+#: page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -87,11 +98,11 @@ msgstr ""
 "对的。杂项目的地用来添加各种目的地，以供其他的FreeOBX模块拨打内线号码或功能代"
 "码。"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:131
+#: page.miscapps.php:131
 msgid "Submit Changes"
 msgstr "提交更改"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+#: page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -99,9 +110,6 @@ msgstr ""
 "设置用户为了访问此应用，需要拨打的代码/分机号。这个设置也可以在功能代码设置页"
 "进行更改。"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+#: page.miscapps.php:108
 msgid "The name of this application"
 msgstr "该应用的名字"
-
-#~ msgid "Misc Applications"
-#~ msgstr "杂项应用"

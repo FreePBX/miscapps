@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX miscapps\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:00-0500\n"
+"POT-Creation-Date: 2015-02-20 19:41-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,63 +30,76 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:66
-#: /usr/src/freepbx/miscapps/page.miscapps.php:88
-#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+#: page.miscapps.php:66 page.miscapps.php:88 page.miscapps.php:106
 msgid "Add Misc Application"
 msgstr "Lägg till Övrig applikation"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:96
+#: miscapps.i18n.php:5
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
+msgstr ""
+"Ger möjlighet att skapa funktionskoder som kan gå till vilken FreePBX "
+"destination som helst (såsom IVR eller kö)"
+
+#: miscapps.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: page.miscapps.php:96
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:132
+#: page.miscapps.php:132
 msgid "Delete"
 msgstr "Ta bort"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+#: page.miscapps.php:108
 msgid "Description"
 msgstr "Beskrivning"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:123
+#: page.miscapps.php:123
 msgid "Destination"
 msgstr "Destination"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:119
+#: page.miscapps.php:119
 msgid "Disabled"
 msgstr "Avaktiverad"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:86
-#: /usr/src/freepbx/miscapps/page.miscapps.php:106
+#: page.miscapps.php:86 page.miscapps.php:106
 msgid "Edit Misc Application"
 msgstr "Redigera Övrig applikation"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:118
+#: page.miscapps.php:118
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+#: page.miscapps.php:112
 msgid "Feature Code"
 msgstr "Funktionskod"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+#: page.miscapps.php:116
 msgid "Feature Status"
 msgstr "Funktionsstatus"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:116
+#: page.miscapps.php:116
 msgid "If this code is enabled or not."
 msgstr "Om denna kod är aktiv eller inte."
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:144
+#: page.miscapps.php:144
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning angiven"
 
-#: /usr/src/freepbx/miscapps/functions.inc.php:151
+#: functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Övrig applikation: %s"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:91
+#: miscapps.i18n.php:3 miscapps.i18n.php:6
+msgid "Misc Applications"
+msgstr "Övriga applikationer"
+
+#: page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -100,11 +113,11 @@ msgstr ""
 "för att skapa destinationer som kan användas av FreePBX övriga moduler för "
 "att ringa interna nummer eller funktionskoder."
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:131
+#: page.miscapps.php:131
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:112
+#: page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -112,19 +125,9 @@ msgstr ""
 "Funktionskoden/anknytningen användare kan ringa för att få åtkomst till "
 "denna applikation. Denna kan även modifieras på sidan Funktionskoder."
 
-#: /usr/src/freepbx/miscapps/page.miscapps.php:108
+#: page.miscapps.php:108
 msgid "The name of this application"
 msgstr "Kort beskrivning på denna applikation"
-
-#~ msgid "Misc Applications"
-#~ msgstr "Övriga applikationer"
-
-#~ msgid ""
-#~ "Adds the ability to create feature codes that can go to any FreePBX "
-#~ "destination (such as an IVR or queue)"
-#~ msgstr ""
-#~ "Ger möjlighet att skapa funktionskoder som kan gå till vilken FreePBX "
-#~ "destination som helst (såsom IVR eller kö)"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna val och konfigurationer"
