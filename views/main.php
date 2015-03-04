@@ -22,8 +22,10 @@
 												<?php echo _("Enable") ?>
 											</div>
 											<div class="col-md-9 radioset">
-												<input type="checkbox" id="enabled" name="enabled" <?php if ($enabled) echo "checked"; ?>>
-												<label for="enabled">Enabled</label>
+												<input type="radio" name="enabled" id="enabledyes" value="1" <?php echo ($enabled?"CHECKED":"") ?>>
+												<label for="enabledyes"><?php echo _("Yes");?></label>
+												<input type="radio" name="enabled" id="enabledno" value="" <?php echo ($enabled?"":"CHECKED") ?>>
+												<label for="enabledno"><?php echo _("No");?></label>
 											</div>
 										</div>
 									</div>
