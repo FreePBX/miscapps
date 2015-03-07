@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:41-0500\n"
+"POT-Creation-Date: 2015-03-06 21:37-0500\n"
 "PO-Revision-Date: 2014-02-20 04:44+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
@@ -48,11 +48,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: page.miscapps.php:66 page.miscapps.php:88 page.miscapps.php:106
+#: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
 msgstr "その他アプリケーションを追加"
 
-#: miscapps.i18n.php:5
+#: miscapps.i18n.php:8
 msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
@@ -60,64 +60,60 @@ msgstr ""
 "FreePBXのどの宛先にも行ける(IVRやキューなど)キーコードを作成する機能を追加し"
 "ます。"
 
-#: miscapps.i18n.php:4
+#: miscapps.i18n.php:6 miscapps.i18n.php:12
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: page.miscapps.php:96
+#: assets/js/miscapps.js:40
+msgid "Are you sure you want to delete this?"
+msgstr ""
+
+#: views/main.php:103
+msgid "Choose the destination for this app when people dial the feature code"
+msgstr ""
+
+#: page.miscapps.php:47
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: page.miscapps.php:132
+#: Miscapps.class.php:118
 msgid "Delete"
 msgstr "削除"
 
-#: page.miscapps.php:108
-msgid "Description"
-msgstr "説明"
+#: views/main.php:43
+msgid "Description:"
+msgstr ""
 
-#: page.miscapps.php:123
+#: views/main.php:91
 msgid "Destination"
 msgstr "宛先"
 
-#: page.miscapps.php:119
-msgid "Disabled"
-msgstr "無効"
-
-#: page.miscapps.php:86 page.miscapps.php:106
+#: page.miscapps.php:20
 msgid "Edit Misc Application"
 msgstr "その他アプリケーションを編集"
 
-#: page.miscapps.php:118
-msgid "Enabled"
-msgstr "有効"
+#: views/main.php:22
+msgid "Enable"
+msgstr ""
 
-#: page.miscapps.php:112
+#: views/main.php:67
 msgid "Feature Code"
 msgstr "キーコード"
 
-#: page.miscapps.php:116
-msgid "Feature Status"
-msgstr "ステータス"
-
-#: page.miscapps.php:116
-msgid "If this code is enabled or not."
-msgstr "このコードを有効にするかどうか。"
-
-#: page.miscapps.php:144
+#: assets/js/miscapps.js:3
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: functions.inc.php:151
+#: Miscapps.class.php:265 functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "その他アプリケーション： %s"
 
-#: miscapps.i18n.php:3 miscapps.i18n.php:6
+#: miscapps.i18n.php:4 miscapps.i18n.php:10
 msgid "Misc Applications"
 msgstr "その他アプリケーション"
 
-#: page.miscapps.php:91
+#: page.miscapps.php:9
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -130,11 +126,23 @@ msgstr ""
 "にダイヤルするために、他のFreePBXモジュールから使用される宛先を作成する"
 "<strong>その他宛先</strong>モジュールと対照的な機能です。"
 
-#: page.miscapps.php:131
-msgid "Submit Changes"
-msgstr "変更を適用"
+#: views/main.php:28
+msgid "No"
+msgstr ""
 
-#: page.miscapps.php:112
+#: Miscapps.class.php:41
+msgid "Removing Settings table"
+msgstr ""
+
+#: Miscapps.class.php:123
+msgid "Reset"
+msgstr ""
+
+#: Miscapps.class.php:128
+msgid "Submit"
+msgstr ""
+
+#: views/main.php:79
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -142,6 +150,36 @@ msgstr ""
 "このアプリケーションにアクセスするためにユーザーがダイヤルすることができる"
 "キーコード/内線。この値はキーコードのページからも修正することができます。"
 
-#: page.miscapps.php:108
+#: views/main.php:55
 msgid "The name of this application"
 msgstr "このアプリケーションの名前"
+
+#: assets/js/miscapps.js:33
+msgid "The number provided for the feature code is already in use by "
+msgstr ""
+
+#: assets/js/miscapps.js:23
+msgid "This field must only contain numbers and *'s"
+msgstr ""
+
+#: views/main.php:26
+msgid "Yes"
+msgstr ""
+
+#~ msgid "Description"
+#~ msgstr "説明"
+
+#~ msgid "Disabled"
+#~ msgstr "無効"
+
+#~ msgid "Enabled"
+#~ msgstr "有効"
+
+#~ msgid "Feature Status"
+#~ msgstr "ステータス"
+
+#~ msgid "If this code is enabled or not."
+#~ msgstr "このコードを有効にするかどうか。"
+
+#~ msgid "Submit Changes"
+#~ msgstr "変更を適用"

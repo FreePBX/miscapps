@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:41-0500\n"
+"POT-Creation-Date: 2015-03-06 21:37-0500\n"
 "PO-Revision-Date: 2014-07-22 10:12+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/miscapps/"
@@ -22,11 +22,11 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.miscapps.php:66 page.miscapps.php:88 page.miscapps.php:106
+#: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
 msgstr "Добави Друго Приложение"
 
-#: miscapps.i18n.php:5
+#: miscapps.i18n.php:8
 msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
@@ -34,64 +34,60 @@ msgstr ""
 "Добавя възможност за създаване на специални кодове, които да насочват към "
 "всяко FreePBX направление (като IVR или опашка)"
 
-#: miscapps.i18n.php:4
+#: miscapps.i18n.php:6 miscapps.i18n.php:12
 msgid "Applications"
 msgstr "Приложения"
 
-#: page.miscapps.php:96
+#: assets/js/miscapps.js:40
+msgid "Are you sure you want to delete this?"
+msgstr ""
+
+#: views/main.php:103
+msgid "Choose the destination for this app when people dial the feature code"
+msgstr ""
+
+#: page.miscapps.php:47
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: page.miscapps.php:132
+#: Miscapps.class.php:118
 msgid "Delete"
 msgstr "Изтрий"
 
-#: page.miscapps.php:108
-msgid "Description"
-msgstr "Описание"
+#: views/main.php:43
+msgid "Description:"
+msgstr ""
 
-#: page.miscapps.php:123
+#: views/main.php:91
 msgid "Destination"
 msgstr "Направление"
 
-#: page.miscapps.php:119
-msgid "Disabled"
-msgstr "Забранен"
-
-#: page.miscapps.php:86 page.miscapps.php:106
+#: page.miscapps.php:20
 msgid "Edit Misc Application"
 msgstr "Редактирай Друго Приложение"
 
-#: page.miscapps.php:118
-msgid "Enabled"
-msgstr "Разрешен"
+#: views/main.php:22
+msgid "Enable"
+msgstr ""
 
-#: page.miscapps.php:112
+#: views/main.php:67
 msgid "Feature Code"
 msgstr "Специален Код"
 
-#: page.miscapps.php:116
-msgid "Feature Status"
-msgstr "Статус на Функцията"
-
-#: page.miscapps.php:116
-msgid "If this code is enabled or not."
-msgstr "Дали този код е разрешен или не."
-
-#: page.miscapps.php:144
+#: assets/js/miscapps.js:3
 msgid "Invalid description specified"
 msgstr "Неправилно въведено описание"
 
-#: functions.inc.php:151
+#: Miscapps.class.php:265 functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Друго Приложение: %s"
 
-#: miscapps.i18n.php:3 miscapps.i18n.php:6
+#: miscapps.i18n.php:4 miscapps.i18n.php:10
 msgid "Misc Applications"
 msgstr "Други Приложения"
 
-#: page.miscapps.php:91
+#: page.miscapps.php:9
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -106,11 +102,23 @@ msgstr ""
 "които да се използват от други FreePBX модули за избиране на вътрешни номера "
 "или специални кодове."
 
-#: page.miscapps.php:131
-msgid "Submit Changes"
-msgstr "Приеми Промените"
+#: views/main.php:28
+msgid "No"
+msgstr ""
 
-#: page.miscapps.php:112
+#: Miscapps.class.php:41
+msgid "Removing Settings table"
+msgstr ""
+
+#: Miscapps.class.php:123
+msgid "Reset"
+msgstr ""
+
+#: Miscapps.class.php:128
+msgid "Submit"
+msgstr ""
+
+#: views/main.php:79
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -118,6 +126,36 @@ msgstr ""
 "Специален код / вътрешен номер който потребителите да избират за достъп до "
 "приложението. Може да се промени в меню Специални Кодове."
 
-#: page.miscapps.php:108
+#: views/main.php:55
 msgid "The name of this application"
 msgstr "Име на това приложение"
+
+#: assets/js/miscapps.js:33
+msgid "The number provided for the feature code is already in use by "
+msgstr ""
+
+#: assets/js/miscapps.js:23
+msgid "This field must only contain numbers and *'s"
+msgstr ""
+
+#: views/main.php:26
+msgid "Yes"
+msgstr ""
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "Disabled"
+#~ msgstr "Забранен"
+
+#~ msgid "Enabled"
+#~ msgstr "Разрешен"
+
+#~ msgid "Feature Status"
+#~ msgstr "Статус на Функцията"
+
+#~ msgid "If this code is enabled or not."
+#~ msgstr "Дали този код е разрешен или не."
+
+#~ msgid "Submit Changes"
+#~ msgstr "Приеми Промените"
