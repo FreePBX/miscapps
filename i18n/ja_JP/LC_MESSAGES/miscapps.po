@@ -1,3 +1,20 @@
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
+#
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+#
 # This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
@@ -13,91 +30,92 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# FreePBX language for miscapps
-# Copyright (C) 2009, 2010, 2011 Mikael Carlsson
+# FreePBX language template for miscapps
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FreePBX miscapps\n"
+"Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:41-0500\n"
-"PO-Revision-Date: 2011-03-20 00:00+0100\n"
-"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2014-02-20 04:44+0200\n"
+"Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
+"Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Swedish\n"
-"X-Poedit-Country: SWEDEN\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.8\n"
 
 #: page.miscapps.php:66 page.miscapps.php:88 page.miscapps.php:106
 msgid "Add Misc Application"
-msgstr "Lägg till Övrig applikation"
+msgstr "その他アプリケーションを追加"
 
 #: miscapps.i18n.php:5
 msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
-"Ger möjlighet att skapa funktionskoder som kan gå till vilken FreePBX "
-"destination som helst (såsom IVR eller kö)"
+"FreePBXのどの宛先にも行ける(IVRやキューなど)キーコードを作成する機能を追加し"
+"ます。"
 
 #: miscapps.i18n.php:4
 msgid "Applications"
-msgstr ""
+msgstr "アプリケーション"
 
 #: page.miscapps.php:96
 msgid "Conflicting Extensions"
-msgstr "Konfliktande anknytningar"
+msgstr "内線の競合"
 
 #: page.miscapps.php:132
 msgid "Delete"
-msgstr "Ta bort"
+msgstr "削除"
 
 #: page.miscapps.php:108
 msgid "Description"
-msgstr "Beskrivning"
+msgstr "説明"
 
 #: page.miscapps.php:123
 msgid "Destination"
-msgstr "Destination"
+msgstr "宛先"
 
 #: page.miscapps.php:119
 msgid "Disabled"
-msgstr "Avaktiverad"
+msgstr "無効"
 
 #: page.miscapps.php:86 page.miscapps.php:106
 msgid "Edit Misc Application"
-msgstr "Redigera Övrig applikation"
+msgstr "その他アプリケーションを編集"
 
 #: page.miscapps.php:118
 msgid "Enabled"
-msgstr "Aktiverad"
+msgstr "有効"
 
 #: page.miscapps.php:112
 msgid "Feature Code"
-msgstr "Funktionskod"
+msgstr "キーコード"
 
 #: page.miscapps.php:116
 msgid "Feature Status"
-msgstr "Funktionsstatus"
+msgstr "ステータス"
 
 #: page.miscapps.php:116
 msgid "If this code is enabled or not."
-msgstr "Om denna kod är aktiv eller inte."
+msgstr "このコードを有効にするかどうか。"
 
 #: page.miscapps.php:144
 msgid "Invalid description specified"
-msgstr "Ogiltig beskrivning angiven"
+msgstr "無効な説明が指定されました"
 
 #: functions.inc.php:151
 #, php-format
 msgid "Misc Application: %s"
-msgstr "Övrig applikation: %s"
+msgstr "その他アプリケーション： %s"
 
 #: miscapps.i18n.php:3 miscapps.i18n.php:6
 msgid "Misc Applications"
-msgstr "Övriga applikationer"
+msgstr "その他アプリケーション"
 
 #: page.miscapps.php:91
 msgid ""
@@ -107,27 +125,23 @@ msgid ""
 "for creating destinations that can be used by other FreePBX modules to dial "
 "internal numbers or feature codes."
 msgstr ""
-"Övriga applikationer är till för att lägga till funktionskoder som du kan "
-"ringa från interna telefoner som kan gå till olika destinationer inom "
-"FreePBX. Detta är i kontrast med <strong>Övrig destination</strong>, som är "
-"för att skapa destinationer som kan användas av FreePBX övriga moduler för "
-"att ringa interna nummer eller funktionskoder."
+"その他アプリケーションは、内部の電話からダイヤルし、FreePBXで利用できる様々な"
+"宛先に行くことができるキーコードを追加します。これは、内部の番号やキーコード"
+"にダイヤルするために、他のFreePBXモジュールから使用される宛先を作成する"
+"<strong>その他宛先</strong>モジュールと対照的な機能です。"
 
 #: page.miscapps.php:131
 msgid "Submit Changes"
-msgstr "Spara ändringar"
+msgstr "変更を適用"
 
 #: page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
-"Funktionskoden/anknytningen användare kan ringa för att få åtkomst till "
-"denna applikation. Denna kan även modifieras på sidan Funktionskoder."
+"このアプリケーションにアクセスするためにユーザーがダイヤルすることができる"
+"キーコード/内線。この値はキーコードのページからも修正することができます。"
 
 #: page.miscapps.php:108
 msgid "The name of this application"
-msgstr "Kort beskrivning på denna applikation"
-
-#~ msgid "Internal Options & Configuration"
-#~ msgstr "Interna val och konfigurationer"
+msgstr "このアプリケーションの名前"

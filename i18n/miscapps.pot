@@ -1,11 +1,15 @@
-# FreePBX language template
-# Copyright 2013 Schmooze Com Inc
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for miscapps
+# Copyright (C) 2008-2015 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:41-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,27 +17,78 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, php-format
-msgid "Misc Application: %s"
+#: page.miscapps.php:66
+#: page.miscapps.php:88
+#: page.miscapps.php:106
+msgid "Add Misc Application"
 msgstr ""
 
-msgid "Misc Applications"
-msgstr ""
-
-msgid "Applications"
-msgstr ""
-
+#: miscapps.i18n.php:5
 msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
 
-msgid "Add Misc Application"
+#: miscapps.i18n.php:4
+msgid "Applications"
 msgstr ""
 
+#: page.miscapps.php:96
+msgid "Conflicting Extensions"
+msgstr ""
+
+#: page.miscapps.php:132
+msgid "Delete"
+msgstr ""
+
+#: page.miscapps.php:108
+msgid "Description"
+msgstr ""
+
+#: page.miscapps.php:123
+msgid "Destination"
+msgstr ""
+
+#: page.miscapps.php:119
+msgid "Disabled"
+msgstr ""
+
+#: page.miscapps.php:86
+#: page.miscapps.php:106
 msgid "Edit Misc Application"
 msgstr ""
 
+#: page.miscapps.php:118
+msgid "Enabled"
+msgstr ""
+
+#: page.miscapps.php:112
+msgid "Feature Code"
+msgstr ""
+
+#: page.miscapps.php:116
+msgid "Feature Status"
+msgstr ""
+
+#: page.miscapps.php:116
+msgid "If this code is enabled or not."
+msgstr ""
+
+#: page.miscapps.php:144
+msgid "Invalid description specified"
+msgstr ""
+
+#: functions.inc.php:151
+#, php-format
+msgid "Misc Application: %s"
+msgstr ""
+
+#: miscapps.i18n.php:3
+#: miscapps.i18n.php:6
+msgid "Misc Applications"
+msgstr ""
+
+#: page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -42,43 +97,16 @@ msgid ""
 "internal numbers or feature codes."
 msgstr ""
 
-msgid "Conflicting Extensions"
+#: page.miscapps.php:131
+msgid "Submit Changes"
 msgstr ""
 
-msgid "Description"
-msgstr ""
-
-msgid "The name of this application"
-msgstr ""
-
-msgid "Feature Code"
-msgstr ""
-
+#: page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
 
-msgid "Feature Status"
-msgstr ""
-
-msgid "If this code is enabled or not."
-msgstr ""
-
-msgid "Enabled"
-msgstr ""
-
-msgid "Disabled"
-msgstr ""
-
-msgid "Destination"
-msgstr ""
-
-msgid "Submit Changes"
-msgstr ""
-
-msgid "Delete"
-msgstr ""
-
-msgid "Invalid description specified"
+#: page.miscapps.php:108
+msgid "The name of this application"
 msgstr ""

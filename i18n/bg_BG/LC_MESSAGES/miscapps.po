@@ -7,38 +7,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2008-11-03 13:34+0200\n"
-"Last-Translator: \n"
-"Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
+"POT-Creation-Date: 2015-02-20 19:41-0500\n"
+"PO-Revision-Date: 2014-07-22 10:12+0200\n"
+"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
+"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/miscapps/"
+"bg/>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#, php-format
-msgid "Misc Application: %s"
-msgstr "Друго Приложение: %s"
+#: page.miscapps.php:66 page.miscapps.php:88 page.miscapps.php:106
+msgid "Add Misc Application"
+msgstr "Добави Друго Приложение"
 
-msgid "Misc Applications"
-msgstr "Други Приложения"
-
-msgid "Applications"
-msgstr ""
-
+#: miscapps.i18n.php:5
 msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
+"Добавя възможност за създаване на специални кодове, които да насочват към "
+"всяко FreePBX направление (като IVR или опашка)"
 
-msgid "Add Misc Application"
-msgstr "Добави Друго Приложение"
+#: miscapps.i18n.php:4
+msgid "Applications"
+msgstr "Приложения"
 
+#: page.miscapps.php:96
+msgid "Conflicting Extensions"
+msgstr "Вътрешни Линии в Конфликт"
+
+#: page.miscapps.php:132
+msgid "Delete"
+msgstr "Изтрий"
+
+#: page.miscapps.php:108
+msgid "Description"
+msgstr "Описание"
+
+#: page.miscapps.php:123
+msgid "Destination"
+msgstr "Направление"
+
+#: page.miscapps.php:119
+msgid "Disabled"
+msgstr "Забранен"
+
+#: page.miscapps.php:86 page.miscapps.php:106
 msgid "Edit Misc Application"
 msgstr "Редактирай Друго Приложение"
 
+#: page.miscapps.php:118
+msgid "Enabled"
+msgstr "Разрешен"
+
+#: page.miscapps.php:112
+msgid "Feature Code"
+msgstr "Специален Код"
+
+#: page.miscapps.php:116
+msgid "Feature Status"
+msgstr "Статус на Функцията"
+
+#: page.miscapps.php:116
+msgid "If this code is enabled or not."
+msgstr "Дали този код е разрешен или не."
+
+#: page.miscapps.php:144
+msgid "Invalid description specified"
+msgstr "Неправилно въведено описание"
+
+#: functions.inc.php:151
+#, php-format
+msgid "Misc Application: %s"
+msgstr "Друго Приложение: %s"
+
+#: miscapps.i18n.php:3 miscapps.i18n.php:6
+msgid "Misc Applications"
+msgstr "Други Приложения"
+
+#: page.miscapps.php:91
 msgid ""
 "Misc Applications are for adding feature codes that you can dial from "
 "internal phones that go to various destinations available in FreePBX. This "
@@ -53,18 +106,11 @@ msgstr ""
 "които да се използват от други FreePBX модули за избиране на вътрешни номера "
 "или специални кодове."
 
-msgid "Conflicting Extensions"
-msgstr "Вътрешни Линии в Конфликт"
+#: page.miscapps.php:131
+msgid "Submit Changes"
+msgstr "Приеми Промените"
 
-msgid "Description"
-msgstr "Описание"
-
-msgid "The name of this application"
-msgstr "Име на това приложение"
-
-msgid "Feature Code"
-msgstr "Специален Код"
-
+#: page.miscapps.php:112
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -72,26 +118,6 @@ msgstr ""
 "Специален код / вътрешен номер който потребителите да избират за достъп до "
 "приложението. Може да се промени в меню Специални Кодове."
 
-msgid "Feature Status"
-msgstr "Статус на Функцията"
-
-msgid "If this code is enabled or not."
-msgstr "Дали този код е разрешен или не."
-
-msgid "Enabled"
-msgstr "Разрешен"
-
-msgid "Disabled"
-msgstr "Забранен"
-
-msgid "Destination"
-msgstr "Направление"
-
-msgid "Submit Changes"
-msgstr "Приеми Промените"
-
-msgid "Delete"
-msgstr "Изтрий"
-
-msgid "Invalid description specified"
-msgstr "Неправилно въведено описание"
+#: page.miscapps.php:108
+msgid "The name of this application"
+msgstr "Име на това приложение"
