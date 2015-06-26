@@ -2,11 +2,13 @@
 msgid "Add Misc Application"
 msgstr ""
 
-#: miscapps.i18n.php:5
-msgid "Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)"
+#: miscapps.i18n.php:8
+msgid ""
+"Adds the ability to create feature codes that can go to any FreePBX "
+"destination (such as an IVR or queue)"
 msgstr ""
 
-#: miscapps.i18n.php:4
+#: miscapps.i18n.php:6 miscapps.i18n.php:12
 msgid "Applications"
 msgstr ""
 
@@ -60,7 +62,12 @@ msgid "Misc Applications"
 msgstr ""
 
 #: page.miscapps.php:9
-msgid "Misc Applications are for adding feature codes that you can dial from internal phones that go to various destinations available in FreePBX. This is in contrast to the <strong>Misc Destinations</strong> module, which is for creating destinations that can be used by other FreePBX modules to dial internal numbers or feature codes."
+msgid ""
+"Misc Applications are for adding feature codes that you can dial from "
+"internal phones that go to various destinations available in FreePBX. This "
+"is in contrast to the <strong>Misc Destinations</strong> module, which is "
+"for creating destinations that can be used by other FreePBX modules to dial "
+"internal numbers or feature codes."
 msgstr ""
 
 #: views/main.php:28
@@ -80,7 +87,9 @@ msgid "Submit"
 msgstr ""
 
 #: views/main.php:79
-msgid "The feature code/extension users can dial to access this application. This can also be modified on the Feature Codes page."
+msgid ""
+"The feature code/extension users can dial to access this application. This "
+"can also be modified on the Feature Codes page."
 msgstr ""
 
 #: views/main.php:55
