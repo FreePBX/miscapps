@@ -24,7 +24,7 @@ class Miscapps implements \BMO {
 		if (!\DB::IsError($results)) { // error - table must not be there
 			foreach ($results as $result) {
 				$old_dest    = $result['dest'];
-				$$this->id = $result['miscapps_id'];
+				$this->id = $result['miscapps_id'];
 
 				$new_dest = merge_ext_followme(trim($old_dest));
 				if ($new_dest != $old_dest) {
