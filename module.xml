@@ -2,7 +2,7 @@
   <rawname>miscapps</rawname>
   <repo>extended</repo>
   <name>Misc Applications</name>
-  <version>13.0.2</version>
+  <version>13.0.2.1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -14,16 +14,17 @@
     <miscapps>Misc Applications</miscapps>
   </menuitems>
   <changelog>
-		*13.0.2* Version bump Beta
-		*13.0.1alpha1* BMO/Bootstrap
-  		*2.11.0.2* Include license file
-		*2.11.0.0* #6055
-		*2.10.0.1* #5478 
-		*2.10.0.0* new version changes
-		*2.9.0.2* #4831
-		*2.9.0.1* set repository
-		*2.9.0.0* #4651, #4655, #4724
-	</changelog>
+	  *13.0.2.1* Typo fix
+	  *13.0.2* Version bump Beta
+	  *13.0.1alpha1* BMO/Bootstrap
+	  *2.11.0.2* Include license file
+	  *2.11.0.0* #6055
+	  *2.10.0.1* #5478 
+	  *2.10.0.0* new version changes
+	  *2.9.0.2* #4831
+	  *2.9.0.1* set repository
+	  *2.9.0.0* #4651, #4655, #4724
+  </changelog>
   <depends>
     <version>2.4.0</version>
   </depends>
