@@ -44,7 +44,7 @@
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="description" name="description" value="<?php echo (isset($description) ? $description : ''); ?>" tabindex="<?php echo ++$tabindex;?>" >
+												<input type="text" class="form-control" id="description" name="description" value="<?php echo (isset($description) ? $description : ''); ?>"  >
 											</div>
 										</div>
 									</div>
@@ -68,7 +68,7 @@
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="ext"></i>
 											</div>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="ext" name="ext" value="<?php echo (isset($ext) ? $ext : ''); ?>" tabindex="<?php echo ++$tabindex;?>">
+												<input type="text" class="form-control" id="ext" name="ext" value="<?php echo (isset($ext) ? $ext : ''); ?>" >
 											</div>
 										</div>
 									</div>
