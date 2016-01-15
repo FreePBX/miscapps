@@ -2,7 +2,7 @@
   <rawname>miscapps</rawname>
   <repo>extended</repo>
   <name>Misc Applications</name>
-  <version>13.0.2.1</version>
+  <version>13.0.2.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,7 +13,8 @@
   <menuitems>
     <miscapps>Misc Applications</miscapps>
   </menuitems>
-  <changelog>
+	<changelog>
+		*13.0.2.2* FREEPBX-11234
 	  *13.0.2.1* Typo fix
 	  *13.0.2* Version bump Beta
 	  *13.0.1alpha1* BMO/Bootstrap
