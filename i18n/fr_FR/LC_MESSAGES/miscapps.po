@@ -15,18 +15,21 @@
 #
 # Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-06 21:37-0500\n"
-"PO-Revision-Date: 2009-04-20 21:52+0100\n"
-"Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
-"Language-Team: Français <LL@li.org>\n"
+"PO-Revision-Date: 2016-01-17 08:54+0200\n"
+"Last-Translator: Nicolas <forums@riendeau.org>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/miscapps/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
@@ -44,7 +47,7 @@ msgstr ""
 
 #: assets/js/miscapps.js:40
 msgid "Are you sure you want to delete this?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir supprimer ceci ?"
 
 #: views/main.php:103
 msgid "Choose the destination for this app when people dial the feature code"
@@ -52,7 +55,7 @@ msgstr ""
 
 #: page.miscapps.php:47
 msgid "Conflicting Extensions"
-msgstr "Extensions Conflictuelles"
+msgstr "Postes Conflictuels"
 
 #: Miscapps.class.php:118
 msgid "Delete"
@@ -76,7 +79,7 @@ msgstr ""
 
 #: views/main.php:67
 msgid "Feature Code"
-msgstr "Code de Caractéristique"
+msgstr "Code de caractéristique"
 
 #: assets/js/miscapps.js:3
 msgid "Invalid description specified"
