@@ -19,26 +19,25 @@ function miscapps_get_config($engine) {
 	global $ext;
 	switch ($engine) {
 		case 'asterisk':
-      $addit = false;
+			$addit = false;
 			foreach (miscapps_list(true) as $row) {
 				if ($row['enabled']) {
-          $ext->add('app-miscapps', $row['ext'], '', new ext_noop('Running miscapp '.$row['miscapps_id'].': '.$row['description']));
-          $ext->add('app-miscapps', $row['ext'], '', new ext_macro('user-callerid'));
-          $ext->add('app-miscapps', $row['ext'], '', new ext_goto($row['dest']));
-          $addit = true;
+					$ext->add('app-miscapps', $row['ext'], '', new ext_noop('Running miscapp '.$row['miscapps_id'].': '.$row['description']));
+					$ext->add('app-miscapps', $row['ext'], '', new ext_macro('user-callerid'));
+					$ext->add('app-miscapps', $row['ext'], '', new ext_goto($row['dest']));
+					$addit = true;
 				}
 			}
-      if ($addit) {
-        $ext->addInclude('from-internal-additional', 'app-miscapps');
-      }
+			if ($addit) {
+				$ext->addInclude('from-internal-additional', 'app-miscapps');
+			}
 		break;
 	}
 }
 
-
 /**  Get a list of all miscapps
- * Optional parameter is get_ext. Potentially slow, because each row is extracted from the featurecodes table
- * one-by-one
+ * Optional parameter is get_ext. Potentially slow, because each row is
+ * extracted from the featurecodes table one-by-one
  */
 function miscapps_list($get_ext = false) {
 	global $db;
