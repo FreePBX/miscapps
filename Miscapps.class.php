@@ -40,7 +40,7 @@ class Miscapps implements \BMO {
 	public function uninstall() {
 		echo _("Removing Settings table");
 		$sql = "DROP TABLE IF EXISTS miscapps";
-		$q = $db->prepare($sql);
+		$q = $this->db->prepare($sql);
 		$q->execute();
 	}
 	public function backup() {}
