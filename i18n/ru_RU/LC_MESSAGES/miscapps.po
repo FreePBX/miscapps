@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 21:37-0500\n"
+"POT-Creation-Date: 2016-06-06 16:20-0700\n"
 "PO-Revision-Date: 2015-04-23 16:24+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/miscapps/"
@@ -78,7 +78,7 @@ msgstr "Сервисный код"
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
 
-#: Miscapps.class.php:265 functions.inc.php:151
+#: Miscapps.class.php:265 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Дополнительное приложение: %s"

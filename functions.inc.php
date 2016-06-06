@@ -7,7 +7,7 @@ function miscapps_contexts() {
 	// return an associative array with context and description
 	foreach (miscapps_list() as $row) {
 		$contexts[] = array(
-			'context' => 'app-miscapps-'.$row['miscapps_id'], 
+			'context' => 'app-miscapps-'.$row['miscapps_id'],
 			'description'=> 'Misc Application: '.$row['description'],
 			'source' => 'Misc Applications',
 		);
@@ -44,9 +44,9 @@ function miscapps_list($get_ext = false) {
 	$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from miscapps");	
+		die_freepbx($results->getMessage()."<br><br>Error selecting from miscapps");
 	}
-	
+
 	if ($get_ext) {
 		foreach (array_keys($results) as $idx) {
 			$fc = new featurecode('miscapps', 'miscapp_'.$results[$idx]['miscapps_id']);
@@ -54,7 +54,7 @@ function miscapps_list($get_ext = false) {
 			$results[$idx]['enabled'] = $fc->isEnabled();
 		}
 	}
-	
+
 	return $results;
 }
 
@@ -63,9 +63,9 @@ function miscapps_get($miscapps_id) {
 	$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ".$db->escapeSimple($miscapps_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from miscapps");	
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from miscapps");
 	}
-	
+
 	// we want to get the ext from featurecodes
 	$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
 	$row['ext'] = $fc->getDefault();
@@ -89,7 +89,7 @@ function miscapps_add($description, $ext, $dest) {
 	if (DB::IsError($miscapps_id)) {
 		//TODO -- handle this
 	}
-	
+
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
 	$fc->setDescription($description);
 	$fc->setDefault($ext, true);
@@ -103,12 +103,12 @@ function miscapps_delete($miscapps_id) {
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
-	
+
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
 	$fc->delete();
 }
 
-function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) { 
+function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
 	global $db;
 	$sql = "UPDATE miscapps SET ".
 		"description = '".$db->escapeSimple($description)."', ".
@@ -119,7 +119,7 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
-	
+
 	$fc = new featurecode('miscapps', 'miscapp_'.$miscapps_id);
 	$fc->setDescription($description);
 	$fc->setDefault($ext, true);
