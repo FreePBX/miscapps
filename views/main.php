@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-9">
+		<div class="col-sm-12">
 			<div class="fpbx-container">
 				<form autocomplete="off" class="fpbx-submit" name="editMiscapp" action="config.php?display=miscapps" method="post" data-fpbx-delete="<?php echo $delurl ?>" role="form" onsubmit="return checkMiscapp(editMiscapp);">
 					<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
@@ -109,6 +109,5 @@
 				</form>
 			</div>
 		</div>
-		<?php echo $bootnav ?>
 	</div>
 </div>

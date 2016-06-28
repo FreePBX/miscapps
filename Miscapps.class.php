@@ -64,8 +64,9 @@ class Miscapps implements \BMO {
 					$conflict_url = framework_display_extension_usage_alert($usage_arr);
 				} else {
 					$id = $this->add($description, $ext, $dest);
+					$_REQUEST['action'] = null;
+					$_REQUEST['view'] = null;
 					needreload();
-					redirect('config.php?display=miscapps&type=setup&extdisplay='.$id);
 				}
 			break;
 			// TODO: need to lookup the current extension based on the id and if it is changing
@@ -83,13 +84,15 @@ class Miscapps implements \BMO {
 				if (empty($conflict_url)) {
 					$this->edit($miscapp_id, $description, $ext, $dest, $enabled);
 					needreload();
-					redirect_standard('extdisplay');
+					$_REQUEST['action'] = null;
+					$_REQUEST['view'] = null;
 				}
 			break;
 			case 'delete':
 				$this->delete($_REQUEST['id']);
 				needreload();
-				redirect_standard();
+				$_REQUEST['action'] = null;
+				$_REQUEST['view'] = null;
 			break;
 		}
 	}
@@ -278,5 +281,43 @@ class Miscapps implements \BMO {
 			return true;
 		}
 		return false;
+	}
+	public function getRightNav($request) {
+		return load_view(__DIR__."/views/rnav.php",array());
+	}
+	public function listApps($get_ext = false) {
+		$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute();
+		$results = $ret = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+		if ($get_ext) {
+			foreach ($results as $idx => $v) {
+				$fc = new \featurecode('miscapps', 'miscapp_'.$results[$idx]['miscapps_id']);
+				$results[$idx]['ext'] = $fc->getDefault();
+				$results[$idx]['enabled'] = $fc->isEnabled();
+			}
+		}
+		return $results;
+	}
+	public function ajaxRequest($req, &$setting) {
+		switch ($req) {
+			case 'rnav':
+				return true;
+			break;
+			default:
+				return false;
+			break;
+		}
+	}
+	public function ajaxHandler() {
+		switch ($_REQUEST['command']) {
+			case 'rnav':
+				return $this->listApps(true);
+			break;
+
+			default:
+				return array('status' => false, 'message' => 'Invalid command');
+				break;
+		}
 	}
 }
