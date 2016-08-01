@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-06 16:20-0700\n"
+"POT-Creation-Date: 2016-08-01 10:00-0700\n"
 "PO-Revision-Date: 2014-02-20 04:44+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
@@ -47,6 +47,10 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
+
+#: views/rnav.php:2
+msgid "Add Misc App"
+msgstr ""
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
@@ -76,9 +80,13 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: Miscapps.class.php:118
+#: Miscapps.class.php:121
 msgid "Delete"
 msgstr "削除"
+
+#: views/rnav.php:8
+msgid "Description"
+msgstr "説明"
 
 #: views/main.php:43
 msgid "Description:"
@@ -96,6 +104,10 @@ msgstr "その他アプリケーションを編集"
 msgid "Enable"
 msgstr ""
 
+#: views/rnav.php:7
+msgid "Extension"
+msgstr ""
+
 #: views/main.php:67
 msgid "Feature Code"
 msgstr "キーコード"
@@ -104,7 +116,7 @@ msgstr "キーコード"
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: Miscapps.class.php:265 functions.inc.php:150
+#: Miscapps.class.php:268 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "その他アプリケーション： %s"
@@ -134,11 +146,11 @@ msgstr ""
 msgid "Removing Settings table"
 msgstr ""
 
-#: Miscapps.class.php:123
+#: Miscapps.class.php:126
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:128
+#: Miscapps.class.php:131
 msgid "Submit"
 msgstr ""
 
@@ -165,9 +177,6 @@ msgstr ""
 #: views/main.php:26
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Description"
-#~ msgstr "説明"
 
 #~ msgid "Disabled"
 #~ msgstr "無効"

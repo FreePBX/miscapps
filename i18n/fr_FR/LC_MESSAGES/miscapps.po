@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-06 16:20-0700\n"
+"POT-Creation-Date: 2016-08-01 10:00-0700\n"
 "PO-Revision-Date: 2016-01-17 08:54+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/miscapps/"
@@ -30,6 +30,10 @@ msgstr ""
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
+
+#: views/rnav.php:2
+msgid "Add Misc App"
+msgstr ""
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
@@ -57,9 +61,13 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Postes Conflictuels"
 
-#: Miscapps.class.php:118
+#: Miscapps.class.php:121
 msgid "Delete"
 msgstr "Supprimer"
+
+#: views/rnav.php:8
+msgid "Description"
+msgstr "Description"
 
 #: views/main.php:43
 msgid "Description:"
@@ -77,6 +85,10 @@ msgstr "Editer Application"
 msgid "Enable"
 msgstr ""
 
+#: views/rnav.php:7
+msgid "Extension"
+msgstr ""
+
 #: views/main.php:67
 msgid "Feature Code"
 msgstr "Code de caractéristique"
@@ -85,7 +97,7 @@ msgstr "Code de caractéristique"
 msgid "Invalid description specified"
 msgstr "Description spécifiée invalide"
 
-#: Miscapps.class.php:265 functions.inc.php:150
+#: Miscapps.class.php:268 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Application : %s"
@@ -117,11 +129,11 @@ msgstr ""
 msgid "Removing Settings table"
 msgstr ""
 
-#: Miscapps.class.php:123
+#: Miscapps.class.php:126
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:128
+#: Miscapps.class.php:131
 msgid "Submit"
 msgstr ""
 
@@ -149,9 +161,6 @@ msgstr ""
 #: views/main.php:26
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Description"
-#~ msgstr "Description"
 
 #~ msgid "Disabled"
 #~ msgstr "Désactivé"

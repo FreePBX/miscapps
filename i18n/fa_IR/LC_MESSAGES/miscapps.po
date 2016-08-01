@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-06 16:20-0700\n"
+"POT-Creation-Date: 2016-08-01 10:00-0700\n"
 "PO-Revision-Date: 2016-05-15 07:07+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -20,6 +20,10 @@ msgstr ""
 "Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
+
+#: views/rnav.php:2
+msgid "Add Misc App"
+msgstr ""
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
@@ -49,9 +53,13 @@ msgstr "مقصد این برنامه را وقتی کد مخصوص شماره گ
 msgid "Conflicting Extensions"
 msgstr "داخلی های متضاد"
 
-#: Miscapps.class.php:118
+#: Miscapps.class.php:121
 msgid "Delete"
 msgstr "حذف"
+
+#: views/rnav.php:8
+msgid "Description"
+msgstr ""
 
 #: views/main.php:43
 msgid "Description:"
@@ -69,6 +77,10 @@ msgstr "ویرایش برنامه‌ اضافی"
 msgid "Enable"
 msgstr "فعال"
 
+#: views/rnav.php:7
+msgid "Extension"
+msgstr ""
+
 #: views/main.php:67
 msgid "Feature Code"
 msgstr "کد ویژه"
@@ -77,7 +89,7 @@ msgstr "کد ویژه"
 msgid "Invalid description specified"
 msgstr "شرح اختصاص داده شده نامعتبر است"
 
-#: Miscapps.class.php:265 functions.inc.php:150
+#: Miscapps.class.php:268 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "برنامه‌ اضافی：%s"
@@ -108,11 +120,11 @@ msgstr "خیر"
 msgid "Removing Settings table"
 msgstr "حذف تنظیمات جدول"
 
-#: Miscapps.class.php:123
+#: Miscapps.class.php:126
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: Miscapps.class.php:128
+#: Miscapps.class.php:131
 msgid "Submit"
 msgstr "ثبت"
 

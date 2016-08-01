@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX miscapps\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-06 16:20-0700\n"
+"POT-Creation-Date: 2016-08-01 10:00-0700\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -29,6 +29,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: views/rnav.php:2
+msgid "Add Misc App"
+msgstr ""
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
@@ -58,9 +62,13 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
-#: Miscapps.class.php:118
+#: Miscapps.class.php:121
 msgid "Delete"
 msgstr "Ta bort"
+
+#: views/rnav.php:8
+msgid "Description"
+msgstr "Beskrivning"
 
 #: views/main.php:43
 msgid "Description:"
@@ -78,6 +86,10 @@ msgstr "Redigera Övrig applikation"
 msgid "Enable"
 msgstr ""
 
+#: views/rnav.php:7
+msgid "Extension"
+msgstr ""
+
 #: views/main.php:67
 msgid "Feature Code"
 msgstr "Funktionskod"
@@ -86,7 +98,7 @@ msgstr "Funktionskod"
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning angiven"
 
-#: Miscapps.class.php:265 functions.inc.php:150
+#: Miscapps.class.php:268 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Övrig applikation: %s"
@@ -117,11 +129,11 @@ msgstr ""
 msgid "Removing Settings table"
 msgstr ""
 
-#: Miscapps.class.php:123
+#: Miscapps.class.php:126
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:128
+#: Miscapps.class.php:131
 msgid "Submit"
 msgstr ""
 
@@ -148,9 +160,6 @@ msgstr ""
 #: views/main.php:26
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Description"
-#~ msgstr "Beskrivning"
 
 #~ msgid "Disabled"
 #~ msgstr "Avaktiverad"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-06 16:20-0700\n"
+"POT-Creation-Date: 2016-08-01 10:00-0700\n"
 "PO-Revision-Date: 2015-04-23 16:24+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/miscapps/"
@@ -20,6 +20,10 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
+
+#: views/rnav.php:2
+msgid "Add Misc App"
+msgstr ""
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
@@ -50,9 +54,13 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Конфликтующие внутренние номера"
 
-#: Miscapps.class.php:118
+#: Miscapps.class.php:121
 msgid "Delete"
 msgstr "Удалить"
+
+#: views/rnav.php:8
+msgid "Description"
+msgstr "Описание"
 
 #: views/main.php:43
 msgid "Description:"
@@ -70,6 +78,10 @@ msgstr "Изменить Дополнительное приложение"
 msgid "Enable"
 msgstr ""
 
+#: views/rnav.php:7
+msgid "Extension"
+msgstr ""
+
 #: views/main.php:67
 msgid "Feature Code"
 msgstr "Сервисный код"
@@ -78,7 +90,7 @@ msgstr "Сервисный код"
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
 
-#: Miscapps.class.php:265 functions.inc.php:150
+#: Miscapps.class.php:268 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Дополнительное приложение: %s"
@@ -110,11 +122,11 @@ msgstr ""
 msgid "Removing Settings table"
 msgstr ""
 
-#: Miscapps.class.php:123
+#: Miscapps.class.php:126
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:128
+#: Miscapps.class.php:131
 msgid "Submit"
 msgstr ""
 
@@ -141,9 +153,6 @@ msgstr ""
 #: views/main.php:26
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Description"
-#~ msgstr "Описание"
 
 #~ msgid "Disabled"
 #~ msgstr "Выключен"
