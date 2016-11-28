@@ -18,7 +18,7 @@ function checkMiscapp(theForm) {
 //Make sure the Feature code is only letters and numbers.
 $('#ext').on('keyup',function(){
 	var cval = $(this).val();
-	var patt = new RegExp("^[\*0-9]+$");
+	var patt = new RegExp("^[\*\._0-9XN]+$");
 	if(!patt.test(cval) && cval.length > 0){
 		warnInvalid($(this),_("This field must only contain numbers and *'s"));
 	}
