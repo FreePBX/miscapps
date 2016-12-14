@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-01 10:00-0700\n"
-"PO-Revision-Date: 2016-12-13 21:57+0200\n"
+"PO-Revision-Date: 2016-12-13 22:14+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/miscapps/pt_BR/>\n"
@@ -108,41 +108,49 @@ msgid ""
 "for creating destinations that can be used by other FreePBX modules to dial "
 "internal numbers or feature codes."
 msgstr ""
+"Aplicações Diversas servem para a adição de códigos de recurso que você pode "
+"discar a partir de telefones internos para vários destinos disponíveis no "
+"FreePBX. Em contraposição com o módulo<strong> Destinos variados</strong> , "
+"que é para a criação de destinos que podem ser usados por outros módulos do "
+"FreePBX para discar números internos ou códigos de recurso."
 
 #: views/main.php:28
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
-msgstr ""
+msgstr "Removendo tabela de Configurações"
 
 #: Miscapps.class.php:126
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: Miscapps.class.php:131
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/main.php:79
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
+"O código de recurso/ramais que os usuários podem discar para acessar esta "
+"aplicação. Este valor pode ser modificado também na página Códigos de "
+"Recursos."
 
 #: views/main.php:55
 msgid "The name of this application"
-msgstr ""
+msgstr "Nome para esta aplicação"
 
 #: assets/js/miscapps.js:33
 msgid "The number provided for the feature code is already in use by "
-msgstr ""
+msgstr "O número fornecido para o código de recurso já está em uso por "
 
 #: assets/js/miscapps.js:23
 msgid "This field must only contain numbers and *'s"
-msgstr ""
+msgstr "Este campo deve conter apenas números e *'s"
 
 #: views/main.php:26
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
