@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-01 10:00-0700\n"
-"PO-Revision-Date: 2016-12-13 22:14+0200\n"
+"PO-Revision-Date: 2016-12-13 22:19+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/miscapps/pt_BR/>\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: views/rnav.php:2
 msgid "Add Misc App"
-msgstr "Adicionar Aplicativo Misc"
+msgstr "Adicionar Aplicativo Diversificado"
 
 #: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
 msgid "Add Misc Application"
-msgstr "Adicionar Aplicação Misc"
+msgstr "Adicionar Aplicação Diversificada"
 
 #: miscapps.i18n.php:8
 msgid ""
@@ -73,7 +73,7 @@ msgstr "Destino"
 
 #: page.miscapps.php:20
 msgid "Edit Misc Application"
-msgstr "Editar Aplicação Misc"
+msgstr "Editar Aplicação Diversa"
 
 #: views/main.php:22
 msgid "Enable"
@@ -94,11 +94,11 @@ msgstr "Descrição especificada inválida"
 #: Miscapps.class.php:268 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
-msgstr "Aplicação Misc: %s"
+msgstr "Aplicação Diversificada: %s"
 
 #: miscapps.i18n.php:4 miscapps.i18n.php:10
 msgid "Misc Applications"
-msgstr "Aplicações Misc"
+msgstr "Aplicações Diversificadas"
 
 #: page.miscapps.php:9
 msgid ""
@@ -108,11 +108,12 @@ msgid ""
 "for creating destinations that can be used by other FreePBX modules to dial "
 "internal numbers or feature codes."
 msgstr ""
-"Aplicações Diversas servem para a adição de códigos de recurso que você pode "
-"discar a partir de telefones internos para vários destinos disponíveis no "
-"FreePBX. Em contraposição com o módulo<strong> Destinos variados</strong> , "
-"que é para a criação de destinos que podem ser usados por outros módulos do "
-"FreePBX para discar números internos ou códigos de recurso."
+"Aplicações Diversificadas servem para a adição de códigos de recurso que "
+"você pode discar a partir de telefones internos para vários destinos "
+"disponíveis no FreePBX. Em contraposição com o módulo<strong> Destinos "
+"variados</strong> , que é para a criação de destinos que podem ser usados "
+"por outros módulos do FreePBX para discar números internos ou códigos de "
+"recurso."
 
 #: views/main.php:28
 msgid "No"
