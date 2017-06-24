@@ -58,38 +58,42 @@ class Miscapps implements \BMO {
 		}
 		switch ($action) {
 			case 'add':
-				$conflict_url = array();
-				$usage_arr = framework_check_extension_usage($ext);
-				if (!empty($usage_arr)) {
-					$conflict_url = framework_display_extension_usage_alert($usage_arr);
-				} else {
-					$id = $this->add($description, $ext, $dest);
-					$_REQUEST['action'] = null;
-					$_REQUEST['view'] = null;
-					needreload();
+				if(isset($_POST['extdisplay'])){
+					$conflict_url = array();
+					$usage_arr = framework_check_extension_usage($ext);
+					if (!empty($usage_arr)) {
+						$conflict_url = framework_display_extension_usage_alert($usage_arr);
+					} else {
+						$id = $this->add($description, $ext, $dest);
+						$_REQUEST['action'] = null;
+						$_REQUEST['view'] = null;
+						needreload();
+					}
 				}
 			break;
 			// TODO: need to lookup the current extension based on the id and if it is changing
 			//       do a check to make sure it doesn't conflict. If not changing, np.
 			//
 			case 'edit':
-				$fc = new \featurecode('miscapps', 'miscapp_'.$miscapp_id);
-				$conflict_url = array();
-				if ($fc->getDefault() != $ext) {
-					$usage_arr = framework_check_extension_usage($ext);
-					if (!empty($usage_arr)) {
-						$conflict_url = framework_display_extension_usage_alert($usage_arr);
+				if(isset($_POST['extdisplay'])){
+					$fc = new \featurecode('miscapps', 'miscapp_'.$miscapp_id);
+					$conflict_url = array();
+					if ($fc->getDefault() != $ext) {
+						$usage_arr = framework_check_extension_usage($ext);
+						if (!empty($usage_arr)) {
+							$conflict_url = framework_display_extension_usage_alert($usage_arr);
+						}
 					}
-				}
-				if (empty($conflict_url)) {
-					$this->edit($miscapp_id, $description, $ext, $dest, $enabled);
-					needreload();
-					$_REQUEST['action'] = null;
-					$_REQUEST['view'] = null;
+					if (empty($conflict_url)) {
+						$this->edit($miscapp_id, $description, $ext, $dest, $enabled);
+						needreload();
+						$_REQUEST['action'] = null;
+						$_REQUEST['view'] = null;
+					}
 				}
 			break;
 			case 'delete':
-				$this->delete($_REQUEST['id']);
+				$this->delete($_REQUEST['extdisplay']);
 				needreload();
 				$_REQUEST['action'] = null;
 				$_REQUEST['view'] = null;
@@ -112,6 +116,7 @@ class Miscapps implements \BMO {
 	}
 	public function getActionBar($request) {
 		$buttons = array();
+		if (!isset($request['action'])) return $buttons;
 		switch($request['display']) {
 			case 'miscapps':
 				$buttons = array(
@@ -133,6 +138,10 @@ class Miscapps implements \BMO {
 				);
 				if (empty($request['extdisplay'])) {
 					unset($buttons['delete']);
+				}
+				if ($request['action'] != 'add' && $request['action'] != 'edit') {
+					unset($buttons);
+					$buttons = array();
 				}
 			break;
 		}
@@ -181,7 +190,6 @@ class Miscapps implements \BMO {
 		if($q){
 			$row = $q->getRow();
 		}
-
 
 		// we want to get the ext from featurecodes
 		$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
@@ -299,6 +307,46 @@ class Miscapps implements \BMO {
 		}
 		return $results;
 	}
+	public function showPage() {
+		$action = !empty($_REQUEST['action']) ? $_REQUEST['action'] : "";
+		$content = "";
+		switch($action) {
+			case "add":
+			case "edit":
+			        $data['id'] = "None";
+			        $data['title'] = _("Add Misc Application");
+			        $data['delurl'] = '';
+				$data['enabled'] = true;
+				$data['extdisplay'] = '';
+
+				if($action == "edit") {
+					$row = miscapps_get($_REQUEST['extdisplay']);
+					$data['id'] = $row['miscapps_id'];
+					$data['title'] = _("Edit Misc Application");
+			 		$data['delurl'] = 'config.php?display=miscapps&action=delete&extdisplay=' . $row['miscapps_id'];
+					$data['enabled'] = $row['enabled'];
+					$data['description'] = $row['description'];
+					$data['ext'] = $row['ext'];
+					$data['dest'] = $row['dest'];
+					$data['helptext'] = '';
+					$data['extdisplay'] = $row['miscapps_id'];
+				} 
+				$base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . '://' . $_SERVER['HTTP_HOST'];
+				$data['url'] = $base_url;
+				$bootnav = '<div class="col-sm-3 bootnav">
+					<div class="list-group">
+					<a href="?display=miscapps" class="list-group-item"><i class="fa fa-th-list"></i> '._("Misc Application").'</a>
+					</div>
+					</div>';
+				$content = load_view(__DIR__."/views/form.php",array("action" => $action, "data" => $data));
+				break;
+			default;
+				$content = load_view(__DIR__."/views/grid.php",array());
+				$bootnav = '';
+			break;
+		}
+		return load_view(__DIR__."/views/main.php",array("content" => $content, "bootnav" => $bootnav));
+	}
 	public function ajaxRequest($req, &$setting) {
 		switch ($req) {
 			case 'rnav':
@@ -312,7 +360,15 @@ class Miscapps implements \BMO {
 	public function ajaxHandler() {
 		switch ($_REQUEST['command']) {
 			case 'rnav':
-				return $this->listApps(true);
+				$apps = $this->listApps(true);
+				if(!empty($apps) && is_array($apps)) {
+					foreach($apps as &$app) {
+						 $app['actions'] = '<a href="?display=miscapps&action=edit&extdisplay='.$app['miscapps_id'].'"><i class="fa fa-edit fa-fw"></i></a><a href="?display=miscapps&action=delete&extdisplay='.$app['miscapps_id'].'"><i class="fa fa-trash fa-fw"></i></a>';
+					}
+					return $apps;
+				}else{
+					return array();
+				}
 			break;
 
 			default:

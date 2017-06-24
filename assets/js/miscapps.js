@@ -1,5 +1,8 @@
-
-function checkMiscapp(theForm) {
+var theForm = document.editMiscapp;
+if(typeof theForm !== 'undefined'){
+	theForm.description.focus();
+}
+function checkMiscapp() {
 	var msgInvalidDescription = _('Invalid description specified');
 
 	// set up the Destination stuff
@@ -13,8 +16,18 @@ function checkMiscapp(theForm) {
 	if (!validateDestinations(theForm, 1, true))
 		return false;
 
-	return true;
+	return checkExt();
 }
+$(document).ready(function() {
+	$('form').unbind( "submit");
+	$('form[name="editMiscapp"]').submit(checkMiscapp);
+	$('form').submit(function(e) {
+		if (!e.isDefaultPrevented()){
+			$(".destdropdown2").filter(".hidden").remove();
+		}
+	});
+});	
+
 //Make sure the Feature code is only letters and numbers.
 $('#ext').on('keyup',function(){
 	var cval = $(this).val();
@@ -24,21 +37,17 @@ $('#ext').on('keyup',function(){
 	}
 });
 //Check for conflicts
-$('#ext').on('blur',function(){
-	var cval = $(this).val();
+function checkExt(){
+	var cval = theForm.ext.value.trim();
 	var id = 'miscapp_'+ $( "input[name='miscapp_id']" ).val();
 	if(cval in extmap && cval.length > 0){
 		var foundid = extmap[cval];
 		if (foundid.indexOf(id) == -1){
-			warnInvalid($(this),_("The number provided for the feature code is already in use by ") + extmap[cval]);
-		}
-	}
-});
-
-//Delete intercept
-$( "#delete" ).click(function() {
-		var result = confirm(_("Are you sure you want to delete this?"));
-		if(result == false){
+			theForm.ext.focus();
+			warnInvalid(theForm.ext,_("The number provided for the feature code is already in use by ") + extmap[cval]);
 			return false;
 		}
-});
+	}
+	return true;
+}
+
