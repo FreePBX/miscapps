@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 10:00-0700\n"
+"POT-Creation-Date: 2017-06-23 20:42-0400\n"
 "PO-Revision-Date: 2014-02-20 04:44+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
@@ -48,11 +48,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: views/rnav.php:2
+#: miscapps.i18n.php:12
+msgid "777"
+msgstr ""
+
+#: views/grid.php:9
+msgid "Actions"
+msgstr ""
+
+#: views/rnav.php:3
 msgid "Add Misc App"
 msgstr ""
 
-#: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
+#: Miscapps.class.php:317 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "その他アプリケーションを追加"
 
@@ -64,59 +72,59 @@ msgstr ""
 "FreePBXのどの宛先にも行ける(IVRやキューなど)キーコードを作成する機能を追加し"
 "ます。"
 
-#: miscapps.i18n.php:6 miscapps.i18n.php:12
+#: miscapps.i18n.php:6
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: assets/js/miscapps.js:40
-msgid "Are you sure you want to delete this?"
-msgstr ""
-
-#: views/main.php:103
+#: views/form.php:107
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: page.miscapps.php:47
-msgid "Conflicting Extensions"
-msgstr "内線の競合"
-
-#: Miscapps.class.php:121
+#: Miscapps.class.php:126
 msgid "Delete"
 msgstr "削除"
 
-#: views/rnav.php:8
+#: views/grid.php:7 views/rnav.php:15
 msgid "Description"
 msgstr "説明"
 
-#: views/main.php:43
+#: views/form.php:47
 msgid "Description:"
 msgstr ""
 
-#: views/main.php:91
+#: views/form.php:95
 msgid "Destination"
 msgstr "宛先"
 
-#: page.miscapps.php:20
+#: Miscapps.class.php:325
 msgid "Edit Misc Application"
 msgstr "その他アプリケーションを編集"
 
-#: views/main.php:22
+#: views/form.php:26
 msgid "Enable"
 msgstr ""
 
-#: views/rnav.php:7
+#: views/grid.php:8 views/rnav.php:14
 msgid "Extension"
 msgstr ""
 
-#: views/main.php:67
+#: views/form.php:71
 msgid "Feature Code"
 msgstr "キーコード"
 
-#: assets/js/miscapps.js:3
+#: assets/js/miscapps.js:6
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: Miscapps.class.php:268 functions.inc.php:150
+#: views/rnav.php:2
+msgid "List Misc App"
+msgstr ""
+
+#: Miscapps.class.php:338 views/main.php:1
+msgid "Misc Application"
+msgstr ""
+
+#: Miscapps.class.php:276 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "その他アプリケーション： %s"
@@ -125,20 +133,7 @@ msgstr "その他アプリケーション： %s"
 msgid "Misc Applications"
 msgstr "その他アプリケーション"
 
-#: page.miscapps.php:9
-msgid ""
-"Misc Applications are for adding feature codes that you can dial from "
-"internal phones that go to various destinations available in FreePBX. This "
-"is in contrast to the <strong>Misc Destinations</strong> module, which is "
-"for creating destinations that can be used by other FreePBX modules to dial "
-"internal numbers or feature codes."
-msgstr ""
-"その他アプリケーションは、内部の電話からダイヤルし、FreePBXで利用できる様々な"
-"宛先に行くことができるキーコードを追加します。これは、内部の番号やキーコード"
-"にダイヤルするために、他のFreePBXモジュールから使用される宛先を作成する"
-"<strong>その他宛先</strong>モジュールと対照的な機能です。"
-
-#: views/main.php:28
+#: views/form.php:32
 msgid "No"
 msgstr ""
 
@@ -146,15 +141,15 @@ msgstr ""
 msgid "Removing Settings table"
 msgstr ""
 
-#: Miscapps.class.php:126
+#: Miscapps.class.php:131
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:131
+#: Miscapps.class.php:136
 msgid "Submit"
 msgstr ""
 
-#: views/main.php:79
+#: views/form.php:83
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -162,21 +157,40 @@ msgstr ""
 "このアプリケーションにアクセスするためにユーザーがダイヤルすることができる"
 "キーコード/内線。この値はキーコードのページからも修正することができます。"
 
-#: views/main.php:55
+#: views/form.php:59
 msgid "The name of this application"
 msgstr "このアプリケーションの名前"
 
-#: assets/js/miscapps.js:33
+#: assets/js/miscapps.js:47
 msgid "The number provided for the feature code is already in use by "
 msgstr ""
 
-#: assets/js/miscapps.js:23
+#: views/form.php:75
+msgid "This field is required."
+msgstr ""
+
+#: assets/js/miscapps.js:36
 msgid "This field must only contain numbers and *'s"
 msgstr ""
 
-#: views/main.php:26
+#: views/form.php:30
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Conflicting Extensions"
+#~ msgstr "内線の競合"
+
+#~ msgid ""
+#~ "Misc Applications are for adding feature codes that you can dial from "
+#~ "internal phones that go to various destinations available in FreePBX. "
+#~ "This is in contrast to the <strong>Misc Destinations</strong> module, "
+#~ "which is for creating destinations that can be used by other FreePBX "
+#~ "modules to dial internal numbers or feature codes."
+#~ msgstr ""
+#~ "その他アプリケーションは、内部の電話からダイヤルし、FreePBXで利用できる"
+#~ "様々な宛先に行くことができるキーコードを追加します。これは、内部の番号や"
+#~ "キーコードにダイヤルするために、他のFreePBXモジュールから使用される宛先を"
+#~ "作成する<strong>その他宛先</strong>モジュールと対照的な機能です。"
 
 #~ msgid "Disabled"
 #~ msgstr "無効"

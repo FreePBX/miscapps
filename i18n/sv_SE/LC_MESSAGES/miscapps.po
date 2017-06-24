@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX miscapps\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 10:00-0700\n"
+"POT-Creation-Date: 2017-06-23 20:42-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,11 +30,19 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: views/rnav.php:2
+#: miscapps.i18n.php:12
+msgid "777"
+msgstr ""
+
+#: views/grid.php:9
+msgid "Actions"
+msgstr ""
+
+#: views/rnav.php:3
 msgid "Add Misc App"
 msgstr ""
 
-#: page.miscapps.php:23 page.miscapps.php:34 page.miscapps.php:36
+#: Miscapps.class.php:317 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "Lägg till Övrig applikation"
 
@@ -46,59 +54,59 @@ msgstr ""
 "Ger möjlighet att skapa funktionskoder som kan gå till vilken FreePBX "
 "destination som helst (såsom IVR eller kö)"
 
-#: miscapps.i18n.php:6 miscapps.i18n.php:12
+#: miscapps.i18n.php:6
 msgid "Applications"
 msgstr ""
 
-#: assets/js/miscapps.js:40
-msgid "Are you sure you want to delete this?"
-msgstr ""
-
-#: views/main.php:103
+#: views/form.php:107
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: page.miscapps.php:47
-msgid "Conflicting Extensions"
-msgstr "Konfliktande anknytningar"
-
-#: Miscapps.class.php:121
+#: Miscapps.class.php:126
 msgid "Delete"
 msgstr "Ta bort"
 
-#: views/rnav.php:8
+#: views/grid.php:7 views/rnav.php:15
 msgid "Description"
 msgstr "Beskrivning"
 
-#: views/main.php:43
+#: views/form.php:47
 msgid "Description:"
 msgstr ""
 
-#: views/main.php:91
+#: views/form.php:95
 msgid "Destination"
 msgstr "Destination"
 
-#: page.miscapps.php:20
+#: Miscapps.class.php:325
 msgid "Edit Misc Application"
 msgstr "Redigera Övrig applikation"
 
-#: views/main.php:22
+#: views/form.php:26
 msgid "Enable"
 msgstr ""
 
-#: views/rnav.php:7
+#: views/grid.php:8 views/rnav.php:14
 msgid "Extension"
 msgstr ""
 
-#: views/main.php:67
+#: views/form.php:71
 msgid "Feature Code"
 msgstr "Funktionskod"
 
-#: assets/js/miscapps.js:3
+#: assets/js/miscapps.js:6
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning angiven"
 
-#: Miscapps.class.php:268 functions.inc.php:150
+#: views/rnav.php:2
+msgid "List Misc App"
+msgstr ""
+
+#: Miscapps.class.php:338 views/main.php:1
+msgid "Misc Application"
+msgstr ""
+
+#: Miscapps.class.php:276 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Övrig applikation: %s"
@@ -107,21 +115,7 @@ msgstr "Övrig applikation: %s"
 msgid "Misc Applications"
 msgstr "Övriga applikationer"
 
-#: page.miscapps.php:9
-msgid ""
-"Misc Applications are for adding feature codes that you can dial from "
-"internal phones that go to various destinations available in FreePBX. This "
-"is in contrast to the <strong>Misc Destinations</strong> module, which is "
-"for creating destinations that can be used by other FreePBX modules to dial "
-"internal numbers or feature codes."
-msgstr ""
-"Övriga applikationer är till för att lägga till funktionskoder som du kan "
-"ringa från interna telefoner som kan gå till olika destinationer inom "
-"FreePBX. Detta är i kontrast med <strong>Övrig destination</strong>, som är "
-"för att skapa destinationer som kan användas av FreePBX övriga moduler för "
-"att ringa interna nummer eller funktionskoder."
-
-#: views/main.php:28
+#: views/form.php:32
 msgid "No"
 msgstr ""
 
@@ -129,15 +123,15 @@ msgstr ""
 msgid "Removing Settings table"
 msgstr ""
 
-#: Miscapps.class.php:126
+#: Miscapps.class.php:131
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:131
+#: Miscapps.class.php:136
 msgid "Submit"
 msgstr ""
 
-#: views/main.php:79
+#: views/form.php:83
 msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
@@ -145,21 +139,41 @@ msgstr ""
 "Funktionskoden/anknytningen användare kan ringa för att få åtkomst till "
 "denna applikation. Denna kan även modifieras på sidan Funktionskoder."
 
-#: views/main.php:55
+#: views/form.php:59
 msgid "The name of this application"
 msgstr "Kort beskrivning på denna applikation"
 
-#: assets/js/miscapps.js:33
+#: assets/js/miscapps.js:47
 msgid "The number provided for the feature code is already in use by "
 msgstr ""
 
-#: assets/js/miscapps.js:23
+#: views/form.php:75
+msgid "This field is required."
+msgstr ""
+
+#: assets/js/miscapps.js:36
 msgid "This field must only contain numbers and *'s"
 msgstr ""
 
-#: views/main.php:26
+#: views/form.php:30
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Conflicting Extensions"
+#~ msgstr "Konfliktande anknytningar"
+
+#~ msgid ""
+#~ "Misc Applications are for adding feature codes that you can dial from "
+#~ "internal phones that go to various destinations available in FreePBX. "
+#~ "This is in contrast to the <strong>Misc Destinations</strong> module, "
+#~ "which is for creating destinations that can be used by other FreePBX "
+#~ "modules to dial internal numbers or feature codes."
+#~ msgstr ""
+#~ "Övriga applikationer är till för att lägga till funktionskoder som du kan "
+#~ "ringa från interna telefoner som kan gå till olika destinationer inom "
+#~ "FreePBX. Detta är i kontrast med <strong>Övrig destination</strong>, som "
+#~ "är för att skapa destinationer som kan användas av FreePBX övriga moduler "
+#~ "för att ringa interna nummer eller funktionskoder."
 
 #~ msgid "Disabled"
 #~ msgstr "Avaktiverad"
