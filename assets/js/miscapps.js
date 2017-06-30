@@ -12,7 +12,7 @@ function checkMiscapp() {
 	defaultEmptyOK = false;
 	if (isEmpty(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
-
+	
 	if (!validateDestinations(theForm, 1, true))
 		return false;
 
@@ -28,17 +28,15 @@ $(document).ready(function() {
 	});
 });	
 
-//Make sure the Feature code is only letters and numbers.
-$('#ext').on('keyup',function(){
-	var cval = $(this).val();
-	var patt = new RegExp("^[\*\._0-9XN]+$");
-	if(!patt.test(cval) && cval.length > 0){
-		warnInvalid($(this),_("This field must only contain numbers and *'s"));
-	}
-});
 //Check for conflicts
 function checkExt(){
+	//Make sure the Feature code is only letters and numbers.
 	var cval = theForm.ext.value.trim();
+	var patt = new RegExp(/^[_0-9XN#\-\[\]\/\{\}\(\)\*\+\?\.\^\$\|]+$/);
+	if(!patt.test(cval) && cval.length > 0){
+		 warnInvalid(theForm.ext, _("This field must only contain numbers and '*._XN#'"));
+		 return false;
+	}
 	var id = 'miscapp_'+ $( "input[name='miscapp_id']" ).val();
 	if(cval in extmap && cval.length > 0){
 		var foundid = extmap[cval];
