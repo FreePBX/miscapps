@@ -32,9 +32,8 @@ $(document).ready(function() {
 function checkExt(){
 	//Make sure the Feature code is only letters and numbers.
 	var cval = theForm.ext.value.trim();
-	var patt = new RegExp(/^[_0-9XN#\-\[\]\/\{\}\(\)\*\+\?\.\^\$\|]+$/);
-	if(!patt.test(cval) && cval.length > 0){
-		 warnInvalid(theForm.ext, _("This field must only contain numbers and '*._XN#'"));
+	if(!isDialpattern(cval) && cval.length > 0){
+		 warnInvalid(theForm.ext, _("Please enter a valid Feature Code."));
 		 return false;
 	}
 	var id = 'miscapp_'+ $( "input[name='miscapp_id']" ).val();
