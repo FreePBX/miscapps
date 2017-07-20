@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-23 20:42-0400\n"
-"PO-Revision-Date: 2017-07-10 15:52+0200\n"
+"PO-Revision-Date: 2017-07-20 08:11+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/miscapps/vi/>\n"
@@ -83,7 +83,7 @@ msgstr "Máy nhánh"
 
 #: views/form.php:71
 msgid "Feature Code"
-msgstr "Mã tính năng"
+msgstr "Feature Code (Mã tính năng)"
 
 #: assets/js/miscapps.js:6
 msgid "Invalid description specified"
