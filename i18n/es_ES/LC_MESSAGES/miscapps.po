@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 20:42-0400\n"
+"POT-Creation-Date: 2017-07-24 17:44-0400\n"
 "PO-Revision-Date: 2016-12-09 08:32+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/miscapps/"
@@ -104,6 +104,10 @@ msgstr "Aplicaciones varias"
 msgid "No"
 msgstr "No"
 
+#: assets/js/miscapps.js:36
+msgid "Please enter a valid Feature Code."
+msgstr ""
+
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
 msgstr "Removiendo tabla de Configuración"
@@ -129,7 +133,7 @@ msgstr ""
 msgid "The name of this application"
 msgstr "El nombre de esta aplicación"
 
-#: assets/js/miscapps.js:47
+#: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
 msgstr "El numero provisto para el código de función ya esta usado por "
 
@@ -137,13 +141,12 @@ msgstr "El numero provisto para el código de función ya esta usado por "
 msgid "This field is required."
 msgstr ""
 
-#: assets/js/miscapps.js:36
-msgid "This field must only contain numbers and *'s"
-msgstr "Este campo solo puede contener números y *'s"
-
 #: views/form.php:30
 msgid "Yes"
 msgstr "Si"
+
+#~ msgid "This field must only contain numbers and *'s"
+#~ msgstr "Este campo solo puede contener números y *'s"
 
 #~ msgid "Are you sure you want to delete this?"
 #~ msgstr "Esta seguro desea borrar esto?"

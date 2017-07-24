@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 20:42-0400\n"
+"POT-Creation-Date: 2017-07-24 17:44-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,6 +115,10 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: assets/js/miscapps.js:36
+msgid "Please enter a valid Feature Code."
+msgstr ""
+
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
 msgstr ""
@@ -137,16 +141,12 @@ msgstr ""
 msgid "The name of this application"
 msgstr ""
 
-#: assets/js/miscapps.js:47
+#: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
 msgstr ""
 
 #: views/form.php:75
 msgid "This field is required."
-msgstr ""
-
-#: assets/js/miscapps.js:36
-msgid "This field must only contain numbers and *'s"
 msgstr ""
 
 #: views/form.php:30
