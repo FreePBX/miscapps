@@ -11,7 +11,7 @@
 		Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)
 	</description>
   <menuitems>
-    <miscapps>Misc Applications</miscapps>
+    <miscapps needsenginedb="yes">Misc Applications</miscapps>
   </menuitems>
 	<changelog>
 	  *13.0.3.1* FREEPBX-13690 Overly restrictive validation when creating Misc Application feature code
@@ -24,7 +24,7 @@
 	  *13.0.1alpha1* BMO/Bootstrap
 	  *2.11.0.2* Include license file
 	  *2.11.0.0* #6055
-	  *2.10.0.1* #5478 
+	  *2.10.0.1* #5478
 	  *2.10.0.0* new version changes
 	  *2.9.0.2* #4831
 	  *2.9.0.1* set repository
