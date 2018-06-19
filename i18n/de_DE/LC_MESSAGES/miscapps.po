@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-24 17:44-0400\n"
-"PO-Revision-Date: 2018-02-16 18:06+0200\n"
-"Last-Translator: Nils <Nils@heckenkamp.info>\n"
-"Language-Team: German "
-"<http://weblate.freepbx.org/projects/freepbx/miscapps/de_DE/>\n"
+"PO-Revision-Date: 2018-07-18 19:13+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/miscapps/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: miscapps.i18n.php:12
 msgid "777"
@@ -27,15 +26,15 @@ msgstr ""
 
 #: views/grid.php:9
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: views/rnav.php:3
 msgid "Add Misc App"
-msgstr ""
+msgstr "Sonstige Anwendung hinzufügen"
 
 #: Miscapps.class.php:317 views/grid.php:2
 msgid "Add Misc Application"
-msgstr ""
+msgstr "Sonstige Anwendung hinzufügen"
 
 #: miscapps.i18n.php:8
 msgid ""
@@ -69,48 +68,48 @@ msgstr "Ziel"
 
 #: Miscapps.class.php:325
 msgid "Edit Misc Application"
-msgstr ""
+msgstr "Sonstige Anwendung bearbeiten"
 
 #: views/form.php:26
 msgid "Enable"
-msgstr ""
+msgstr "Aktivieren"
 
 #: views/grid.php:8 views/rnav.php:14
 msgid "Extension"
-msgstr ""
+msgstr "Nebenstelle"
 
 #: views/form.php:71
 msgid "Feature Code"
-msgstr ""
+msgstr "Funktionscode"
 
 #: assets/js/miscapps.js:6
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Ungültige Beschreibung angegeben"
 
 #: views/rnav.php:2
 msgid "List Misc App"
-msgstr ""
+msgstr "Sonstige Anwendungen auflisten"
 
 #: Miscapps.class.php:338 views/main.php:1
 msgid "Misc Application"
-msgstr ""
+msgstr "Sonstige Anwendung"
 
 #: Miscapps.class.php:276 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
-msgstr ""
+msgstr "Sonstige Anwendung: %s"
 
 #: miscapps.i18n.php:4 miscapps.i18n.php:10
 msgid "Misc Applications"
-msgstr ""
+msgstr "Sonstige Anwendungen"
 
 #: views/form.php:32
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: assets/js/miscapps.js:36
 msgid "Please enter a valid Feature Code."
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen Funktionscode ein."
 
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
@@ -132,7 +131,7 @@ msgstr ""
 
 #: views/form.php:59
 msgid "The name of this application"
-msgstr ""
+msgstr "Der Name dieser Anwendung"
 
 #: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
@@ -140,7 +139,7 @@ msgstr ""
 
 #: views/form.php:75
 msgid "This field is required."
-msgstr ""
+msgstr "Dieses Feld ist erforderlich."
 
 #: views/form.php:30
 msgid "Yes"
