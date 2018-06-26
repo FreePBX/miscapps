@@ -2,49 +2,18 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright (C) 2014 Schmooze Com Inc.
 namespace FreePBX\modules;
-class Miscapps implements \BMO {
-	public function __construct($freepbx = null) {
-		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
-		}
-		$this->FreePBX = $freepbx;
-		$this->db = $freepbx->Database;
-	}
-	public function install() {
-		$sql = "CREATE TABLE IF NOT EXISTS miscapps (miscapps_id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, ext VARCHAR( 50 ) , description VARCHAR( 50 ) , dest VARCHAR( 255 ))";
-		$q = $this->db->prepare($sql);
-		$q = $q->execute();
-		unset($sql);
-		unset($q);
-		//Migration... Is this still needed
-		global $db;
-		$results = array();
-		$sql = "SELECT miscapps_id, dest FROM miscapps";
-		$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-		if (!\DB::IsError($results)) { // error - table must not be there
-			foreach ($results as $result) {
-				$old_dest    = $result['dest'];
-				$this->id = $result['miscapps_id'];
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+class Miscapps extends FreePBX_Helpers implements BMO {
 
-				$new_dest = merge_ext_followme(trim($old_dest));
-				if ($new_dest != $old_dest) {
-					$sql = "UPDATE miscapps SET dest = '$new_dest' WHERE miscapps_id = $miscapps_id  AND dest = '$old_dest'";
-					$results = $db->query($sql);
-					if(DB::IsError($results)) {
-						die_freepbx($results->getMessage());
-					}
-				}
-			}
-		}
+	public function install() {
+
 	}
 	public function uninstall() {
-		echo _("Removing Settings table");
-		$sql = "DROP TABLE IF EXISTS miscapps";
-		$q = $this->db->prepare($sql);
-		$q->execute();
+
 	}
-	public function backup() {}
-	public function restore($backup) {}
+
 	public function doConfigPageInit($page) {
 		$action = isset($_REQUEST['action']) ? $_REQUEST['action'] :  '';
 		$miscapp_id = isset($_REQUEST['miscapp_id']) ? $_REQUEST['miscapp_id'] :  false;
@@ -65,8 +34,6 @@ class Miscapps implements \BMO {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
 					} else {
 						$id = $this->add($description, $ext, $dest);
-						$_REQUEST['action'] = null;
-						$_REQUEST['view'] = null;
 						needreload();
 					}
 				}
@@ -87,16 +54,12 @@ class Miscapps implements \BMO {
 					if (empty($conflict_url)) {
 						$this->edit($miscapp_id, $description, $ext, $dest, $enabled);
 						needreload();
-						$_REQUEST['action'] = null;
-						$_REQUEST['view'] = null;
 					}
 				}
 			break;
 			case 'delete':
 				$this->delete($_REQUEST['extdisplay']);
 				needreload();
-				$_REQUEST['action'] = null;
-				$_REQUEST['view'] = null;
 			break;
 		}
 	}
@@ -164,7 +127,7 @@ class Miscapps implements \BMO {
 	 * one-by-one
 	 */
 	public function malist($get_ext = false) {
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
 		$q = $db->prepare($sql);
 		$q->execute();
@@ -183,7 +146,7 @@ class Miscapps implements \BMO {
 	}
 
 	public function get($miscapps_id) {
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ?";
 		$q = $db->prepare($sql);
 		$q->execute(array($miscapps_id));
@@ -200,12 +163,12 @@ class Miscapps implements \BMO {
 	}
 
 	public function add($description, $ext, $dest) {
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$sql = "INSERT INTO miscapps (description, ext, dest) VALUES (?,?,?)";
 		$q = $db->prepare($sql);
 		$q->execute(array($description, $ext, $dest));
 		if($q){
-			$miscapps_id = $db->lastInsertId();
+			$miscapps_id = $db->lastInsertId('miscapps_id');
 		}else{
 			return false;
 		}
@@ -216,7 +179,7 @@ class Miscapps implements \BMO {
 		return $miscapps_id;
 	}
 	public function delete($miscapps_id) {
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$sql = "DELETE FROM miscapps WHERE miscapps_id = ?";
 		$q = $db->prepare($sql);
 		$q->execute(array($miscapps_id));
@@ -227,10 +190,23 @@ class Miscapps implements \BMO {
 			return true;
 		}
 		return false;
-	}
+    }
+    
+    public function upsert($miscapps_id, $description, $ext, $dest, $enabled=true){
+        $sql = "REPLACE INTO miscapps (miscapps_id, description, ext, dest, enabled) VALUES (:miscapps_id, :description, :ext, :dest, :enabled)";
+        $this->FreePBX->Database->prepare($sql)
+            ->execute([
+                ':miscapps_id' => $miscapps_id, 
+                ':description' => $description, 
+                ':ext' => $ext, 
+                ':dest' => $dest, 
+                ':enables' => $enabled,
+            ]);
+        return $this;
+    }
 
 	public function edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$sql = 'UPDATE miscapps SET description = ?, ext = ?, dest = ? WHERE miscapps_id = ?';
 		$q = $db->prepare($sql);
 		$q->execute(array($description, $ext, $dest, $miscapps_id));
@@ -245,7 +221,7 @@ class Miscapps implements \BMO {
 
 	public function check_destinations($dest=true) {
 		global $active_modules;
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$destlist = array();
 		if (is_array($dest) && empty($dest)) {
 			return $destlist;
@@ -281,7 +257,7 @@ class Miscapps implements \BMO {
 	}
 
 	public function change_destination($old_dest, $new_dest) {
-		$db = $this->db;
+		$db = $this->FreePBX->Database;
 		$sql = 'UPDATE miscapps SET dest = ? WHERE dest = ?';
 		$q = $db->prepare($sql);
 		$q->execute(array($new_dest, $old_dest));
@@ -295,9 +271,9 @@ class Miscapps implements \BMO {
 	}
 	public function listApps($get_ext = false) {
 		$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute();
-		$results = $ret = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+		$results = $ret = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if ($get_ext) {
 			foreach ($results as $idx => $v) {
 				$fc = new \featurecode('miscapps', 'miscapp_'.$results[$idx]['miscapps_id']);
