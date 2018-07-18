@@ -193,15 +193,21 @@ class Miscapps extends FreePBX_Helpers implements BMO {
     }
     
     public function upsert($miscapps_id, $description, $ext, $dest, $enabled=true){
-        $sql = "REPLACE INTO miscapps (miscapps_id, description, ext, dest, enabled) VALUES (:miscapps_id, :description, :ext, :dest, :enabled)";
-        $this->FreePBX->Database->prepare($sql)
+        $sql = "REPLACE INTO miscapps (miscapps_id, description, ext, dest) VALUES (:miscapps_id, :description, :ext, :dest)";
+        $ret = $this->FreePBX->Database->prepare($sql)
             ->execute([
                 ':miscapps_id' => $miscapps_id, 
                 ':description' => $description, 
                 ':ext' => $ext, 
                 ':dest' => $dest, 
-                ':enables' => $enabled,
             ]);
+        if($ret){
+            $fc = new \featurecode('miscapps', 'miscapp_' . $miscapps_id);
+            $fc->setDescription($description);
+            $fc->setDefault($ext, true);
+            $fc->setEnabled($enabled);
+            $fc->update();
+        }
         return $this;
     }
 
