@@ -8,4 +8,18 @@ class Restore Extends Base\RestoreBase{
         $this->FreePBX->Miscapps->upsert($destination['miscapps_id'], $destination['description'], $destination['ext'], $destination['dest'], $destination['enabled']);
     }
   }
+  public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
+    $tables = array_flip($tables+$unknownTables);
+    if(!isset(tables['miscapps']))
+      return $this;
+    }
+    $bmo = $this->FreePBX->Miscapps;
+    $bmo->setDatabase($pdo);
+    $data = $bmo->listApps(true);
+    $bmo->resetDatabase();
+    foreach ($data as $destination) {
+      $bmo->upsert($destination['miscapps_id'], $destination['description'], $destination['ext'], $destination['dest'], $destination['enabled']);
+    }
+    return $this;
+  }
 }

@@ -127,7 +127,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 	 * one-by-one
 	 */
 	public function malist($get_ext = false) {
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
 		$q = $db->prepare($sql);
 		$q->execute();
@@ -146,7 +146,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 	}
 
 	public function get($miscapps_id) {
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ?";
 		$q = $db->prepare($sql);
 		$q->execute(array($miscapps_id));
@@ -163,7 +163,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 	}
 
 	public function add($description, $ext, $dest) {
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$sql = "INSERT INTO miscapps (description, ext, dest) VALUES (?,?,?)";
 		$q = $db->prepare($sql);
 		$q->execute(array($description, $ext, $dest));
@@ -179,7 +179,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 		return $miscapps_id;
 	}
 	public function delete($miscapps_id) {
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$sql = "DELETE FROM miscapps WHERE miscapps_id = ?";
 		$q = $db->prepare($sql);
 		$q->execute(array($miscapps_id));
@@ -194,7 +194,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
     
     public function upsert($miscapps_id, $description, $ext, $dest, $enabled=true){
         $sql = "REPLACE INTO miscapps (miscapps_id, description, ext, dest) VALUES (:miscapps_id, :description, :ext, :dest)";
-        $ret = $this->FreePBX->Database->prepare($sql)
+        $ret = $this->Database->prepare($sql)
             ->execute([
                 ':miscapps_id' => $miscapps_id, 
                 ':description' => $description, 
@@ -212,7 +212,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
     }
 
 	public function edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$sql = 'UPDATE miscapps SET description = ?, ext = ?, dest = ? WHERE miscapps_id = ?';
 		$q = $db->prepare($sql);
 		$q->execute(array($description, $ext, $dest, $miscapps_id));
@@ -227,7 +227,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 
 	public function check_destinations($dest=true) {
 		global $active_modules;
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$destlist = array();
 		if (is_array($dest) && empty($dest)) {
 			return $destlist;
@@ -263,7 +263,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 	}
 
 	public function change_destination($old_dest, $new_dest) {
-		$db = $this->FreePBX->Database;
+		$db = $this->Database;
 		$sql = 'UPDATE miscapps SET dest = ? WHERE dest = ?';
 		$q = $db->prepare($sql);
 		$q->execute(array($new_dest, $old_dest));
@@ -277,7 +277,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 	}
 	public function listApps($get_ext = false) {
 		$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->Database->prepare($sql);
 		$stmt->execute();
 		$results = $ret = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if ($get_ext) {
@@ -357,5 +357,14 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 				return array('status' => false, 'message' => 'Invalid command');
 				break;
 		}
+	}
+	public function setDatabase($pdo){
+	$this->Database = $pdo;
+	return $this;
+	}
+	
+	public function resetDatabase(){
+	$this->Database = $this->FreePBX->Database;
+	return $this;
 	}
 }
