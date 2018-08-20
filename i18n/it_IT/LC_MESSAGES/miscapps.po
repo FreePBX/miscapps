@@ -8,26 +8,29 @@ msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-24 17:44-0400\n"
-"PO-Revision-Date: 2008-11-06 14:52+0100\n"
-"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
-"Language-Team: Italian\n"
+"PO-Revision-Date: 2018-05-29 13:56+0000\n"
+"Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
+"Language-Team: Italian <http://*/projects/freepbx/miscapps/it/>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.19.1\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
 #: miscapps.i18n.php:12
 msgid "777"
-msgstr ""
+msgstr "777"
 
 #: views/grid.php:9
 msgid "Actions"
-msgstr ""
+msgstr "Azioni"
 
 #: views/rnav.php:3
 msgid "Add Misc App"
-msgstr ""
+msgstr "Aggiungi app diversa"
 
 #: Miscapps.class.php:317 views/grid.php:2
 msgid "Add Misc Application"
@@ -38,14 +41,18 @@ msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
+"Aggiunge la possibilità di creare codici funzione che possono andare a "
+"qualsiasi destinazione FreePBX (come un IVR o una coda)"
 
 #: miscapps.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Applicazioni"
 
 #: views/form.php:107
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
+"Scegli la destinazione per questa app quando le persone compongono il codice "
+"funzione"
 
 #: Miscapps.class.php:126
 msgid "Delete"
@@ -57,7 +64,7 @@ msgstr "Descrizione"
 
 #: views/form.php:47
 msgid "Description:"
-msgstr ""
+msgstr "Descrizione:"
 
 #: views/form.php:95
 msgid "Destination"
@@ -69,11 +76,11 @@ msgstr "Modifica Applicazione"
 
 #: views/form.php:26
 msgid "Enable"
-msgstr ""
+msgstr "Abilitare"
 
 #: views/grid.php:8 views/rnav.php:14
 msgid "Extension"
-msgstr ""
+msgstr "Estensione"
 
 #: views/form.php:71
 msgid "Feature Code"
@@ -85,11 +92,11 @@ msgstr "Descrizione specificata non valida"
 
 #: views/rnav.php:2
 msgid "List Misc App"
-msgstr ""
+msgstr "Elenco di app diverse"
 
 #: Miscapps.class.php:338 views/main.php:1
 msgid "Misc Application"
-msgstr ""
+msgstr "Applicazione Misc"
 
 #: Miscapps.class.php:276 functions.inc.php:150
 #, php-format
@@ -102,23 +109,23 @@ msgstr "Applicazioni Varie"
 
 #: views/form.php:32
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: assets/js/miscapps.js:36
 msgid "Please enter a valid Feature Code."
-msgstr ""
+msgstr "Si prega di inserire un codice funzione valido."
 
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
-msgstr ""
+msgstr "Rimozione della tabella delle impostazioni"
 
 #: Miscapps.class.php:131
 msgid "Reset"
-msgstr ""
+msgstr "Azzera"
 
 #: Miscapps.class.php:136
 msgid "Submit"
-msgstr ""
+msgstr "Sottoscrivi"
 
 #: views/form.php:83
 msgid ""
@@ -134,15 +141,15 @@ msgstr "Il nome di questa applicazione"
 
 #: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
-msgstr ""
+msgstr "Il numero fornito per il codice funzione è già in uso da "
 
 #: views/form.php:75
 msgid "This field is required."
-msgstr ""
+msgstr "Questo campo è obbligatorio."
 
 #: views/form.php:30
 msgid "Yes"
-msgstr ""
+msgstr "Si"
 
 #~ msgid "Conflicting Extensions"
 #~ msgstr "Interni in conflitto"
