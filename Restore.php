@@ -10,7 +10,7 @@ class Restore Extends Base\RestoreBase{
   }
   public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
     $tables = array_flip($tables+$unknownTables);
-    if(!isset(tables['miscapps']))
+    if(!isset($tables['miscapps']))
       return $this;
     }
     $bmo = $this->FreePBX->Miscapps;
