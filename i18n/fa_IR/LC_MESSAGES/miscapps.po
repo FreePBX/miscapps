@@ -9,21 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-24 17:44-0400\n"
+"POT-Creation-Date: 2018-08-20 13:57-0400\n"
 "PO-Revision-Date: 2016-08-07 06:44+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
 "miscapps/fa_IR/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
-
-#: miscapps.i18n.php:12
-msgid "777"
-msgstr ""
 
 #: views/grid.php:9
 msgid "Actions"
@@ -33,7 +29,7 @@ msgstr ""
 msgid "Add Misc App"
 msgstr "افزودن برنامه متفرقه"
 
-#: Miscapps.class.php:317 views/grid.php:2
+#: Miscapps.class.php:299 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "افزودن برنامه متفرقه"
 
@@ -53,7 +49,7 @@ msgstr "برنامه‌ ها"
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr "مقصد این برنامه را وقتی کد مخصوص شماره گیری میشود انتخاب کنید"
 
-#: Miscapps.class.php:126
+#: Miscapps.class.php:89
 msgid "Delete"
 msgstr "حذف"
 
@@ -69,7 +65,7 @@ msgstr "شرح："
 msgid "Destination"
 msgstr "مقصد"
 
-#: Miscapps.class.php:325
+#: Miscapps.class.php:307
 msgid "Edit Misc Application"
 msgstr "ویرایش برنامه‌ اضافی"
 
@@ -93,11 +89,11 @@ msgstr "شرح اختصاص داده شده نامعتبر است"
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:338 views/main.php:1
+#: Miscapps.class.php:320 views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:276 functions.inc.php:150
+#: Miscapps.class.php:258 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "برنامه‌ اضافی：%s"
@@ -114,15 +110,11 @@ msgstr "خیر"
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:41
-msgid "Removing Settings table"
-msgstr "حذف تنظیمات جدول"
-
-#: Miscapps.class.php:131
+#: Miscapps.class.php:94
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: Miscapps.class.php:136
+#: Miscapps.class.php:99
 msgid "Submit"
 msgstr "ثبت"
 
@@ -147,6 +139,9 @@ msgstr ""
 #: views/form.php:30
 msgid "Yes"
 msgstr "بله"
+
+#~ msgid "Removing Settings table"
+#~ msgstr "حذف تنظیمات جدول"
 
 #~ msgid "This field must only contain numbers and *'s"
 #~ msgstr "این فیلد تنها باید شامل عدد باشد و *'s"

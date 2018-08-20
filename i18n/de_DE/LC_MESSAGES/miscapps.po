@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-24 17:44-0400\n"
+"POT-Creation-Date: 2018-08-20 13:57-0400\n"
 "PO-Revision-Date: 2018-07-18 19:13+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/miscapps/de/>\n"
@@ -20,10 +20,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.19.1\n"
 
-#: miscapps.i18n.php:12
-msgid "777"
-msgstr ""
-
 #: views/grid.php:9
 msgid "Actions"
 msgstr "Aktionen"
@@ -32,7 +28,7 @@ msgstr "Aktionen"
 msgid "Add Misc App"
 msgstr "Sonstige Anwendung hinzufügen"
 
-#: Miscapps.class.php:317 views/grid.php:2
+#: Miscapps.class.php:299 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "Sonstige Anwendung hinzufügen"
 
@@ -50,7 +46,7 @@ msgstr "Anwendungen"
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: Miscapps.class.php:126
+#: Miscapps.class.php:89
 msgid "Delete"
 msgstr "Löschen"
 
@@ -66,7 +62,7 @@ msgstr "Beschreibung:"
 msgid "Destination"
 msgstr "Ziel"
 
-#: Miscapps.class.php:325
+#: Miscapps.class.php:307
 msgid "Edit Misc Application"
 msgstr "Sonstige Anwendung bearbeiten"
 
@@ -90,11 +86,11 @@ msgstr "Ungültige Beschreibung angegeben"
 msgid "List Misc App"
 msgstr "Sonstige Anwendungen auflisten"
 
-#: Miscapps.class.php:338 views/main.php:1
+#: Miscapps.class.php:320 views/main.php:1
 msgid "Misc Application"
 msgstr "Sonstige Anwendung"
 
-#: Miscapps.class.php:276 functions.inc.php:150
+#: Miscapps.class.php:258 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Sonstige Anwendung: %s"
@@ -111,15 +107,11 @@ msgstr "Nein"
 msgid "Please enter a valid Feature Code."
 msgstr "Bitte geben Sie einen gültigen Funktionscode ein."
 
-#: Miscapps.class.php:41
-msgid "Removing Settings table"
-msgstr ""
-
-#: Miscapps.class.php:131
+#: Miscapps.class.php:94
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: Miscapps.class.php:136
+#: Miscapps.class.php:99
 msgid "Submit"
 msgstr ""
 
