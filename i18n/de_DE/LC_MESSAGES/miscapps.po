@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-24 17:44-0400\n"
-"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"PO-Revision-Date: 2018-10-16 14:23+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/miscapps/de/>\n"
 "Language: de_DE\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: miscapps.i18n.php:12
 msgid "777"
-msgstr ""
+msgstr "777"
 
 #: views/grid.php:9
 msgid "Actions"
@@ -41,6 +41,8 @@ msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
+"Bietet die Möglichkeit, Funktionscodes anzulegen, die jedes FreePBX-Ziel ("
+"z.B. IVR oder Warteschlange) anwählen können"
 
 #: miscapps.i18n.php:6
 msgid "Applications"
@@ -49,6 +51,8 @@ msgstr "Anwendungen"
 #: views/form.php:107
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
+"Wählen Sie das Ziel, das diese Anwendung anwählen soll, wenn jemand den "
+"Funktionscode wählt"
 
 #: Miscapps.class.php:126
 msgid "Delete"
@@ -113,7 +117,7 @@ msgstr "Bitte geben Sie einen gültigen Funktionscode ein."
 
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
-msgstr ""
+msgstr "Entferne Einstellungstabelle"
 
 #: Miscapps.class.php:131
 msgid "Reset"
@@ -128,6 +132,9 @@ msgid ""
 "The feature code/extension users can dial to access this application. This "
 "can also be modified on the Feature Codes page."
 msgstr ""
+"Der Funktionscode/die Nebenstelle, die Benutzer wählen können, um diese "
+"Anwendung anzusteuern. Kann auch auf der Seite mit den Funktionscodes "
+"geändert werden."
 
 #: views/form.php:59
 msgid "The name of this application"
@@ -135,7 +142,7 @@ msgstr "Der Name dieser Anwendung"
 
 #: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
-msgstr ""
+msgstr "Die Nummer für den Funktionscode wird bereits hier verwendet:"
 
 #: views/form.php:75
 msgid "This field is required."
