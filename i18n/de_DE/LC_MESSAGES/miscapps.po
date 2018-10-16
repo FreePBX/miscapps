@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-24 17:44-0400\n"
-"PO-Revision-Date: 2018-10-16 14:23+0000\n"
+"PO-Revision-Date: 2018-10-17 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/miscapps/de/>\n"
 "Language: de_DE\n"
@@ -142,7 +142,7 @@ msgstr "Der Name dieser Anwendung"
 
 #: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
-msgstr "Die Nummer für den Funktionscode wird bereits hier verwendet:"
+msgstr "Die Nummer für den Funktionscode wird bereits hier verwendet: "
 
 #: views/form.php:75
 msgid "This field is required."
