@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 13:57-0400\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: 2017-07-20 08:11+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr "Các thao tác"
 msgid "Add Misc App"
 msgstr "Thêm ứng dụng Misc"
 
-#: Miscapps.class.php:299 views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "Thêm ứng dụng Misc"
 
@@ -49,7 +49,7 @@ msgstr "Các ứng dụng"
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr "Chọn điểm đích cho ứng dụng này khi có người quay mã tính năng"
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr "Xóa"
 
@@ -65,7 +65,7 @@ msgstr "Mô tả:"
 msgid "Destination"
 msgstr "Điểm đích"
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr "Chỉnh sửa ứng dụng Misc"
 
@@ -89,11 +89,11 @@ msgstr "Mô tả không hợp lệ được xác định"
 msgid "List Misc App"
 msgstr "Danh sách ứng dụng Misc"
 
-#: Miscapps.class.php:320 views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr "Ứng dụng Misc"
 
-#: Miscapps.class.php:258 functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Ứng dụng Misc: %s"
@@ -110,11 +110,11 @@ msgstr "Không"
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -141,6 +141,14 @@ msgstr "Trường này được yêu cầu."
 #: views/form.php:30
 msgid "Yes"
 msgstr "Có"
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
 
 #~ msgid "777"
 #~ msgstr "777"

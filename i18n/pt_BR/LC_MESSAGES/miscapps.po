@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 13:57-0400\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: 2016-12-13 22:19+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Add Misc App"
 msgstr "Adicionar Aplicativo Diversificado"
 
-#: Miscapps.class.php:299 views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "Adicionar Aplicação Diversificada"
 
@@ -51,7 +51,7 @@ msgstr ""
 "Escolha o destino para este aplicativo quando as pessoas discarem o código "
 "de recurso"
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr "Apagar"
 
@@ -67,7 +67,7 @@ msgstr "Descrição:"
 msgid "Destination"
 msgstr "Destino"
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr "Editar Aplicação Diversa"
 
@@ -91,11 +91,11 @@ msgstr "Descrição especificada inválida"
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:320 views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:258 functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Aplicação Diversificada: %s"
@@ -112,11 +112,11 @@ msgstr "Não"
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr "Enviar"
 
@@ -144,6 +144,14 @@ msgstr ""
 #: views/form.php:30
 msgid "Yes"
 msgstr "Sim"
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
 
 #~ msgid "Removing Settings table"
 #~ msgstr "Removendo tabela de Configurações"

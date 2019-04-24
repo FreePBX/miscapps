@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-06 17:35-0500\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Add Misc App"
 msgstr ""
 
-#: Miscapps.class.php:299
+#: Miscapps.class.php:305
 #: views/grid.php:2
 msgid "Add Misc Application"
 msgstr ""
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgstr ""
 msgid "Destination"
 msgstr ""
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr ""
 
@@ -87,12 +87,12 @@ msgstr ""
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:320
+#: Miscapps.class.php:326
 #: views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:258
+#: Miscapps.class.php:264
 #: functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
@@ -111,11 +111,11 @@ msgstr ""
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr ""
 
@@ -139,4 +139,12 @@ msgstr ""
 
 #: views/form.php:30
 msgid "Yes"
+msgstr ""
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
 msgstr ""

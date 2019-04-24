@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 13:57-0400\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: 2016-01-17 08:54+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/miscapps/"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Add Misc App"
 msgstr ""
 
-#: Miscapps.class.php:299 views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "Ajouter une Application"
 
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Destination"
 msgstr "Destination"
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr "Editer Application"
 
@@ -97,11 +97,11 @@ msgstr "Description spécifiée invalide"
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:320 views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:258 functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Application : %s"
@@ -118,11 +118,11 @@ msgstr ""
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr ""
 
@@ -149,6 +149,14 @@ msgstr ""
 
 #: views/form.php:30
 msgid "Yes"
+msgstr ""
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
 msgstr ""
 
 #~ msgid "Are you sure you want to delete this?"

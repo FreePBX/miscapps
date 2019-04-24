@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 13:57-0400\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: 2016-08-07 06:44+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Add Misc App"
 msgstr "افزودن برنامه متفرقه"
 
-#: Miscapps.class.php:299 views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "افزودن برنامه متفرقه"
 
@@ -49,7 +49,7 @@ msgstr "برنامه‌ ها"
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr "مقصد این برنامه را وقتی کد مخصوص شماره گیری میشود انتخاب کنید"
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr "حذف"
 
@@ -65,7 +65,7 @@ msgstr "شرح："
 msgid "Destination"
 msgstr "مقصد"
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr "ویرایش برنامه‌ اضافی"
 
@@ -89,11 +89,11 @@ msgstr "شرح اختصاص داده شده نامعتبر است"
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:320 views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:258 functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "برنامه‌ اضافی：%s"
@@ -110,11 +110,11 @@ msgstr "خیر"
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr "ثبت"
 
@@ -139,6 +139,14 @@ msgstr ""
 #: views/form.php:30
 msgid "Yes"
 msgstr "بله"
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
 
 #~ msgid "Removing Settings table"
 #~ msgstr "حذف تنظیمات جدول"

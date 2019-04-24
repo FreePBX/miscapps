@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 13:57-0400\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: 2014-02-20 04:44+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Add Misc App"
 msgstr ""
 
-#: Miscapps.class.php:299 views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "その他アプリケーションを追加"
 
@@ -76,7 +76,7 @@ msgstr "アプリケーション"
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr "削除"
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Destination"
 msgstr "宛先"
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr "その他アプリケーションを編集"
 
@@ -116,11 +116,11 @@ msgstr "無効な説明が指定されました"
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:320 views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:258 functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "その他アプリケーション： %s"
@@ -137,11 +137,11 @@ msgstr ""
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr ""
 
@@ -167,6 +167,14 @@ msgstr ""
 
 #: views/form.php:30
 msgid "Yes"
+msgstr ""
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
 msgstr ""
 
 #~ msgid "Conflicting Extensions"

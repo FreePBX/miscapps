@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 13:57-0400\n"
+"POT-Creation-Date: 2019-04-24 21:12+0530\n"
 "PO-Revision-Date: 2018-07-04 11:03+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/miscapps/bg/>\n"
@@ -29,7 +29,7 @@ msgstr "Действия"
 msgid "Add Misc App"
 msgstr "Добави Друго Приложение"
 
-#: Miscapps.class.php:299 views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr "Добави Друго Приложение"
 
@@ -50,7 +50,7 @@ msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 "Изберете направление за това приложение, когато хората набират специален код"
 
-#: Miscapps.class.php:89
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -66,7 +66,7 @@ msgstr "Описание:"
 msgid "Destination"
 msgstr "Направление"
 
-#: Miscapps.class.php:307
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr "Редактирай Друго Приложение"
 
@@ -90,11 +90,11 @@ msgstr "Неправилно въведено описание"
 msgid "List Misc App"
 msgstr "Списък на Други Приложения"
 
-#: Miscapps.class.php:320 views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr "Друго Приложение"
 
-#: Miscapps.class.php:258 functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr "Друго Приложение: %s"
@@ -111,11 +111,11 @@ msgstr "Не"
 msgid "Please enter a valid Feature Code."
 msgstr "Моля въведете правилен Специален Код."
 
-#: Miscapps.class.php:94
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr "Изчисти"
 
-#: Miscapps.class.php:99
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr "Приеми"
 
@@ -142,6 +142,14 @@ msgstr "Това поле е задължително."
 #: views/form.php:30
 msgid "Yes"
 msgstr "Да"
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
 
 #~ msgid "777"
 #~ msgstr "777"
