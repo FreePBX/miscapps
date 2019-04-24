@@ -34,6 +34,8 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
 					} else {
 						$id = $this->add($description, $ext, $dest);
+						$_REQUEST['action'] = null;
+						$_REQUEST['view'] = null;
 						needreload();
 					}
 				}
@@ -53,12 +55,16 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 					}
 					if (empty($conflict_url)) {
 						$this->edit($miscapp_id, $description, $ext, $dest, $enabled);
+						$_REQUEST['action'] = null;
+						$_REQUEST['view'] = null;
 						needreload();
 					}
 				}
 			break;
 			case 'delete':
 				$this->delete($_REQUEST['extdisplay']);
+				$_REQUEST['action'] = null;
+				$_REQUEST['view'] = null;
 				needreload();
 			break;
 		}
