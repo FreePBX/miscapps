@@ -11,5 +11,6 @@ class Restore Extends Base\RestoreBase{
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$this->restoreLegacyDatabase($pdo);
+		$this->restoreLegacyFeatureCodes($pdo);
 	}
 }
