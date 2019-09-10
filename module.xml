@@ -2,7 +2,7 @@
     <rawname>miscapps</rawname>
     <repo>extended</repo>
     <name>Misc Applications</name>
-    <version>15.0.6</version>
+    <version>15.0.7</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -22,6 +22,7 @@
         </table>
     </database>
     <changelog>
+		*15.0.7* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.6* FREEPBX-20481 Restoring legacy(FreePBX 13) Backup into FreePBX 15 system is not restoring the Feature codes for Misc application entries. 
 		*15.0.5* Fixing FREEPBX-19768 
 		*15.0.3* fixing legacy restore
