@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-24 17:44-0400\n"
+"POT-Creation-Date: 2019-11-25 14:15+0530\n"
 "PO-Revision-Date: 2018-05-29 13:56+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/miscapps/it/>\n"
@@ -19,10 +19,6 @@ msgstr ""
 "X-Generator: Weblate 2.19.1\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
-
-#: miscapps.i18n.php:12
-msgid "777"
-msgstr "777"
 
 #: views/grid.php:9
 msgid "Actions"
@@ -151,6 +147,17 @@ msgstr "Questo campo è obbligatorio."
 msgid "Yes"
 msgstr "Si"
 
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
+
+#~ msgid "777"
+#~ msgstr "777"
+
 #~ msgid "Conflicting Extensions"
 #~ msgstr "Interni in conflitto"
 
@@ -220,12 +227,12 @@ msgstr "Si"
 #~ "<br><br><b>custom-myapp,s,1</b><br><br>The <b>[custom-myapp]</b> context "
 #~ "would need to be created and included in extensions_custom.conf</span>"
 #~ msgstr ""
-#~ "Applicazione Personalizzata<span>SOLO UTENTI AVANZATI<br>Utilizzare Goto"
-#~ "() per inviare la chiamata verso un contesto personalizzato.<br><br>Il "
-#~ "nome del contesto deve iniziare per \"custom-\" e deve essere nel formato "
-#~ "custom-contesto,extension,priorità. Esempio: <br><br><b>custom-app,s,1</"
-#~ "b><br><br><b>Il contesto [custom-app] </b> deve poi essere creato e "
-#~ "incluso nel file extensions_custom.conf</span>"
+#~ "Applicazione Personalizzata<span>SOLO UTENTI AVANZATI<br>Utilizzare "
+#~ "Goto() per inviare la chiamata verso un contesto personalizzato."
+#~ "<br><br>Il nome del contesto deve iniziare per \"custom-\" e deve essere "
+#~ "nel formato custom-contesto,extension,priorità. Esempio: "
+#~ "<br><br><b>custom-app,s,1</b><br><br><b>Il contesto [custom-app] </b> "
+#~ "deve poi essere creato e incluso nel file extensions_custom.conf</span>"
 
 #~ msgid "Edit"
 #~ msgstr "Modifica"

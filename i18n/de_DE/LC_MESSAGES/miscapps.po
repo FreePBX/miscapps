@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-24 17:44-0400\n"
+"POT-Creation-Date: 2019-11-25 14:15+0530\n"
 "PO-Revision-Date: 2018-10-17 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/miscapps/de/>\n"
@@ -19,10 +19,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
-
-#: miscapps.i18n.php:12
-msgid "777"
-msgstr "777"
 
 #: views/grid.php:9
 msgid "Actions"
@@ -41,8 +37,8 @@ msgid ""
 "Adds the ability to create feature codes that can go to any FreePBX "
 "destination (such as an IVR or queue)"
 msgstr ""
-"Bietet die Möglichkeit, Funktionscodes anzulegen, die jedes FreePBX-Ziel ("
-"z.B. IVR oder Warteschlange) anwählen können"
+"Bietet die Möglichkeit, Funktionscodes anzulegen, die jedes FreePBX-Ziel (z."
+"B. IVR oder Warteschlange) anwählen können"
 
 #: miscapps.i18n.php:6
 msgid "Applications"
@@ -151,3 +147,14 @@ msgstr "Dieses Feld ist erforderlich."
 #: views/form.php:30
 msgid "Yes"
 msgstr "Ja"
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
+
+#~ msgid "777"
+#~ msgstr "777"

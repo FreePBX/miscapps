@@ -20,17 +20,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-24 17:44-0400\n"
+"POT-Creation-Date: 2019-11-25 14:15+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: miscapps.i18n.php:12
-msgid "777"
-msgstr ""
 
 #: views/grid.php:9
 msgid "Actions"
@@ -151,4 +148,12 @@ msgstr ""
 
 #: views/form.php:30
 msgid "Yes"
+msgstr ""
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
 msgstr ""

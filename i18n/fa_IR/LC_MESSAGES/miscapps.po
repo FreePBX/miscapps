@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-24 17:44-0400\n"
+"POT-Creation-Date: 2019-11-25 14:15+0530\n"
 "PO-Revision-Date: 2019-01-25 14:59+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/miscapps/fa/>\n"
@@ -19,10 +19,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
-
-#: miscapps.i18n.php:12
-msgid "777"
-msgstr "777"
 
 #: views/grid.php:9
 msgid "Actions"
@@ -146,6 +142,17 @@ msgstr "این فیلد اجباری است."
 #: views/form.php:30
 msgid "Yes"
 msgstr "بله"
+
+#: miscapps.i18n.php:12
+msgid "qsqq"
+msgstr ""
+
+#: miscapps.i18n.php:14
+msgid "wewe"
+msgstr ""
+
+#~ msgid "777"
+#~ msgstr "777"
 
 #~ msgid "This field must only contain numbers and *'s"
 #~ msgstr "این فیلد تنها باید شامل عدد باشد و *'s"
