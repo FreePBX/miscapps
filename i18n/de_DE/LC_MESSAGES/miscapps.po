@@ -114,11 +114,3 @@ msgstr ""
 #: views/form.php:30
 msgid "Yes"
 msgstr ""
-
-#: miscapps.i18n.php:12
-msgid "qsqq"
-msgstr ""
-
-#: miscapps.i18n.php:14
-msgid "wewe"
-msgstr ""

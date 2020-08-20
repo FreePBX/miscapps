@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-24 21:12+0530\n"
+"POT-Creation-Date: 2020-08-20 04:01+0000\n"
 "PO-Revision-Date: 2014-02-20 04:44+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/miscapps/ja/>\n"
@@ -167,14 +167,6 @@ msgstr ""
 
 #: views/form.php:30
 msgid "Yes"
-msgstr ""
-
-#: miscapps.i18n.php:12
-msgid "qsqq"
-msgstr ""
-
-#: miscapps.i18n.php:14
-msgid "wewe"
 msgstr ""
 
 #~ msgid "Conflicting Extensions"
