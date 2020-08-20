@@ -9,7 +9,8 @@
   <category>Applications</category>
   <description>
 		Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)
-	</description>
+  </description>
+  <more-info>https://wiki.freepbx.org/display/F2/Misc+Applications+Module</more-info>
   <menuitems>
     <miscapps needsenginedb="yes">Misc Applications</miscapps>
   </menuitems>
