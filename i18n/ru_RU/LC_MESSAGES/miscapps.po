@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 04:00+0000\n"
-"PO-Revision-Date: 2021-11-23 07:01+0000\n"
+"PO-Revision-Date: 2021-11-24 12:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/miscapps/"
 "ru/>\n"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: views/form.php:95
 msgid "Destination"
-msgstr "Направление"
+msgstr "Назначение"
 
 #: Miscapps.class.php:325
 msgid "Edit Misc Application"
@@ -72,11 +72,11 @@ msgstr "Изменить Дополнительное приложение"
 
 #: views/form.php:26
 msgid "Enable"
-msgstr ""
+msgstr "Включить"
 
 #: views/grid.php:8 views/rnav.php:14
 msgid "Extension"
-msgstr ""
+msgstr "Внутренний номер"
 
 #: views/form.php:71
 msgid "Feature Code"
