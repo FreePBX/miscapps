@@ -1,14 +1,8 @@
-# Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
-# This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
-#
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.4\n"
+"Project-Id-Version: Russian (FreePBX)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 04:00+0000\n"
+"POT-Creation-Date: 2022-04-20 10:02+0000\n"
 "PO-Revision-Date: 2022-04-20 11:23+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/miscapps/"
@@ -27,7 +21,7 @@ msgstr "Действия"
 
 #: views/rnav.php:3
 msgid "Add Misc App"
-msgstr ""
+msgstr "Добавить Доп прил"
 
 #: Miscapps.class.php:317 views/grid.php:2
 msgid "Add Misc Application"
@@ -49,6 +43,8 @@ msgstr "Приложения"
 #: views/form.php:107
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
+"Выберите пункт назначения для этого приложения, когда люди набирают код "
+"функции"
 
 #: Miscapps.class.php:126
 msgid "Delete"
@@ -60,7 +56,7 @@ msgstr "Описание"
 
 #: views/form.php:47
 msgid "Description:"
-msgstr ""
+msgstr "Описание:"
 
 #: views/form.php:95
 msgid "Destination"
@@ -88,11 +84,11 @@ msgstr "Указано неверное описание"
 
 #: views/rnav.php:2
 msgid "List Misc App"
-msgstr ""
+msgstr "Список доп прил"
 
 #: Miscapps.class.php:338 views/main.php:1
 msgid "Misc Application"
-msgstr ""
+msgstr "Дополнительное приложение"
 
 #: Miscapps.class.php:276 functions.inc.php:150
 #, php-format
@@ -109,11 +105,11 @@ msgstr "Нет"
 
 #: assets/js/miscapps.js:36
 msgid "Please enter a valid Feature Code."
-msgstr ""
+msgstr "Пожалуйста, введите действительный Сервисный код"
 
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
-msgstr ""
+msgstr "Удаление таблицы настроек"
 
 #: Miscapps.class.php:131
 msgid "Reset"
@@ -137,15 +133,15 @@ msgstr "Название приложения"
 
 #: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
-msgstr ""
+msgstr "Номер, указанный для Сервисного кода, уже используется"
 
 #: views/form.php:75
 msgid "This field is required."
-msgstr ""
+msgstr "Это поле является обязательным."
 
 #: views/form.php:30
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #~ msgid "Conflicting Extensions"
 #~ msgstr "Конфликтующие внутренние номера"
