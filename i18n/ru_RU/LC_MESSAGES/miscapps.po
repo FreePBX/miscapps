@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (FreePBX)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-20 10:02+0000\n"
-"PO-Revision-Date: 2022-04-20 11:23+0000\n"
+"PO-Revision-Date: 2022-04-21 12:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/miscapps/"
 "ru/>\n"
@@ -105,7 +105,7 @@ msgstr "Нет"
 
 #: assets/js/miscapps.js:36
 msgid "Please enter a valid Feature Code."
-msgstr "Пожалуйста, введите действительный Сервисный код"
+msgstr "Пожалуйста, введите действительный Сервисный код."
 
 #: Miscapps.class.php:41
 msgid "Removing Settings table"
@@ -133,7 +133,7 @@ msgstr "Название приложения"
 
 #: assets/js/miscapps.js:44
 msgid "The number provided for the feature code is already in use by "
-msgstr "Номер, указанный для Сервисного кода, уже используется"
+msgstr "Номер, указанный для Сервисного кода, уже используется "
 
 #: views/form.php:75
 msgid "This field is required."
