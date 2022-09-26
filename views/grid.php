@@ -6,7 +6,7 @@
 		<tr>
 			<th data-field="description"><?php echo _('Description')?></th>
 			<th data-field="ext"><?php echo _('Extension')?></th>
-			<th data-field="actions" data-formatter="linkFormatter" class="col-xs-2"><?php echo _("Actions")?></th>
+			<th data-field="actions" data-formatter="linkFormatter"><?php echo _("Actions")?></th>
 		</tr>
 	</thead>
 </table>
