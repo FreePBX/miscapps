@@ -74,7 +74,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 		foreach ($this->malist(true) as $row) {
 			if ($row['enabled']) {
 				$ext->add('app-miscapps', $row['ext'], '', new ext_noop('Running miscapp '.$row['miscapps_id'].': '.$row['description']));
-				$ext->add('app-miscapps', $row['ext'], '', new ext_gosub('1','s','sub-user-callerid'));
+				$ext->add('app-miscapps', $row['ext'], '', new ext_macro('user-callerid'));
 				$ext->add('app-miscapps', $row['ext'], '', new ext_goto($row['dest']));
 				$addit = true;
 			}
