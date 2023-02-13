@@ -2,7 +2,7 @@
     <rawname>miscapps</rawname>
     <repo>extended</repo>
     <name>Misc Applications</name>
-    <version>16.0.1</version>
+    <version>17.0.1</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -23,12 +23,12 @@
         </table>
     </database>
     <changelog>
-        *16.0.1* 16.0 release
+        *17.0.1* 17.0 release
 	</changelog>
     <depends>
-        <version>16.0</version>
+        <version>17.0</version>
     </depends>
     <supported>
-        <version>16.0</version>
+        <version>17.0</version>
     </supported>
 </module>
