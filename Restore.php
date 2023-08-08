@@ -7,7 +7,9 @@ class Restore Extends Base\RestoreBase{
 		foreach ($configs['data'] as $destination) {
 			$this->FreePBX->Miscapps->upsert($destination['miscapps_id'], $destination['description'], $destination['ext'], $destination['dest'], $destination['enabled']);
 		}
-		$this->importFeatureCodes($configs['features']);
+		if(isset($config)) {
+			$this->importFeatureCodes($config['features']);
+		}
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$this->restoreLegacyDatabase($pdo);
