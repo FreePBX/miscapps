@@ -13,8 +13,8 @@ if(isset($data) && is_array($data)){
 					<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
 					<div class="display full-border">
 						<div>
-							<?php echo $warn ?>
-							<p><?php echo $helptext ?></p>
+							<?php echo $warn ?? ''; ?>
+							<p><?php echo $helptext ?? ''; ?></p>
 						</div>
 						<!--Enabled-->
 						<div class="element-container">
@@ -96,7 +96,7 @@ if(isset($data) && is_array($data)){
 												<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
 											</div>
 											<div class="col-md-9">
-												<?php echo drawselects($dest,0);?>
+												<?php $dest = $dest ?? ''; echo drawselects($dest,0);?>
 											</div>
 										</div>
 									</div>
