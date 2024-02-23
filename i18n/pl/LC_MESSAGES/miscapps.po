@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 04:00+0000\n"
+"POT-Creation-Date: 2024-02-22 23:19-0500\n"
 "PO-Revision-Date: 2023-11-18 14:01+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/miscapps/"
 "pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
@@ -30,8 +30,7 @@ msgstr "Działania"
 msgid "Add Misc App"
 msgstr ""
 
-#: Miscapps.class.php:317
-#: views/grid.php:2
+#: Miscapps.class.php:305 views/grid.php:2
 msgid "Add Misc Application"
 msgstr ""
 
@@ -49,12 +48,11 @@ msgstr ""
 msgid "Choose the destination for this app when people dial the feature code"
 msgstr ""
 
-#: Miscapps.class.php:126
+#: Miscapps.class.php:95
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:7
-#: views/rnav.php:15
+#: views/grid.php:7 views/rnav.php:15
 msgid "Description"
 msgstr ""
 
@@ -66,7 +64,7 @@ msgstr ""
 msgid "Destination"
 msgstr ""
 
-#: Miscapps.class.php:325
+#: Miscapps.class.php:313
 msgid "Edit Misc Application"
 msgstr ""
 
@@ -74,8 +72,7 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: views/grid.php:8
-#: views/rnav.php:14
+#: views/grid.php:8 views/rnav.php:14
 msgid "Extension"
 msgstr ""
 
@@ -91,19 +88,16 @@ msgstr ""
 msgid "List Misc App"
 msgstr ""
 
-#: Miscapps.class.php:338
-#: views/main.php:1
+#: Miscapps.class.php:326 views/main.php:1
 msgid "Misc Application"
 msgstr ""
 
-#: Miscapps.class.php:276
-#: functions.inc.php:150
+#: Miscapps.class.php:264 functions.inc.php:150
 #, php-format
 msgid "Misc Application: %s"
 msgstr ""
 
-#: miscapps.i18n.php:4
-#: miscapps.i18n.php:10
+#: miscapps.i18n.php:4 miscapps.i18n.php:10
 msgid "Misc Applications"
 msgstr ""
 
@@ -115,15 +109,11 @@ msgstr ""
 msgid "Please enter a valid Feature Code."
 msgstr ""
 
-#: Miscapps.class.php:41
-msgid "Removing Settings table"
-msgstr ""
-
-#: Miscapps.class.php:131
+#: Miscapps.class.php:100
 msgid "Reset"
 msgstr ""
 
-#: Miscapps.class.php:136
+#: Miscapps.class.php:105
 msgid "Submit"
 msgstr ""
 
