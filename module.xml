@@ -2,7 +2,7 @@
     <rawname>miscapps</rawname>
     <repo>extended</repo>
     <name>Misc Applications</name>
-    <version>17.0.2</version>
+    <version>17.0.3</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -23,6 +23,7 @@
         </table>
     </database>
     <changelog>
+		*17.0.3*  bump
 		*17.0.2* FREEPBX-24005 
         *17.0.1* 17.0 release
 	</changelog>
