@@ -10,7 +10,7 @@
     <description>
         Adds the ability to create feature codes that can go to any FreePBX destination (such as an IVR or queue)
     </description>
-    <more-info>https://wiki.freepbx.org/display/FPG/Misc+Applications+Module</more-info>
+    <more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/24477784/PBX+GUI+-+Misc+Applications+Module</more-info>
     <menuitems>
         <miscapps needsenginedb="yes">Misc Applications</miscapps>
     </menuitems>
