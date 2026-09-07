@@ -6,6 +6,16 @@ use BMO;
 use FreePBX_Helpers;
 use PDO;
 class Miscapps extends FreePBX_Helpers implements BMO {
+	/** @var \FreePBX */
+	public $FreePBX;
+
+	/** @var \FreePBX\Database|PDO */
+	public $Database;
+
+	public function __construct($freepbx = null) {
+		parent::__construct($freepbx);
+		$this->Database = $this->FreePBX->Database;
+	}
 
 	public function install() {
 
@@ -73,9 +83,9 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 		$addit = false;
 		foreach ($this->malist(true) as $row) {
 			if ($row['enabled']) {
-				$ext->add('app-miscapps', $row['ext'], '', new ext_noop('Running miscapp '.$row['miscapps_id'].': '.$row['description']));
-				$ext->add('app-miscapps', $row['ext'], '', new ext_macro('user-callerid'));
-				$ext->add('app-miscapps', $row['ext'], '', new ext_goto($row['dest']));
+				$ext->add('app-miscapps', $row['ext'], '', new \ext_noop('Running miscapp '.$row['miscapps_id'].': '.$row['description']));
+				$ext->add('app-miscapps', $row['ext'], '', new \ext_macro('user-callerid'));
+				$ext->add('app-miscapps', $row['ext'], '', new \ext_goto($row['dest']));
 				$addit = true;
 			}
 		}
@@ -118,6 +128,7 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 	}
 	public function contexts() {
 		// return an associative array with context and description
+		$contexts = array();
 		foreach ($this->malist() as $row) {
 			$contexts[] = array(
 				'context' => 'app-miscapps-'.$row['miscapps_id'],
@@ -137,12 +148,10 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 		$sql = "SELECT miscapps_id, description, dest FROM miscapps ORDER BY description ";
 		$q = $db->prepare($sql);
 		$q->execute();
-		if($q){
-			$results = $q->fetchAll();
-		}
+		$results = $q->fetchAll(PDO::FETCH_ASSOC);
 		if ($get_ext) {
 			foreach (array_keys($results) as $idx) {
-				$fc = new featurecode('miscapps', 'miscapp_'.$results[$idx]['miscapps_id']);
+				$fc = new \featurecode('miscapps', 'miscapp_'.$results[$idx]['miscapps_id']);
 				$results[$idx]['ext'] = $fc->getDefault();
 				$results[$idx]['enabled'] = $fc->isEnabled();
 			}
@@ -156,12 +165,13 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 		$sql = "SELECT miscapps_id, description, ext, dest FROM miscapps WHERE miscapps_id = ?";
 		$q = $db->prepare($sql);
 		$q->execute(array($miscapps_id));
-		if($q){
-			$row = $q->getRow();
+		$row = $q->fetch(PDO::FETCH_ASSOC);
+		if ($row === false) {
+			return false;
 		}
 
 		// we want to get the ext from featurecodes
-		$fc = new featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
+		$fc = new \featurecode('miscapps', 'miscapp_'.$row['miscapps_id']);
 		$row['ext'] = $fc->getDefault();
 		$row['enabled'] = $fc->isEnabled();
 
@@ -242,17 +252,13 @@ class Miscapps extends FreePBX_Helpers implements BMO {
 			$sql = "SELECT miscapps_id, dest, description FROM miscapps";
 			$q = $db->prepare($sql);
 			$q->execute();
-			if($q){
-				$results = $q->fetchAll();
-			}
+			$results = $q->fetchAll(PDO::FETCH_ASSOC);
 		} else {
-			$where = implode("','", $dest);
-			$sql = "SELECT miscapps_id, dest, description FROM miscapps WHERE dest in ?";
+			$placeholders = implode(',', array_fill(0, count($dest), '?'));
+			$sql = "SELECT miscapps_id, dest, description FROM miscapps WHERE dest IN ($placeholders)";
 			$q = $db->prepare($sql);
-			$q->execute(array($where));
-			if($q){
-				$results = $q->fetchAll();
-			}
+			$q->execute($dest);
+			$results = $q->fetchAll(PDO::FETCH_ASSOC);
 		}
 		$type = isset($active_modules['miscapps']['type'])?$active_modules['miscapps']['type']:'setup';
 
