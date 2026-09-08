@@ -5,6 +5,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 function miscapps_contexts() {
 	// return an associative array with context and description
+	$contexts = array();
 	foreach (miscapps_list() as $row) {
 		$contexts[] = array(
 			'context' => 'app-miscapps-'.$row['miscapps_id'],
@@ -129,6 +130,7 @@ function miscapps_edit($miscapps_id, $description, $ext, $dest, $enabled=true) {
 
 function miscapps_check_destinations($dest=true) {
 	global $active_modules;
+	global $db;
 
 	$destlist = array();
 	if (is_array($dest) && empty($dest)) {
@@ -136,9 +138,12 @@ function miscapps_check_destinations($dest=true) {
 	}
 	$sql = "SELECT miscapps_id, dest, description FROM miscapps ";
 	if ($dest !== true) {
-		$sql .= "WHERE dest in ('".implode("','",$dest)."')";
+		$placeholders = implode(',', array_fill(0, count($dest), '?'));
+		$sql .= "WHERE dest IN ($placeholders)";
 	}
-	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+	$stmt = $db->prepare($sql);
+	$stmt->execute($dest === true ? array() : $dest);
+	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 	$type = isset($active_modules['miscapps']['type'])?$active_modules['miscapps']['type']:'setup';
 
@@ -155,7 +160,9 @@ function miscapps_check_destinations($dest=true) {
 }
 
 function miscapps_change_destination($old_dest, $new_dest) {
-	$sql = 'UPDATE miscapps SET dest = "' . $new_dest . '" WHERE dest = "' . $old_dest . '"';
-	sql($sql, "query");
+	global $db;
+
+	$stmt = $db->prepare('UPDATE miscapps SET dest = ? WHERE dest = ?');
+	return $stmt->execute(array($new_dest, $old_dest));
 }
 ?>
